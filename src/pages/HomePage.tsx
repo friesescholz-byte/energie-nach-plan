@@ -326,15 +326,15 @@ export const HomePage: React.FC = () => {
       </div>
 
       {/* 4. WARUM ENERGIE NACH PLAN DIE LOGISCHE ENTSCHEIDUNG IST (Mit verfeinertem, grün schimmerndem Architekturmuster) */}
-      <section className="py-28 bg-gradient-to-b from-[#F4F7FB] via-[#F8FCF9] to-[#EEF5F1] relative overflow-hidden">
+      <section className="pt-24 sm:pt-28 pb-0 bg-gradient-to-b from-[#F4F7FB] via-[#F8FCF9] to-[#EEF5F1] relative overflow-hidden">
         {/* Ganz leicht grün schimmernde Ambient-Auren für Tiefe */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1100px] h-[650px] bg-gradient-to-tr from-emerald-100/50 via-emerald-50/30 to-transparent rounded-full blur-[110px] pointer-events-none" />
         <div className="absolute -top-24 right-0 w-96 h-96 bg-emerald-200/25 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute -bottom-24 left-0 w-96 h-96 bg-emerald-100/35 rounded-full blur-3xl pointer-events-none" />
 
-        {/* Großformatiges, geschwungenes Architektur-Konturmuster mit dezenten smaragdgrünen Wellenlinien */}
+        {/* Großformatiges, geschwungenes Architektur-Konturmuster mit dezenten smaragdgrünen Wellenlinien – reicht lückenlos bis zur Wellenlinie */}
         <div 
-          className="absolute inset-0 opacity-[0.65] pointer-events-none [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]"
+          className="absolute inset-0 opacity-[0.75] pointer-events-none [mask-image:linear-gradient(to_bottom,transparent,black_8%,black_100%)]"
           style={{
             backgroundImage: `url('/images/pattern_curved_contour.svg')`,
             backgroundSize: '240px 120px'
@@ -427,13 +427,13 @@ export const HomePage: React.FC = () => {
             </div>
           </div>
         </div>
+
+        {/* Schicker, organischer geschwungener Übergang direkt im Abschnitt – das Muster reicht lückenlos bis zur Wellenlinie */}
+        <CurvedWaveLightDivider fillColor="#EFF2F8" className="mt-12 sm:mt-16" />
       </section>
 
-      {/* Schicker, organischer geschwungener Übergang mit dezent grüner Designer-Linie ("nichts Wildes") */}
-      <CurvedWaveLightDivider fillColor="#EFF2F8" />
-
       {/* 5. DIE 3 SANIERUNGSFALLEN (Spaziös, Weitläufig, mit Bild pro Problem) */}
-      <section className="pt-28 pb-20 bg-gradient-to-b from-[#EFF2F8] via-white to-[#F0F3F9] relative">
+      <section className="pt-20 sm:pt-24 pb-20 bg-gradient-to-b from-[#EFF2F8] via-white to-[#F0F3F9] relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-14 sm:mb-16 lg:mb-20">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1B1754] tracking-tight leading-[1.15]">
