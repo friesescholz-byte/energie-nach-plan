@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-[#FFFFFF] text-slate-900 font-sans antialiased;
+  }
+}
+
+/* Custom subtle utilities */
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Custom scrollbar for modern browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Infinite Marquee Double Slider Animations */
+@keyframes marquee-left {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee-left {
+  display: flex;
+  width: max-content;
+  animation: marquee-left 38s linear infinite;
+}
+
+.animate-marquee-left-slow {
+  display: flex;
+  width: max-content;
+  animation: marquee-left 46s linear infinite;
+}
+
+.animate-marquee-left:hover,
+.animate-marquee-left-slow:hover {
+  animation-play-state: paused;
+}

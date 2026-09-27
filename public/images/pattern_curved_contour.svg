@@ -1,0 +1,14 @@
+<svg width="200" height="100" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Subtle Navy Slate Waves -->
+  <path d="M 0 10 C 50 25, 150 -5, 200 10" stroke="#1B1754" stroke-width="1.2" stroke-opacity="0.12" fill="none"/>
+  <path d="M 0 35 C 50 50, 150 20, 200 35" stroke="#1B1754" stroke-width="1.2" stroke-opacity="0.14" fill="none"/>
+  <path d="M 0 60 C 50 75, 150 45, 200 60" stroke="#1B1754" stroke-width="1.2" stroke-opacity="0.12" fill="none"/>
+  <path d="M 0 85 C 50 100, 150 70, 200 85" stroke="#1B1754" stroke-width="1.2" stroke-opacity="0.14" fill="none"/>
+  
+  <!-- Subtle Emerald Green Accent Waves (#2DE054) -->
+  <path d="M 0 22 C 50 37, 150 7, 200 22" stroke="#2DE054" stroke-width="1.4" stroke-opacity="0.38" fill="none"/>
+  <path d="M 0 72 C 50 87, 150 57, 200 72" stroke="#2DE054" stroke-width="1.4" stroke-opacity="0.38" fill="none"/>
+
+  <!-- Counter-curve for organic contour depth -->
+  <path d="M 0 50 C 60 20, 140 80, 200 50" stroke="#2DE054" stroke-width="0.9" stroke-opacity="0.22" stroke-dasharray="3 5" fill="none"/>
+</svg>
