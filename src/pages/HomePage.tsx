@@ -139,7 +139,7 @@ export const HomePage: React.FC = () => {
 
             {/* Subline-Text: Positionierung als herstellerunabhängiges Planungsbüro & zertifizierte Experten */}
             <p className="text-base sm:text-lg lg:text-[19px] text-[#242068] font-medium leading-relaxed max-w-xl">
-              Zertifizierte Energieeffizienz-Experten &amp; Ingenieurskompetenz aus Drakenburg. Unabhängige Fachplanung für Wärmepumpen, Photovoltaik, Dämmung und Sanierungskonzepte – herstellerunabhängig und mit bis zu 70 % staatlicher KfW-Förderung.
+              Zertifizierte Energieeffizienz-Experten &amp; Ingenieurskompetenz aus Drakenburg. Unabhängige Fachplanung für Wärmepumpen, Photovoltaik, Dämmung und Sanierungskonzepte – herstellerunabhängig und mit <span className="whitespace-nowrap">bis zu 70&nbsp;%</span> staatlicher KfW-Förderung.
             </p>
 
             {/* Action Buttons: Fließender 3D-Hero-Button + Schlichterer 3D-Button daneben */}

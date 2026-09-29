@@ -910,7 +910,7 @@ export const ContactModal: React.FC = () => {
                       <span>Wird gesendet...</span>
                     ) : (
                       <>
-                        <span>Anfrage verbindlich absenden</span>
+                        <span>Anfrage unverbindlich absenden</span>
                         <ArrowRight className="w-4 h-4" />
                       </>
                     )}
