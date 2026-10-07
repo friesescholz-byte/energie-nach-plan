@@ -86,27 +86,27 @@ export const ContactModal: React.FC = () => {
     isfp: {
       title: 'Sanierungsfahrplan (iSFP)',
       subtitle: 'Bis zu 80 % staatlicher Zuschuss + 5 % Extra-Förderung für alle Folgemaßnahmen',
-      icon: <FileCheck className="w-5 h-5 text-emerald-600" />
+      icon: <FileCheck className="w-5 h-5 text-slate-800" />
     },
     waermepumpe: {
       title: 'Wärmepumpen-Check',
       subtitle: 'Verbindliche Eignungsprüfung & reale Heizlastberechnung nach DIN 12831',
-      icon: <Flame className="w-5 h-5 text-emerald-600" />
+      icon: <Flame className="w-5 h-5 text-slate-800" />
     },
     foerderung: {
       title: 'Förderservice (KfW / BAFA)',
       subtitle: 'Bis zu 70 % Zuschuss – 100 % rechtssicher vor Auftragsvergabe gesichert',
-      icon: <Calculator className="w-5 h-5 text-emerald-600" />
+      icon: <Calculator className="w-5 h-5 text-slate-800" />
     },
     fachbauleitung: {
       title: 'Fachbauleitung & Abnahme',
       subtitle: 'Unabhängige meisterhafte Qualitätskontrolle und Förderabnahme auf der Baustelle',
-      icon: <Wrench className="w-5 h-5 text-emerald-600" />
+      icon: <Wrench className="w-5 h-5 text-slate-800" />
     },
     allgemein: {
       title: 'Kostenloses Erstgespräch',
       subtitle: 'Unverbindliche Beratung durch unsere Handwerksmeister Nico Heidemann & Jan Osmer',
-      icon: <Sparkles className="w-5 h-5 text-emerald-600" />
+      icon: <Sparkles className="w-5 h-5 text-slate-800" />
     }
   };
 
@@ -169,7 +169,7 @@ export const ContactModal: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setCurrentStep(prev => prev - 1)}
-                className="p-1.5 -ml-1 text-slate-400 hover:text-[#1B1754] rounded-lg hover:bg-white transition-colors"
+                className="p-1.5 -ml-1 text-slate-400 hover:text-[#0B0F19] rounded-lg hover:bg-white transition-colors"
                 title="Zurück zum vorherigen Schritt"
               >
                 <ArrowLeft className="w-5 h-5" />
@@ -179,7 +179,7 @@ export const ContactModal: React.FC = () => {
               <button
                 type="button"
                 onClick={() => selectService(null as any)}
-                className="p-1.5 -ml-1 text-slate-400 hover:text-[#1B1754] rounded-lg hover:bg-white transition-colors text-xs font-bold flex items-center gap-1"
+                className="p-1.5 -ml-1 text-slate-400 hover:text-[#0B0F19] rounded-lg hover:bg-white transition-colors text-xs font-bold flex items-center gap-1"
                 title="Zurück zur Leistungsauswahl"
               >
                 <ArrowLeft className="w-4 h-4" />
@@ -187,8 +187,8 @@ export const ContactModal: React.FC = () => {
               </button>
             )}
             <div className="flex items-center gap-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-[#2DE054]" />
-              <span className="font-extrabold text-[#1B1754] text-sm tracking-tight">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#BBBE22]" />
+              <span className="font-extrabold text-[#0B0F19] text-sm tracking-tight">
                 Energie nach Plan
               </span>
               <span className="text-xs text-slate-400 font-medium">| Meisterberatung</span>
@@ -214,10 +214,10 @@ export const ContactModal: React.FC = () => {
           {!selectedService && (
             <div className="space-y-6">
               <div className="text-center max-w-lg mx-auto pt-2">
-                <span className="inline-block px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-wider mb-2.5 border border-emerald-200">
+                <span className="badge-eyebrow mb-2.5">
                   Erstgespräch vereinbaren
                 </span>
-                <h3 className="text-2xl sm:text-3xl font-black text-[#1B1754] tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-black text-[#0B0F19] tracking-tight">
                   Wählen Sie Ihr Anliegen
                 </h3>
                 <p className="mt-2 text-sm text-slate-600 leading-relaxed font-normal">
@@ -231,20 +231,20 @@ export const ContactModal: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => selectService('isfp')}
-                  className="p-5 rounded-2xl border border-slate-200 hover:border-[#2DE054] border-b-[3.5px] border-b-slate-200 hover:border-b-[#1ba73c] bg-slate-50/60 hover:bg-white text-left transition-all duration-200 group flex flex-col justify-between hover:shadow-md hover:-translate-y-0.5 active:translate-y-0.5"
+                  className="p-5 rounded-2xl border border-slate-200 hover:border-[#BBBE22] border-b-[3.5px] border-b-slate-200 hover:border-b-[#929515] bg-slate-50/60 hover:bg-white text-left transition-all duration-200 group flex flex-col justify-between hover:shadow-md hover:-translate-y-0.5 active:translate-y-0.5"
                 >
                   <div>
-                    <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-[#1B1754] group-hover:bg-[#2DE054] group-hover:border-[#2DE054] transition-all mb-3.5 shadow-xs">
+                    <div className="w-10 h-10 rounded-xl bg-slate-100 text-slate-800 border border-slate-200/90 flex items-center justify-center group-hover:bg-[#BBBE22] group-hover:text-[#0B0F19] group-hover:border-[#BBBE22] transition-all mb-3.5 shadow-xs">
                       <FileCheck className="w-5 h-5" />
                     </div>
-                    <h4 className="font-black text-[#1B1754] text-base mb-1 group-hover:text-emerald-800 transition-colors">
+                    <h4 className="font-black text-[#0B0F19] text-base mb-1 group-hover:text-[#0B0F19] transition-colors">
                       Sanierungsfahrplan (iSFP)
                     </h4>
                     <p className="text-xs text-slate-600 leading-relaxed font-normal">
                       Der 15-Jahre-Plan für Ihr Gebäude. Bis zu 80 % BAFA-Zuschuss und 5 % Extra-Förderung.
                     </p>
                   </div>
-                  <div className="mt-3 text-xs font-bold text-emerald-700 flex items-center gap-1">
+                  <div className="mt-3 text-xs font-bold text-slate-700 group-hover:text-[#0B0F19] flex items-center gap-1">
                     <span>Auswählen</span> <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </button>
@@ -253,20 +253,20 @@ export const ContactModal: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => selectService('waermepumpe')}
-                  className="p-5 rounded-2xl border border-slate-200 hover:border-[#2DE054] border-b-[3.5px] border-b-slate-200 hover:border-b-[#1ba73c] bg-slate-50/60 hover:bg-white text-left transition-all duration-200 group flex flex-col justify-between hover:shadow-md hover:-translate-y-0.5 active:translate-y-0.5"
+                  className="p-5 rounded-2xl border border-slate-200 hover:border-[#BBBE22] border-b-[3.5px] border-b-slate-200 hover:border-b-[#929515] bg-slate-50/60 hover:bg-white text-left transition-all duration-200 group flex flex-col justify-between hover:shadow-md hover:-translate-y-0.5 active:translate-y-0.5"
                 >
                   <div>
-                    <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-[#1B1754] group-hover:bg-[#2DE054] group-hover:border-[#2DE054] transition-all mb-3.5 shadow-xs">
+                    <div className="w-10 h-10 rounded-xl bg-slate-100 text-slate-800 border border-slate-200/90 flex items-center justify-center group-hover:bg-[#BBBE22] group-hover:text-[#0B0F19] group-hover:border-[#BBBE22] transition-all mb-3.5 shadow-xs">
                       <Flame className="w-5 h-5" />
                     </div>
-                    <h4 className="font-black text-[#1B1754] text-base mb-1 group-hover:text-emerald-800 transition-colors">
+                    <h4 className="font-black text-[#0B0F19] text-base mb-1 group-hover:text-[#0B0F19] transition-colors">
                       Wärmepumpen-Check
                     </h4>
                     <p className="text-xs text-slate-600 leading-relaxed font-normal">
                       Verbindliche Eignungsprüfung für Heizkörper &amp; reale Heizlastberechnung DIN 12831.
                     </p>
                   </div>
-                  <div className="mt-3 text-xs font-bold text-emerald-700 flex items-center gap-1">
+                  <div className="mt-3 text-xs font-bold text-slate-700 group-hover:text-[#0B0F19] flex items-center gap-1">
                     <span>Auswählen</span> <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </button>
@@ -275,20 +275,20 @@ export const ContactModal: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => selectService('foerderung')}
-                  className="p-5 rounded-2xl border border-slate-200 hover:border-[#2DE054] border-b-[3.5px] border-b-slate-200 hover:border-b-[#1ba73c] bg-slate-50/60 hover:bg-white text-left transition-all duration-200 group flex flex-col justify-between hover:shadow-md hover:-translate-y-0.5 active:translate-y-0.5"
+                  className="p-5 rounded-2xl border border-slate-200 hover:border-[#BBBE22] border-b-[3.5px] border-b-slate-200 hover:border-b-[#929515] bg-slate-50/60 hover:bg-white text-left transition-all duration-200 group flex flex-col justify-between hover:shadow-md hover:-translate-y-0.5 active:translate-y-0.5"
                 >
                   <div>
-                    <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-[#1B1754] group-hover:bg-[#2DE054] group-hover:border-[#2DE054] transition-all mb-3.5 shadow-xs">
+                    <div className="w-10 h-10 rounded-xl bg-slate-100 text-slate-800 border border-slate-200/90 flex items-center justify-center group-hover:bg-[#BBBE22] group-hover:text-[#0B0F19] group-hover:border-[#BBBE22] transition-all mb-3.5 shadow-xs">
                       <Calculator className="w-5 h-5" />
                     </div>
-                    <h4 className="font-black text-[#1B1754] text-base mb-1 group-hover:text-emerald-800 transition-colors">
+                    <h4 className="font-black text-[#0B0F19] text-base mb-1 group-hover:text-[#0B0F19] transition-colors">
                       Förderservice (KfW / BAFA)
                     </h4>
                     <p className="text-xs text-slate-600 leading-relaxed font-normal">
                       Rechtssichere Beantragung für bis zu 70 % KfW-Zuschuss vor verbindlicher Auftragsvergabe.
                     </p>
                   </div>
-                  <div className="mt-3 text-xs font-bold text-emerald-700 flex items-center gap-1">
+                  <div className="mt-3 text-xs font-bold text-slate-700 group-hover:text-[#0B0F19] flex items-center gap-1">
                     <span>Auswählen</span> <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </button>
@@ -297,20 +297,20 @@ export const ContactModal: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => selectService('fachbauleitung')}
-                  className="p-5 rounded-2xl border border-slate-200 hover:border-[#2DE054] border-b-[3.5px] border-b-slate-200 hover:border-b-[#1ba73c] bg-slate-50/60 hover:bg-white text-left transition-all duration-200 group flex flex-col justify-between hover:shadow-md hover:-translate-y-0.5 active:translate-y-0.5"
+                  className="p-5 rounded-2xl border border-slate-200 hover:border-[#BBBE22] border-b-[3.5px] border-b-slate-200 hover:border-b-[#929515] bg-slate-50/60 hover:bg-white text-left transition-all duration-200 group flex flex-col justify-between hover:shadow-md hover:-translate-y-0.5 active:translate-y-0.5"
                 >
                   <div>
-                    <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-[#1B1754] group-hover:bg-[#2DE054] group-hover:border-[#2DE054] transition-all mb-3.5 shadow-xs">
+                    <div className="w-10 h-10 rounded-xl bg-slate-100 text-slate-800 border border-slate-200/90 flex items-center justify-center group-hover:bg-[#BBBE22] group-hover:text-[#0B0F19] group-hover:border-[#BBBE22] transition-all mb-3.5 shadow-xs">
                       <Wrench className="w-5 h-5" />
                     </div>
-                    <h4 className="font-black text-[#1B1754] text-base mb-1 group-hover:text-emerald-800 transition-colors">
+                    <h4 className="font-black text-[#0B0F19] text-base mb-1 group-hover:text-[#0B0F19] transition-colors">
                       Fachbauleitung &amp; Abnahme
                     </h4>
                     <p className="text-xs text-slate-600 leading-relaxed font-normal">
                       Unabhängige Prüfung der Ausführung vor Ort durch erfahrene HWK-Heizungsbaumeister.
                     </p>
                   </div>
-                  <div className="mt-3 text-xs font-bold text-emerald-700 flex items-center gap-1">
+                  <div className="mt-3 text-xs font-bold text-slate-700 group-hover:text-[#0B0F19] flex items-center gap-1">
                     <span>Auswählen</span> <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </button>
@@ -321,7 +321,7 @@ export const ContactModal: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => selectService('allgemein')}
-                  className="text-xs font-bold text-slate-600 hover:text-[#1B1754] underline underline-offset-4 transition-colors"
+                  className="text-xs font-bold text-slate-600 hover:text-[#0B0F19] underline underline-offset-4 transition-colors"
                 >
                   Sie sind noch unsicher oder haben eine allgemeine Frage? Hier klicken ➔
                 </button>
@@ -338,10 +338,10 @@ export const ContactModal: React.FC = () => {
               {/* Badge & Active Service Title */}
               <div className="border-b border-slate-100 pb-4">
                 <div className="flex items-center gap-2 mb-1.5">
-                  <div className="w-7 h-7 rounded-lg bg-emerald-50 border border-emerald-200 flex items-center justify-center">
+                  <div className="w-7 h-7 rounded-lg bg-slate-100 border border-slate-200/90 flex items-center justify-center">
                     {serviceMeta[selectedService].icon}
                   </div>
-                  <span className="text-xs font-bold text-emerald-800 uppercase tracking-wider">
+                  <span className="text-xs font-bold text-slate-800 uppercase tracking-wider">
                     {serviceMeta[selectedService].title}
                   </span>
                 </div>
@@ -361,7 +361,7 @@ export const ContactModal: React.FC = () => {
                   </div>
                   <div className="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
                     <div 
-                      className="h-full bg-[#2DE054] transition-all duration-300 rounded-full"
+                      className="h-full bg-gradient-to-r from-[#BBBE22] to-[#f6e21c] transition-all duration-300 rounded-full"
                       style={{ width: `${(currentStep / 3) * 100}%` }}
                     />
                   </div>
@@ -387,12 +387,12 @@ export const ContactModal: React.FC = () => {
                               onClick={() => setFormData(prev => ({ ...prev, buildingType: opt }))}
                               className={`p-3.5 rounded-xl border text-xs font-bold transition-all text-left flex items-center justify-between ${
                                 formData.buildingType === opt
-                                  ? 'bg-[#1B1754] text-white border-[#1B1754] shadow-sm'
+                                  ? 'bg-[#0B0F19] text-white border-[#0B0F19] shadow-sm'
                                   : 'bg-white text-slate-700 border-slate-200 hover:border-slate-300'
                               }`}
                             >
                               <span>{opt}</span>
-                              {formData.buildingType === opt && <Check className="w-4 h-4 text-[#2DE054]" />}
+                              {formData.buildingType === opt && <Check className="w-4 h-4 text-[#BBBE22]" />}
                             </button>
                           ))}
                         </div>
@@ -410,7 +410,7 @@ export const ContactModal: React.FC = () => {
                               onClick={() => setFormData(prev => ({ ...prev, buildingYear: opt }))}
                               className={`p-2.5 rounded-xl border text-xs font-bold transition-all text-center ${
                                 formData.buildingYear === opt
-                                  ? 'bg-[#1B1754] text-white border-[#1B1754] shadow-sm'
+                                  ? 'bg-[#0B0F19] text-white border-[#0B0F19] shadow-sm'
                                   : 'bg-white text-slate-700 border-slate-200 hover:border-slate-300'
                               }`}
                             >
@@ -445,12 +445,12 @@ export const ContactModal: React.FC = () => {
                                 onClick={() => handleMeasureToggle(opt)}
                                 className={`p-3 rounded-xl border text-xs font-bold transition-all text-left flex items-center justify-between ${
                                   selected
-                                    ? 'bg-emerald-50 text-emerald-950 border-[#2DE054]'
+                                    ? 'bg-slate-100 text-[#0B0F19] border-[#0B0F19]'
                                     : 'bg-white text-slate-700 border-slate-200 hover:border-slate-300'
                                 }`}
                               >
                                 <span>{opt}</span>
-                                {selected && <Check className="w-4 h-4 text-emerald-700" />}
+                                {selected && <Check className="w-4 h-4 text-[#0B0F19]" />}
                               </button>
                             );
                           })}
@@ -469,7 +469,7 @@ export const ContactModal: React.FC = () => {
                               onClick={() => setFormData(prev => ({ ...prev, currentHeatingIsfp: opt }))}
                               className={`p-2.5 rounded-xl border text-xs font-bold transition-all text-center ${
                                 formData.currentHeatingIsfp === opt
-                                  ? 'bg-[#1B1754] text-white border-[#1B1754]'
+                                  ? 'bg-[#0B0F19] text-white border-[#0B0F19]'
                                   : 'bg-white text-slate-700 border-slate-200 hover:border-slate-300'
                               }`}
                             >
@@ -502,12 +502,12 @@ export const ContactModal: React.FC = () => {
                               onClick={() => setFormData(prev => ({ ...prev, currentHeatingWp: opt }))}
                               className={`p-3.5 rounded-xl border text-xs font-bold transition-all text-left flex items-center justify-between ${
                                 formData.currentHeatingWp === opt
-                                  ? 'bg-[#1B1754] text-white border-[#1B1754] shadow-sm'
+                                  ? 'bg-[#0B0F19] text-white border-[#0B0F19] shadow-sm'
                                   : 'bg-white text-slate-700 border-slate-200 hover:border-slate-300'
                               }`}
                             >
                               <span>{opt}</span>
-                              {formData.currentHeatingWp === opt && <Check className="w-4 h-4 text-[#2DE054]" />}
+                              {formData.currentHeatingWp === opt && <Check className="w-4 h-4 text-[#BBBE22]" />}
                             </button>
                           ))}
                         </div>
@@ -525,7 +525,7 @@ export const ContactModal: React.FC = () => {
                               onClick={() => setFormData(prev => ({ ...prev, heatingAge: opt }))}
                               className={`p-2.5 rounded-xl border text-xs font-bold transition-all text-center ${
                                 formData.heatingAge === opt
-                                  ? 'bg-[#1B1754] text-white border-[#1B1754]'
+                                  ? 'bg-[#0B0F19] text-white border-[#0B0F19]'
                                   : 'bg-white text-slate-700 border-slate-200 hover:border-slate-300'
                               }`}
                             >
@@ -555,12 +555,12 @@ export const ContactModal: React.FC = () => {
                               onClick={() => setFormData(prev => ({ ...prev, heatDistribution: opt }))}
                               className={`p-3.5 rounded-xl border text-xs font-bold transition-all text-left flex items-center justify-between ${
                                 formData.heatDistribution === opt
-                                  ? 'bg-[#1B1754] text-white border-[#1B1754] shadow-sm'
+                                  ? 'bg-[#0B0F19] text-white border-[#0B0F19] shadow-sm'
                                   : 'bg-white text-slate-700 border-slate-200 hover:border-slate-300'
                               }`}
                             >
                               <span>{opt}</span>
-                              {formData.heatDistribution === opt && <Check className="w-4 h-4 text-[#2DE054]" />}
+                              {formData.heatDistribution === opt && <Check className="w-4 h-4 text-[#BBBE22]" />}
                             </button>
                           ))}
                         </div>
@@ -578,7 +578,7 @@ export const ContactModal: React.FC = () => {
                               onClick={() => setFormData(prev => ({ ...prev, livingArea: opt }))}
                               className={`p-2.5 rounded-xl border text-xs font-bold transition-all text-center ${
                                 formData.livingArea === opt
-                                  ? 'bg-[#1B1754] text-white border-[#1B1754]'
+                                  ? 'bg-[#0B0F19] text-white border-[#0B0F19]'
                                   : 'bg-white text-slate-700 border-slate-200 hover:border-slate-300'
                               }`}
                             >
@@ -588,7 +588,7 @@ export const ContactModal: React.FC = () => {
                         </div>
                       </div>
 
-                      <div className="p-3.5 rounded-xl bg-emerald-50 border border-emerald-200 text-xs text-emerald-900 leading-relaxed">
+                      <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-800 leading-relaxed">
                         <strong>Wichtig:</strong> Für Wärmepumpen berechnen wir vor Ort die tatsächliche Vorlauftemperatur. Meist reicht der Tausch von nur 1–2 Heizkörpern völlig aus.
                       </div>
                     </div>
@@ -619,12 +619,12 @@ export const ContactModal: React.FC = () => {
                               onClick={() => setFormData(prev => ({ ...prev, fundingGoal: opt }))}
                               className={`w-full p-3.5 rounded-xl border text-xs font-bold transition-all text-left flex items-center justify-between ${
                                 formData.fundingGoal === opt
-                                  ? 'bg-[#1B1754] text-white border-[#1B1754] shadow-sm'
+                                  ? 'bg-[#0B0F19] text-white border-[#0B0F19] shadow-sm'
                                   : 'bg-white text-slate-700 border-slate-200 hover:border-slate-300'
                               }`}
                             >
                               <span>{opt}</span>
-                              {formData.fundingGoal === opt && <Check className="w-4 h-4 text-[#2DE054]" />}
+                              {formData.fundingGoal === opt && <Check className="w-4 h-4 text-[#BBBE22]" />}
                             </button>
                           ))}
                         </div>
@@ -649,12 +649,12 @@ export const ContactModal: React.FC = () => {
                               onClick={() => setFormData(prev => ({ ...prev, contractorOffersReady: opt }))}
                               className={`p-3.5 rounded-xl border text-xs font-bold transition-all text-left flex items-center justify-between ${
                                 formData.contractorOffersReady === opt
-                                  ? 'bg-[#1B1754] text-white border-[#1B1754] shadow-sm'
+                                  ? 'bg-[#0B0F19] text-white border-[#0B0F19] shadow-sm'
                                   : 'bg-white text-slate-700 border-slate-200 hover:border-slate-300'
                               }`}
                             >
                               <span>{opt}</span>
-                              {formData.contractorOffersReady === opt && <Check className="w-4 h-4 text-[#2DE054]" />}
+                              {formData.contractorOffersReady === opt && <Check className="w-4 h-4 text-[#BBBE22]" />}
                             </button>
                           ))}
                         </div>
@@ -692,12 +692,12 @@ export const ContactModal: React.FC = () => {
                               onClick={() => setFormData(prev => ({ ...prev, projectScope: opt }))}
                               className={`w-full p-3.5 rounded-xl border text-xs font-bold transition-all text-left flex items-center justify-between ${
                                 formData.projectScope === opt
-                                  ? 'bg-[#1B1754] text-white border-[#1B1754] shadow-sm'
+                                  ? 'bg-[#0B0F19] text-white border-[#0B0F19] shadow-sm'
                                   : 'bg-white text-slate-700 border-slate-200 hover:border-slate-300'
                               }`}
                             >
                               <span>{opt}</span>
-                              {formData.projectScope === opt && <Check className="w-4 h-4 text-[#2DE054]" />}
+                              {formData.projectScope === opt && <Check className="w-4 h-4 text-[#BBBE22]" />}
                             </button>
                           ))}
                         </div>
@@ -719,7 +719,7 @@ export const ContactModal: React.FC = () => {
                               onClick={() => setFormData(prev => ({ ...prev, projectTiming: opt }))}
                               className={`p-2.5 rounded-xl border text-xs font-bold transition-all text-center ${
                                 formData.projectTiming === opt
-                                  ? 'bg-[#1B1754] text-white border-[#1B1754]'
+                                  ? 'bg-[#0B0F19] text-white border-[#0B0F19]'
                                   : 'bg-white text-slate-700 border-slate-200 hover:border-slate-300'
                               }`}
                             >
@@ -749,14 +749,14 @@ export const ContactModal: React.FC = () => {
                           value={formData.notes}
                           onChange={(e) => setFormData(prev => ({ ...prev, notes: e.target.value }))}
                           placeholder="z.B. Ich überlege meine Gasheizung zu tauschen, weiß aber nicht welche Förderung möglich ist..."
-                          className="w-full p-3.5 rounded-xl border border-slate-200 focus:border-[#2DE054] focus:ring-1 focus:ring-[#2DE054] text-sm text-slate-800 placeholder-slate-400"
+                          className="w-full p-3.5 rounded-xl border border-slate-200 focus:border-[#BBBE22] focus:ring-1 focus:ring-[#BBBE22] text-sm text-slate-800 placeholder-slate-400"
                         />
                       </div>
                     </div>
                   )}
                   {currentStep === 2 && (
                     <div className="space-y-5 animate-in fade-in duration-200">
-                      <div className="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-xs text-emerald-950">
+                      <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs text-slate-800">
                         Vielen Dank! Im nächsten Schritt benötigen wir lediglich Ihre Kontaktdaten, damit sich Jan Osmer oder Nico Heidemann direkt mit Ihnen in Verbindung setzen können.
                       </div>
                     </div>
@@ -792,7 +792,7 @@ export const ContactModal: React.FC = () => {
                           value={formData.name}
                           onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
                           placeholder="Max Mustermann"
-                          className="w-full pl-10 pr-3.5 py-2.5 rounded-xl border border-slate-200 focus:border-[#2DE054] focus:ring-1 focus:ring-[#2DE054] text-sm text-slate-800"
+                          className="w-full pl-10 pr-3.5 py-2.5 rounded-xl border border-slate-200 focus:border-[#BBBE22] focus:ring-1 focus:ring-[#BBBE22] text-sm text-slate-800"
                         />
                       </div>
                     </div>
@@ -809,7 +809,7 @@ export const ContactModal: React.FC = () => {
                           value={formData.phone}
                           onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
                           placeholder="0170 1234567"
-                          className="w-full pl-10 pr-3.5 py-2.5 rounded-xl border border-slate-200 focus:border-[#2DE054] focus:ring-1 focus:ring-[#2DE054] text-sm text-slate-800"
+                          className="w-full pl-10 pr-3.5 py-2.5 rounded-xl border border-slate-200 focus:border-[#BBBE22] focus:ring-1 focus:ring-[#BBBE22] text-sm text-slate-800"
                         />
                       </div>
                     </div>
@@ -827,7 +827,7 @@ export const ContactModal: React.FC = () => {
                           value={formData.email}
                           onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
                           placeholder="beispiel@mail.de"
-                          className="w-full pl-10 pr-3.5 py-2.5 rounded-xl border border-slate-200 focus:border-[#2DE054] focus:ring-1 focus:ring-[#2DE054] text-sm text-slate-800"
+                          className="w-full pl-10 pr-3.5 py-2.5 rounded-xl border border-slate-200 focus:border-[#BBBE22] focus:ring-1 focus:ring-[#BBBE22] text-sm text-slate-800"
                         />
                       </div>
                     </div>
@@ -843,7 +843,7 @@ export const ContactModal: React.FC = () => {
                           value={formData.city}
                           onChange={(e) => setFormData(prev => ({ ...prev, city: e.target.value }))}
                           placeholder="31623 Drakenburg / Nienburg"
-                          className="w-full pl-10 pr-3.5 py-2.5 rounded-xl border border-slate-200 focus:border-[#2DE054] focus:ring-1 focus:ring-[#2DE054] text-sm text-slate-800"
+                          className="w-full pl-10 pr-3.5 py-2.5 rounded-xl border border-slate-200 focus:border-[#BBBE22] focus:ring-1 focus:ring-[#BBBE22] text-sm text-slate-800"
                         />
                       </div>
                     </div>
@@ -858,7 +858,7 @@ export const ContactModal: React.FC = () => {
                       value={formData.notes}
                       onChange={(e) => setFormData(prev => ({ ...prev, notes: e.target.value }))}
                       placeholder="z.B. Gebäude ist vermietet, bevorzugt nachmittags erreichbar..."
-                      className="w-full p-2.5 rounded-xl border border-slate-200 focus:border-[#2DE054] text-xs text-slate-800"
+                      className="w-full p-2.5 rounded-xl border border-slate-200 focus:border-[#BBBE22] text-xs text-slate-800"
                     />
                   </div>
 
@@ -894,7 +894,7 @@ export const ContactModal: React.FC = () => {
                   <button
                     type="button"
                     onClick={() => setCurrentStep(prev => prev + 1)}
-                    className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-[#2DE054] hover:bg-[#25ca4a] text-[#1B1754] font-black text-xs sm:text-sm border-b-[2.5px] border-b-[#1b9e38] transition-all shadow-sm hover:shadow hover:-translate-y-0.5"
+                    className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-gradient-to-r from-[#BBBE22] to-[#f6e21c] hover:from-[#A8AB1A] hover:to-[#ebd615] text-[#0B0F19] font-black text-xs sm:text-sm border-b-[2.5px] border-b-[#929515] transition-all shadow-sm hover:shadow hover:-translate-y-0.5"
                   >
                     <span>Weiter</span>
                     <ArrowRight className="w-4 h-4" />
@@ -904,7 +904,7 @@ export const ContactModal: React.FC = () => {
                     type="button"
                     onClick={handleSubmit}
                     disabled={isSubmitting}
-                    className="inline-flex items-center gap-2 px-7 py-3 rounded-xl bg-[#2DE054] hover:bg-[#25ca4a] text-[#1B1754] font-black text-xs sm:text-sm border-b-[3px] border-b-[#1b9e38] transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0.5 disabled:opacity-50"
+                    className="inline-flex items-center gap-2 px-7 py-3 rounded-xl bg-gradient-to-r from-[#BBBE22] to-[#f6e21c] hover:from-[#A8AB1A] hover:to-[#ebd615] text-[#0B0F19] font-black text-xs sm:text-sm border-b-[3px] border-b-[#929515] transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0.5 disabled:opacity-50"
                   >
                     {isSubmitting ? (
                       <span>Wird gesendet...</span>
@@ -925,15 +925,15 @@ export const ContactModal: React.FC = () => {
           {/* ======================================================== */}
           {selectedService && currentStep === 4 && (
             <div className="text-center py-6 sm:py-8 space-y-5 animate-in zoom-in-95 duration-300">
-              <div className="w-16 h-16 rounded-full bg-emerald-100 border-2 border-[#2DE054] flex items-center justify-center mx-auto text-emerald-800 shadow-md">
-                <CheckCircle2 className="w-8 h-8 text-emerald-600 stroke-[2.5]" />
+              <div className="w-16 h-16 rounded-full bg-slate-100 border-2 border-slate-200/90 flex items-center justify-center mx-auto text-[#0B0F19] shadow-md">
+                <CheckCircle2 className="w-8 h-8 text-[#0B0F19] stroke-[2.5]" />
               </div>
 
               <div className="space-y-2 max-w-md mx-auto">
-                <span className="inline-block px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-wider border border-emerald-200">
+                <span className="badge-eyebrow mb-2">
                   Erfolgreich eingegangen
                 </span>
-                <h3 className="text-2xl sm:text-3xl font-black text-[#1B1754] tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-black text-[#0B0F19] tracking-tight">
                   Vielen Dank für Ihre Anfrage!
                 </h3>
                 <p className="text-sm text-slate-600 leading-relaxed font-normal">
@@ -942,8 +942,8 @@ export const ContactModal: React.FC = () => {
               </div>
 
               <div className="p-4 sm:p-5 rounded-2xl bg-slate-50 border border-slate-200 text-left max-w-md mx-auto space-y-2.5">
-                <div className="flex items-center gap-2 text-xs font-bold text-[#1B1754]">
-                  <Clock className="w-4 h-4 text-emerald-600" />
+                <div className="flex items-center gap-2 text-xs font-bold text-[#0B0F19]">
+                  <Clock className="w-4 h-4 text-slate-700" />
                   <span>So geht es jetzt weiter:</span>
                 </div>
                 <p className="text-xs text-slate-600 leading-relaxed font-normal">
@@ -955,7 +955,7 @@ export const ContactModal: React.FC = () => {
                 <button
                   type="button"
                   onClick={closeModal}
-                  className="px-8 py-3 rounded-xl bg-[#1B1754] hover:bg-[#151242] text-white font-bold text-sm transition-all shadow-sm hover:shadow-md"
+                  className="px-8 py-3 rounded-xl bg-[#0B0F19] hover:bg-[#05080E] text-white font-bold text-sm transition-all shadow-sm hover:shadow-md"
                 >
                   Fenster schließen
                 </button>

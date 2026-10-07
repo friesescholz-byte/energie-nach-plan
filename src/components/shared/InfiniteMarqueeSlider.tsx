@@ -48,11 +48,11 @@ export const InfiniteMarqueeSlider: React.FC<InfiniteMarqueeSliderProps> = ({
       {title && (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 sm:mb-16 text-center">
           {eyebrow && (
-            <span className="inline-block px-3.5 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-widest mb-3 border border-emerald-200/80">
+            <span className="badge-eyebrow mb-3">
               {eyebrow}
             </span>
           )}
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1B1754] tracking-tight leading-[1.15]">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B0F19] tracking-tight leading-[1.15]">
             {title}
           </h2>
           {subtitle && (
@@ -80,7 +80,7 @@ export const InfiniteMarqueeSlider: React.FC<InfiniteMarqueeSliderProps> = ({
                 loading="lazy"
               />
               {/* Sehr dezenter, edler Glanz-Hover */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1B1754]/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F19]/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
             </div>
           ))}
         </div>
@@ -98,7 +98,7 @@ export const InfiniteMarqueeSlider: React.FC<InfiniteMarqueeSliderProps> = ({
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#1B1754]/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F19]/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
             </div>
           ))}
         </div>

@@ -10,11 +10,11 @@ export const BarrierefreiheitPage: React.FC = () => {
         
         {/* Header */}
         <div className="border-b border-slate-200/80 pb-8">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-wider mb-4 border border-emerald-200/80">
-            <Eye className="w-3.5 h-3.5 text-emerald-600" />
+          <div className="badge-eyebrow mb-4">
+            <Eye className="w-3.5 h-3.5 text-slate-700" />
             <span>Inklusion &amp; digitale Zugänglichkeit</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1B1754] tracking-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B0F19] tracking-tight">
             Erklärung zur Barrierefreiheit
           </h1>
           <p className="mt-3 text-base text-slate-600 font-normal">
@@ -27,7 +27,7 @@ export const BarrierefreiheitPage: React.FC = () => {
           
           {/* 1. Grundsatz & Geltungsbereich */}
           <section className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4">
-            <h2 className="text-xl font-bold text-[#1B1754]">
+            <h2 className="text-xl font-bold text-[#0B0F19]">
               1. Unser Anspruch an Barrierefreiheit
             </h2>
             <p>
@@ -40,7 +40,7 @@ export const BarrierefreiheitPage: React.FC = () => {
 
           {/* 2. Stand der Vereinbarkeit mit den Anforderungen */}
           <section className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4">
-            <h2 className="text-xl font-bold text-[#1B1754]">
+            <h2 className="text-xl font-bold text-[#0B0F19]">
               2. Umgesetzte Maßnahmen &amp; Konformitätsstatus
             </h2>
             <p>
@@ -49,8 +49,8 @@ export const BarrierefreiheitPage: React.FC = () => {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5">
-                <div className="flex items-center gap-2 font-bold text-[#1B1754] text-sm">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                <div className="flex items-center gap-2 font-bold text-[#0B0F19] text-sm">
+                  <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0" />
                   <span>Hohe Kontrastwerte</span>
                 </div>
                 <p className="text-xs text-slate-600">
@@ -59,8 +59,8 @@ export const BarrierefreiheitPage: React.FC = () => {
               </div>
 
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5">
-                <div className="flex items-center gap-2 font-bold text-[#1B1754] text-sm">
-                  <Keyboard className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                <div className="flex items-center gap-2 font-bold text-[#0B0F19] text-sm">
+                  <Keyboard className="w-4 h-4 text-slate-700 flex-shrink-0" />
                   <span>Tastaturbedienbarkeit</span>
                 </div>
                 <p className="text-xs text-slate-600">
@@ -69,8 +69,8 @@ export const BarrierefreiheitPage: React.FC = () => {
               </div>
 
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5">
-                <div className="flex items-center gap-2 font-bold text-[#1B1754] text-sm">
-                  <Eye className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                <div className="flex items-center gap-2 font-bold text-[#0B0F19] text-sm">
+                  <Eye className="w-4 h-4 text-slate-700 flex-shrink-0" />
                   <span>Zoom &amp; Skalierbarkeit</span>
                 </div>
                 <p className="text-xs text-slate-600">
@@ -79,8 +79,8 @@ export const BarrierefreiheitPage: React.FC = () => {
               </div>
 
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5">
-                <div className="flex items-center gap-2 font-bold text-[#1B1754] text-sm">
-                  <Sparkles className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                <div className="flex items-center gap-2 font-bold text-[#0B0F19] text-sm">
+                  <Sparkles className="w-4 h-4 text-slate-700 flex-shrink-0" />
                   <span>Screenreader-Struktur</span>
                 </div>
                 <p className="text-xs text-slate-600">
@@ -92,7 +92,7 @@ export const BarrierefreiheitPage: React.FC = () => {
 
           {/* 3. Bekannte Barrieren & Ausnahmen */}
           <section className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4">
-            <h2 className="text-xl font-bold text-[#1B1754]">
+            <h2 className="text-xl font-bold text-[#0B0F19]">
               3. Bekannte Barrieren &amp; laufende Optimierungen
             </h2>
             <p>
@@ -110,24 +110,24 @@ export const BarrierefreiheitPage: React.FC = () => {
 
           {/* 4. Feedback und Kontakt */}
           <section className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4">
-            <h2 className="text-xl font-bold text-[#1B1754]">
+            <h2 className="text-xl font-bold text-[#0B0F19]">
               4. Feedback- und Kontaktmöglichkeit
             </h2>
             <p>
               Sind Ihnen Mängel beim barrierefreien Zugang zu Inhalten von <code className="text-xs font-mono">energie-nach-plan.de</code> aufgefallen oder haben Sie Hinweise zur Verbesserung der Zugänglichkeit? Bitte kontaktieren Sie uns direkt:
             </p>
             <div className="p-5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2 text-sm">
-              <p className="font-bold text-[#1B1754]">Energie nach Plan GbR — Ansprechpartner Barrierefreiheit</p>
+              <p className="font-bold text-[#0B0F19]">Energie nach Plan GbR — Ansprechpartner Barrierefreiheit</p>
               <div className="flex items-center gap-2 text-slate-700">
-                <Phone className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                <Phone className="w-4 h-4 text-slate-700 flex-shrink-0" />
                 <span>Telefon: {COMPANY_INFO.phone}</span>
               </div>
               <div className="flex items-center gap-2 text-slate-700">
-                <Mail className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                <Mail className="w-4 h-4 text-slate-700 flex-shrink-0" />
                 <span>E-Mail: {COMPANY_INFO.email}</span>
               </div>
               <div className="flex items-center gap-2 text-slate-700">
-                <MapPin className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                <MapPin className="w-4 h-4 text-slate-700 flex-shrink-0" />
                 <span>Postanschrift: {COMPANY_INFO.address}, {COMPANY_INFO.zipCity}</span>
               </div>
             </div>
@@ -138,17 +138,17 @@ export const BarrierefreiheitPage: React.FC = () => {
 
           {/* 5. Schlichtungsverfahren (§ 16 BGG) */}
           <section className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4">
-            <h2 className="text-xl font-bold text-[#1B1754]">
+            <h2 className="text-xl font-bold text-[#0B0F19]">
               5. Durchsetzungs- &amp; Schlichtungsverfahren
             </h2>
             <p className="text-sm text-slate-600">
               Sollte auf Ihre Anfrage zur Barrierefreiheit keine zufriedenstellende Lösung gefunden werden, können Sie sich an die Schlichtungsstelle nach dem Behindertengleichstellungsgesetz wenden:
             </p>
             <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-xs sm:text-sm text-slate-700 space-y-1">
-              <p className="font-bold text-[#1B1754]">Schlichtungsstelle nach dem Behindertengleichstellungsgesetz</p>
+              <p className="font-bold text-[#0B0F19]">Schlichtungsstelle nach dem Behindertengleichstellungsgesetz</p>
               <p>bei dem Beauftragten der Bundesregierung für die Belange von Menschen mit Behinderungen</p>
               <p>Mauerstraße 53, 10117 Berlin</p>
-              <p>Telefon: 030 18 527-2805 | Website: <a href="https://www.schlichtungsstelle-bgg.de" target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:underline">www.schlichtungsstelle-bgg.de</a></p>
+              <p>Telefon: 030 18 527-2805 | Website: <a href="https://www.schlichtungsstelle-bgg.de" target="_blank" rel="noopener noreferrer" className="text-slate-800 underline hover:text-[#0B0F19]">www.schlichtungsstelle-bgg.de</a></p>
             </div>
           </section>
 
@@ -160,10 +160,10 @@ export const BarrierefreiheitPage: React.FC = () => {
             Stand der Erklärung: September 2026 · Regelmäßige Überprüfung
           </div>
           <div className="flex items-center gap-6">
-            <Link to="/impressum" className="hover:text-emerald-700 transition-colors font-medium">
+            <Link to="/impressum" className="hover:text-[#0B0F19] transition-colors font-medium">
               Zum Impressum →
             </Link>
-            <Link to="/datenschutz" className="hover:text-emerald-700 transition-colors font-medium">
+            <Link to="/datenschutz" className="hover:text-[#0B0F19] transition-colors font-medium">
               Zur Datenschutzerklärung →
             </Link>
           </div>

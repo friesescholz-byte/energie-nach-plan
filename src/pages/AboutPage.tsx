@@ -24,12 +24,12 @@ export const AboutPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="max-w-3xl mb-12 sm:mb-16">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold uppercase tracking-wider mb-5">
-              <Award className="w-3.5 h-3.5 text-emerald-600" />
+            <div className="badge-eyebrow mb-5">
+              <Award className="w-3.5 h-3.5 text-slate-700" />
               <span>Inhabergeführtes Planungsbüro</span>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-[#1B1754] leading-[1.1]">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-[#0B0F19] leading-[1.1]">
               Meisterwissen aus der Praxis. Unabhängig beraten.
             </h1>
             
@@ -47,9 +47,9 @@ export const AboutPage: React.FC = () => {
                 className="w-full h-full object-cover object-center group-hover:scale-[1.01] transition-transform duration-700"
               />
             </div>
-            <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-[#1B1754]/90 via-[#1B1754]/40 to-transparent p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4">
+            <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-[#0B0F19]/90 via-[#0B0F19]/40 to-transparent p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4">
               <div>
-                <span className="text-xs font-bold text-[#2DE054] uppercase tracking-wider block mb-1">
+                <span className="text-xs font-bold text-[#BBBE22] uppercase tracking-wider block mb-1">
                   Team &amp; Geschäftsführung
                 </span>
                 <p className="text-white font-bold text-base sm:text-lg">
@@ -63,7 +63,7 @@ export const AboutPage: React.FC = () => {
               <button
                 type="button"
                 onClick={() => openModal()}
-                className="px-5 py-2.5 rounded-xl bg-[#2DE054] hover:bg-[#25ca4a] text-[#1B1754] font-black text-xs sm:text-sm transition-all shadow-md hover:shadow-lg flex-shrink-0"
+                className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#BBBE22] to-[#f6e21c] hover:from-[#A8AB1A] hover:to-[#ebd615] text-[#0B0F19] font-black text-xs sm:text-sm transition-all shadow-md hover:shadow-lg flex-shrink-0"
               >
                 Erstgespräch anfragen
               </button>
@@ -89,10 +89,10 @@ export const AboutPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           
           <div className="text-center max-w-3xl mx-auto mb-20">
-            <span className="inline-block px-3.5 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-widest mb-4 border border-emerald-200/80">
+            <span className="badge-eyebrow mb-4">
               Ihre Meister-Partner
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1B1754] tracking-tight leading-[1.15]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B0F19] tracking-tight leading-[1.15]">
               Die Köpfe hinter Energie nach Plan
             </h2>
             <p className="mt-4 text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
@@ -116,34 +116,34 @@ export const AboutPage: React.FC = () => {
               {/* Förmlicher, eleganter Fließtext ohne Kacheln */}
               <div className="space-y-4 max-w-md mx-auto lg:mx-0">
                 <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-slate-100 pb-3">
-                  <h3 className="text-2xl sm:text-3xl font-black text-[#1B1754] tracking-tight">
+                  <h3 className="text-2xl sm:text-3xl font-black text-[#0B0F19] tracking-tight">
                     Nico Heidemann
                   </h3>
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-wider border border-emerald-200/60">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#2DE054]" />
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-bold uppercase tracking-wider border border-slate-200/90">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#BBBE22]" />
                     Meister seit 2008
                   </span>
                 </div>
 
-                <blockquote className="text-base text-slate-700 font-medium italic border-l-2 border-[#2DE054] pl-4 py-1 leading-relaxed">
+                <blockquote className="text-base text-slate-700 font-medium italic border-l-2 border-[#BBBE22] pl-4 py-1 leading-relaxed">
                   „Wir kennen jede Schraube und jeden hydraulischen Engpass im Altbau. Gute Energieberatung beginnt nicht am Bildschirm, sondern vor Ort am Heizkreisverteiler.“
                 </blockquote>
 
                 <div className="space-y-2.5 text-sm text-slate-600 pt-1">
                   <div className="flex items-start gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0 mt-0.5" />
                     <span><strong>Heizungsbaumeister HWK</strong> seit 2008 (Handwerkskammer Hannover)</span>
                   </div>
                   <div className="flex items-start gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0 mt-0.5" />
                     <span><strong>Gebäudeenergieberater HWK</strong> seit 2019</span>
                   </div>
                   <div className="flex items-start gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0 mt-0.5" />
                     <span>Weiterbildung <strong>DIN V 18599</strong> für Nichtwohngebäude &amp; Gewerbe</span>
                   </div>
                   <div className="flex items-start gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0 mt-0.5" />
                     <span>Gelisteter Experte in der <strong>dena-Energieeffizienz-Expertenliste</strong></span>
                   </div>
                 </div>
@@ -152,10 +152,10 @@ export const AboutPage: React.FC = () => {
                   <button
                     type="button"
                     onClick={() => openModal()}
-                    className="inline-flex items-center gap-2 text-sm font-bold text-[#1B1754] hover:text-emerald-700 transition-colors group"
+                    className="inline-flex items-center gap-2 text-sm font-bold text-[#0B0F19] hover:text-slate-700 transition-colors group"
                   >
                     <span>Erstgespräch mit Nico anfragen</span>
-                    <ArrowRight className="w-4 h-4 text-emerald-600 group-hover:translate-x-1.5 transition-transform" />
+                    <ArrowRight className="w-4 h-4 text-slate-700 group-hover:translate-x-1.5 transition-transform" />
                   </button>
                 </div>
               </div>
@@ -175,34 +175,34 @@ export const AboutPage: React.FC = () => {
               {/* Förmlicher, eleganter Fließtext ohne Kacheln */}
               <div className="space-y-4 max-w-md mx-auto lg:mx-0">
                 <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-slate-100 pb-3">
-                  <h3 className="text-2xl sm:text-3xl font-black text-[#1B1754] tracking-tight">
+                  <h3 className="text-2xl sm:text-3xl font-black text-[#0B0F19] tracking-tight">
                     Jan Osmer
                   </h3>
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-wider border border-emerald-200/60">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#2DE054]" />
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-bold uppercase tracking-wider border border-slate-200/90">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#BBBE22]" />
                     Meister seit 2015
                   </span>
                 </div>
 
-                <blockquote className="text-base text-slate-700 font-medium italic border-l-2 border-[#2DE054] pl-4 py-1 leading-relaxed">
+                <blockquote className="text-base text-slate-700 font-medium italic border-l-2 border-[#BBBE22] pl-4 py-1 leading-relaxed">
                   „Eine Wärmepumpe im Altbau ist kein Hexenwerk, wenn man vorher sauber misst und rechnet. Wer das fundiert plant, heizt günstiger als mit Gas oder Öl.“
                 </blockquote>
 
                 <div className="space-y-2.5 text-sm text-slate-600 pt-1">
                   <div className="flex items-start gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0 mt-0.5" />
                     <span><strong>Heizungsbaumeister HWK</strong> seit 2015 (Handwerkskammer Hannover)</span>
                   </div>
                   <div className="flex items-start gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0 mt-0.5" />
                     <span><strong>Gebäudeenergieberater HWK</strong> seit 2019</span>
                   </div>
                   <div className="flex items-start gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0 mt-0.5" />
                     <span>Spezialisierung auf <strong>Hydraulischen Abgleich</strong> nach Verfahren B</span>
                   </div>
                   <div className="flex items-start gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0 mt-0.5" />
                     <span>Gelisteter Experte für Bundesförderprogramme (KfW &amp; BAFA)</span>
                   </div>
                 </div>
@@ -211,10 +211,10 @@ export const AboutPage: React.FC = () => {
                   <button
                     type="button"
                     onClick={() => openModal()}
-                    className="inline-flex items-center gap-2 text-sm font-bold text-[#1B1754] hover:text-emerald-700 transition-colors group"
+                    className="inline-flex items-center gap-2 text-sm font-bold text-[#0B0F19] hover:text-slate-700 transition-colors group"
                   >
                     <span>Erstgespräch mit Jan anfragen</span>
-                    <ArrowRight className="w-4 h-4 text-emerald-600 group-hover:translate-x-1.5 transition-transform" />
+                    <ArrowRight className="w-4 h-4 text-slate-700 group-hover:translate-x-1.5 transition-transform" />
                   </button>
                 </div>
               </div>
@@ -231,10 +231,10 @@ export const AboutPage: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             
             <div className="lg:col-span-6 space-y-6">
-              <span className="inline-block px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-wider border border-emerald-200">
+              <span className="badge-eyebrow">
                 Unsere Philosophie
               </span>
-              <h2 className="text-3xl sm:text-4xl font-black text-[#1B1754] tracking-tight leading-tight">
+              <h2 className="text-3xl sm:text-4xl font-black text-[#0B0F19] tracking-tight leading-tight">
                 Warum 100 % Unabhängigkeit der wichtigste Faktor für Ihr Geld ist
               </h2>
               <p className="text-slate-600 leading-relaxed text-base">
@@ -246,8 +246,8 @@ export const AboutPage: React.FC = () => {
 
               <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs">
-                  <div className="font-bold text-[#1B1754] text-sm mb-1 flex items-center gap-2">
-                    <Scale className="w-4 h-4 text-emerald-600" />
+                  <div className="font-bold text-[#0B0F19] text-sm mb-1 flex items-center gap-2">
+                    <Scale className="w-4 h-4 text-slate-700" />
                     <span>Keine Markenbindung</span>
                   </div>
                   <p className="text-xs text-slate-500 leading-relaxed">
@@ -256,8 +256,8 @@ export const AboutPage: React.FC = () => {
                 </div>
 
                 <div className="p-5 rounded-2xl bg-white border border-slate-200/90 shadow-xs">
-                  <div className="font-bold text-[#1B1754] text-sm mb-1 flex items-center gap-2">
-                    <Wrench className="w-4 h-4 text-emerald-600" />
+                  <div className="font-bold text-[#0B0F19] text-sm mb-1 flex items-center gap-2">
+                    <Wrench className="w-4 h-4 text-slate-700" />
                     <span>Baustellen-Praxis</span>
                   </div>
                   <p className="text-xs text-slate-500 leading-relaxed">
@@ -284,10 +284,10 @@ export const AboutPage: React.FC = () => {
       {/* 5. REGIONALE VERWURZELUNG & SCHLUSS-CTA */}
       <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-          <span className="inline-block px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-wider border border-emerald-200">
+          <span className="badge-eyebrow">
             Regionale Verwurzelung
           </span>
-          <h2 className="text-3xl sm:text-4xl font-black text-[#1B1754] tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-black text-[#0B0F19] tracking-tight">
             Verlässlicher Partner in Drakenburg, Nienburg und der gesamten Mittelweser
           </h2>
           <p className="text-slate-600 leading-relaxed text-base max-w-2xl mx-auto font-normal">
@@ -297,7 +297,7 @@ export const AboutPage: React.FC = () => {
             <button
               type="button"
               onClick={() => openModal()}
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-[#2DE054] hover:bg-[#25ca4a] text-[#1B1754] font-black text-base transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0.5 border-b-[3px] border-b-[#1ba73c]"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-gradient-to-r from-[#BBBE22] to-[#f6e21c] hover:from-[#A8AB1A] hover:to-[#ebd615] text-[#0B0F19] font-black text-base transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0.5 border-b-[3px] border-b-[#929515]"
             >
               <span>Gesprächstermin mit Nico &amp; Jan vereinbaren</span>
               <ArrowRight className="w-5 h-5" />

@@ -32,11 +32,11 @@ export const FaqAccordion: React.FC<FaqAccordionProps> = ({
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           {eyebrow && (
-            <span className="inline-block px-3.5 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-widest mb-4 border border-emerald-200/80">
+            <span className="badge-eyebrow mb-4">
               {eyebrow}
             </span>
           )}
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1B1754] tracking-tight leading-[1.15]">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B0F19] tracking-tight leading-[1.15]">
             {title}
           </h2>
           {subtitle && (
@@ -51,11 +51,11 @@ export const FaqAccordion: React.FC<FaqAccordionProps> = ({
             const isOpen = openIndex === idx;
             return (
               <div 
-                key={idx}
+                key={idx} 
                 className={`rounded-2xl border transition-all duration-300 overflow-hidden ${
                   isOpen 
-                    ? 'border-emerald-300 bg-white shadow-md border-b-[4px] border-b-[#2DE054]' 
-                    : 'border-slate-200/90 bg-slate-50/60 hover:bg-white hover:border-slate-300 shadow-xs border-b-[3.5px] border-b-slate-200 hover:border-b-[#1B1754] hover:-translate-y-0.5'
+                    ? 'border-slate-300 bg-white shadow-md border-b-[4px] border-b-[#BBBE22]' 
+                    : 'border-slate-200/90 bg-slate-50/60 hover:bg-white hover:border-slate-300 shadow-xs border-b-[3.5px] border-b-slate-200 hover:border-b-[#0B0F19] hover:-translate-y-0.5'
                 }`}
               >
                 <button
@@ -66,16 +66,16 @@ export const FaqAccordion: React.FC<FaqAccordionProps> = ({
                 >
                   <div className="flex items-center gap-3.5 sm:gap-4">
                     <div className={`w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors ${
-                      isOpen ? 'bg-[#2DE054] text-[#1B1754]' : 'bg-emerald-50 text-emerald-700'
+                      isOpen ? 'bg-[#BBBE22] text-[#0B0F19]' : 'bg-slate-100 text-slate-700'
                     }`}>
                       <HelpCircle className="w-5 h-5" />
                     </div>
-                    <h3 className="text-base sm:text-lg font-black text-[#1B1754] tracking-tight">
+                    <h3 className="text-base sm:text-lg font-black text-[#0B0F19] tracking-tight">
                       {item.q}
                     </h3>
                   </div>
                   <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-transform duration-300 ${
-                    isOpen ? 'rotate-180 bg-emerald-50 text-emerald-700' : 'text-slate-400'
+                    isOpen ? 'rotate-180 bg-slate-100 text-slate-700' : 'text-slate-400'
                   }`}>
                     <ChevronDown className="w-5 h-5" />
                   </div>

@@ -10,7 +10,7 @@ interface CurvedWaveProps {
  * Schafft einen sauberen, architektonischen Übergang von hellen Abschnitten in Marken-Navy.
  */
 export const CurvedWaveTop: React.FC<CurvedWaveProps> = ({ 
-  fillNavy = '#140F3E',
+  fillNavy = '#0B0F19',
   className = '' 
 }) => {
   return (
@@ -27,10 +27,16 @@ export const CurvedWaveTop: React.FC<CurvedWaveProps> = ({
           d="M 0,90 L 0,40 C 320,80 620,15 980,48 C 1180,66 1340,55 1440,38 L 1440,90 Z" 
           fill={fillNavy} 
         />
-        {/* Primäre grüne Designer-Linie */}
+        {/* Primäre grüne Designer-Linie mit Logo-Farbverlauf */}
+        <defs>
+          <linearGradient id="waveLineGradientTop" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#BBBE22" />
+            <stop offset="100%" stopColor="#f6e21c" />
+          </linearGradient>
+        </defs>
         <path 
           d="M 0,40 C 320,80 620,15 980,48 C 1180,66 1340,55 1440,38" 
-          stroke="#2DE054" 
+          stroke="url(#waveLineGradientTop)" 
           strokeWidth="2.5" 
           strokeLinecap="round"
         />
@@ -47,7 +53,7 @@ export const CurvedWaveTop: React.FC<CurvedWaveProps> = ({
 };
 
 export const CurvedWaveBottom: React.FC<CurvedWaveProps> = ({ 
-  fillNavy = '#140F3E',
+  fillNavy = '#0B0F19',
   className = '' 
 }) => {
   return (
@@ -64,10 +70,16 @@ export const CurvedWaveBottom: React.FC<CurvedWaveProps> = ({
           d="M 0,0 L 0,50 C 320,10 620,75 980,42 C 1180,24 1340,35 1440,52 L 1440,0 Z" 
           fill={fillNavy} 
         />
-        {/* Primäre grüne Designer-Linie */}
+        {/* Primäre grüne Designer-Linie mit Logo-Farbverlauf */}
+        <defs>
+          <linearGradient id="waveLineGradientBottom" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#BBBE22" />
+            <stop offset="100%" stopColor="#f6e21c" />
+          </linearGradient>
+        </defs>
         <path 
           d="M 0,50 C 320,10 620,75 980,42 C 1180,24 1340,35 1440,52" 
-          stroke="#2DE054" 
+          stroke="url(#waveLineGradientBottom)" 
           strokeWidth="2.5" 
           strokeLinecap="round"
         />
@@ -108,9 +120,15 @@ export const CurvedWaveLightDivider: React.FC<{
           d="M 0,60 L 0,25 C 360,50 720,12 1080,35 C 1240,45 1360,38 1440,22 L 1440,60 Z" 
           fill={fillColor} 
         />
+        <defs>
+          <linearGradient id="waveLineGradientDivider" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#BBBE22" />
+            <stop offset="100%" stopColor="#f6e21c" />
+          </linearGradient>
+        </defs>
         <path 
           d="M 0,25 C 360,50 720,12 1080,35 C 1240,45 1360,38 1440,22" 
-          stroke="#2DE054" 
+          stroke="url(#waveLineGradientDivider)" 
           strokeWidth="2" 
           strokeLinecap="round"
           opacity="0.85"

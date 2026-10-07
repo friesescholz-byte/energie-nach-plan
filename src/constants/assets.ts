@@ -5,6 +5,11 @@
 const R2_BASE = 'https://pub-b33108412309406a9a941ddc51e9a5b9.r2.dev/energie-nach-plan';
 
 export const ASSETS = {
+  // Brand Logo & Favicon
+  logo: `${R2_BASE}/energie-nach-plan-logo-lang_02.webp`,
+  logoWhite: `${R2_BASE}/energie-nach-plan-logo-white.webp`,
+  favicon: `${R2_BASE}/energie-nach-plan-flavicon_01.webp`,
+
   // Cloudflare R2 Assets
   heroCutaway: `${R2_BASE}/Hero_energie_nach_plan_01%20(3).webp`,
   heroBanner: `${R2_BASE}/Energie-nach-Plan_01.webp`,

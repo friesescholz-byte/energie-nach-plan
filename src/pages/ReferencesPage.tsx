@@ -79,7 +79,7 @@ export const ReferencesPage: React.FC = () => {
       <section className="py-20 bg-slate-50/80 border-b border-slate-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <span className="text-xs font-bold uppercase tracking-widest text-emerald-700 block mb-3">
+            <span className="badge-eyebrow mb-3">
               Praxisberichte &amp; Fallstudien
             </span>
             <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
@@ -137,7 +137,7 @@ export const ReferencesPage: React.FC = () => {
                       </span>
                       <span>•</span>
                       <span className="flex items-center gap-1 text-slate-700">
-                        <MapPin className="w-3.5 h-3.5 text-emerald-600" />
+                        <MapPin className="w-3.5 h-3.5 text-slate-700" />
                         {proj.location}
                       </span>
                       <span>•</span>
@@ -163,7 +163,7 @@ export const ReferencesPage: React.FC = () => {
                       </div>
 
                       <div>
-                        <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 block mb-1">
+                        <span className="text-xs font-bold uppercase tracking-wider text-slate-900 block mb-1">
                           Die Meisterlösung:
                         </span>
                         <p className="text-xs text-slate-600 leading-relaxed">
@@ -176,7 +176,7 @@ export const ReferencesPage: React.FC = () => {
                   {/* Highlights Bar */}
                   <div className="pt-4 border-t border-slate-100 flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center bg-slate-50 p-4 rounded-xl">
                     <div className="space-y-1">
-                      <span className="text-[11px] uppercase tracking-wide font-bold text-emerald-800 block">
+                      <span className="text-[11px] uppercase tracking-wide font-bold text-slate-800 block">
                         Erreichte Förderung:
                       </span>
                       <span className="text-sm font-bold text-slate-900">
@@ -200,20 +200,20 @@ export const ReferencesPage: React.FC = () => {
           </div>
 
           {/* Bottom Box */}
-          <div className="mt-20 p-8 rounded-2xl bg-emerald-50 border border-emerald-200 text-center max-w-3xl mx-auto space-y-4">
-            <h3 className="text-xl font-bold text-emerald-950">
+          <div className="mt-20 p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#FAFBF2] via-[#FBFCF7] to-[#F4F7ED] border border-[#BBBE22]/40 text-center max-w-3xl mx-auto space-y-4 shadow-sm">
+            <h3 className="text-2xl font-black text-[#0B0F19]">
               Möchten Sie eine ähnliche Lösung für Ihr Gebäude?
             </h3>
-            <p className="text-sm text-emerald-800 leading-relaxed max-w-xl mx-auto">
+            <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-xl mx-auto">
               Lassen Sie uns unverbindlich prüfen, welche Maßnahmen bei Ihrem Objekt den größten Fördereffekt erzielen.
             </p>
-            <div className="pt-2">
+            <div className="pt-3">
               <Link
                 to="/foerdermittel-sanierungscheck"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-emerald-700 hover:bg-emerald-800 text-white font-semibold text-sm transition-colors"
+                className="inline-flex items-center gap-2.5 px-8 py-4.5 rounded-2xl bg-gradient-to-r from-[#BBBE22] to-[#f6e21c] hover:from-[#A8AB1A] hover:to-[#ebd615] text-[#0B0F19] font-black text-base transition-all duration-200 shadow-md hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0.5 border-b-[4px] border-b-[#929515]"
               >
                 <span>Fördermöglichkeiten berechnen</span>
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-5 h-5 text-[#0B0F19]" />
               </Link>
             </div>
           </div>

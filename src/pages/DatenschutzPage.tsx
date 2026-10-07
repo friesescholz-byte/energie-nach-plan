@@ -10,11 +10,11 @@ export const DatenschutzPage: React.FC = () => {
         
         {/* Header */}
         <div className="border-b border-slate-200/80 pb-8">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-wider mb-4 border border-emerald-200/80">
-            <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
+          <div className="badge-eyebrow mb-4">
+            <ShieldCheck className="w-3.5 h-3.5 text-slate-700" />
             <span>Datenschutz nach DSGVO &amp; TDDDG</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1B1754] tracking-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B0F19] tracking-tight">
             Datenschutzerklärung
           </h1>
           <p className="mt-3 text-base text-slate-600 font-normal">
@@ -27,15 +27,15 @@ export const DatenschutzPage: React.FC = () => {
           
           {/* 1. Einleitung & Verantwortliche Stelle */}
           <section className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4">
-            <h2 className="text-xl font-bold text-[#1B1754] flex items-center gap-2">
-              <Lock className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+            <h2 className="text-xl font-bold text-[#0B0F19] flex items-center gap-2">
+              <Lock className="w-5 h-5 text-slate-700 flex-shrink-0" />
               <span>1. Name und Anschrift des Verantwortlichen</span>
             </h2>
             <p>
               Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO), sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer Bestimmungen mit datenschutzrechtlichem Charakter ist die:
             </p>
             <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-800 text-sm">
-              <p className="font-bold text-base text-[#1B1754]">{COMPANY_INFO.name}</p>
+              <p className="font-bold text-base text-[#0B0F19]">{COMPANY_INFO.name}</p>
               <p>Vertretungsberechtigte Gesellschafter: Nico Heidemann &amp; Jan Osmer</p>
               <p>{COMPANY_INFO.address}</p>
               <p>{COMPANY_INFO.zipCity}</p>
@@ -49,8 +49,8 @@ export const DatenschutzPage: React.FC = () => {
 
           {/* 2. Allgemeine Hinweise & Rechtsgrundlagen */}
           <section className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4">
-            <h2 className="text-xl font-bold text-[#1B1754] flex items-center gap-2">
-              <Eye className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+            <h2 className="text-xl font-bold text-[#0B0F19] flex items-center gap-2">
+              <Eye className="w-5 h-5 text-slate-700 flex-shrink-0" />
               <span>2. Allgemeine Hinweise &amp; Rechtsgrundlagen</span>
             </h2>
             <p>
@@ -66,8 +66,8 @@ export const DatenschutzPage: React.FC = () => {
 
           {/* 3. Server-Log-Dateien & Hosting */}
           <section className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4">
-            <h2 className="text-xl font-bold text-[#1B1754] flex items-center gap-2">
-              <Database className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+            <h2 className="text-xl font-bold text-[#0B0F19] flex items-center gap-2">
+              <Database className="w-5 h-5 text-slate-700 flex-shrink-0" />
               <span>3. Server-Log-Dateien &amp; Cloudflare CDN</span>
             </h2>
             <p>
@@ -85,7 +85,7 @@ export const DatenschutzPage: React.FC = () => {
               Diese Daten sind nicht bestimmten Personen zuordenbar. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Rechtsgrundlage ist <strong>Art. 6 Abs. 1 lit. f DSGVO</strong> (Berechtigtes Interesse an der technisch fehlerfreien Darstellung, Stabilität und IT-Sicherheit unseres Webauftritts).
             </p>
             <div className="pt-2">
-              <h3 className="font-bold text-[#1B1754] text-base mb-1">Content Delivery Network (Cloudflare)</h3>
+              <h3 className="font-bold text-[#0B0F19] text-base mb-1">Content Delivery Network (Cloudflare)</h3>
               <p className="text-sm text-slate-600">
                 Zur schnellen und sicheren Auslieferung statischer Mediendateien (Bilder, Schriften) setzen wir das Content Delivery Network von Cloudflare, Inc. (101 Townsend St, San Francisco, CA 94107, USA) ein. Die Einbindung erfolgt auf Grundlage unseres berechtigten Interesses an einer performanten und ausfallsicheren Bereitstellung (Art. 6 Abs. 1 lit. f DSGVO). Die Datenübermittlung in die USA erfolgt im Rahmen des <em>EU-US Data Privacy Framework (DPF)</em> sowie standardisierter EU-Standardvertragsklauseln.
               </p>
@@ -94,8 +94,8 @@ export const DatenschutzPage: React.FC = () => {
 
           {/* 4. SSL- / TLS-Verschlüsselung */}
           <section className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4">
-            <h2 className="text-xl font-bold text-[#1B1754] flex items-center gap-2">
-              <Lock className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+            <h2 className="text-xl font-bold text-[#0B0F19] flex items-center gap-2">
+              <Lock className="w-5 h-5 text-slate-700 flex-shrink-0" />
               <span>4. SSL- bzw. TLS-Verschlüsselung</span>
             </h2>
             <p>
@@ -105,8 +105,8 @@ export const DatenschutzPage: React.FC = () => {
 
           {/* 5. Cookies & Consent Management (§ 25 TDDDG) */}
           <section className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4">
-            <h2 className="text-xl font-bold text-[#1B1754] flex items-center gap-2">
-              <Settings className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+            <h2 className="text-xl font-bold text-[#0B0F19] flex items-center gap-2">
+              <Settings className="w-5 h-5 text-slate-700 flex-shrink-0" />
               <span>5. Cookies &amp; Speichertechnologien (§ 25 TDDDG &amp; DSGVO)</span>
             </h2>
             <p>
@@ -124,8 +124,8 @@ export const DatenschutzPage: React.FC = () => {
 
           {/* 6. Formulare: Kontaktformular & Fördermittel-Rechner */}
           <section className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4">
-            <h2 className="text-xl font-bold text-[#1B1754] flex items-center gap-2">
-              <Mail className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+            <h2 className="text-xl font-bold text-[#0B0F19] flex items-center gap-2">
+              <Mail className="w-5 h-5 text-slate-700 flex-shrink-0" />
               <span>6. Kontaktformulare &amp; Fördermittel-Rechner</span>
             </h2>
             <p>
@@ -136,15 +136,15 @@ export const DatenschutzPage: React.FC = () => {
               <li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Durchführung vorvertraglicher Maßnahmen) sowie Art. 6 Abs. 1 lit. a DSGVO (Einwilligung bei freiwilligen Zusatzangaben).</li>
               <li><strong>Speicherdauer:</strong> Ihre Angaben werden gelöscht, sobald der Sachverhalt abschließend geklärt ist und keine gesetzlichen Aufbewahrungsfristen (z. B. nach HGB oder AO bei Zustandekommen eines Auftrags) entgegenstehen.</li>
             </ul>
-            <p className="text-sm font-semibold text-emerald-800">
+            <p className="text-sm font-semibold text-slate-800">
               Vertraulichkeitsgarantie: Wir verkaufen oder vermitteln Ihre Kontaktdaten niemals an dritte Handwerksbetriebe oder Provisionsportale.
             </p>
           </section>
 
           {/* 7. Google Analytics (GA4) */}
           <section className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4">
-            <h2 className="text-xl font-bold text-[#1B1754] flex items-center gap-2">
-              <Globe className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+            <h2 className="text-xl font-bold text-[#0B0F19] flex items-center gap-2">
+              <Globe className="w-5 h-5 text-slate-700 flex-shrink-0" />
               <span>7. Google Analytics (Google Analytics 4)</span>
             </h2>
             <p>
@@ -161,7 +161,7 @@ export const DatenschutzPage: React.FC = () => {
                 <strong>Rechtsgrundlage:</strong> Die Nutzung erfolgt ausschließlich auf Grundlage Ihrer Einwilligung gemäß <strong>Art. 6 Abs. 1 lit. a DSGVO</strong> und <strong>§ 25 Abs. 1 TDDDG</strong>. Die Einwilligung ist jederzeit widerrufbar.
               </p>
               <p>
-                <strong>Widerspruch &amp; Browser-Plugin:</strong> Sie können die Erfassung Ihrer Daten durch Google Analytics verhindern, indem Sie das unter folgendem Link verfügbare Browser-Plugin herunterladen und installieren: <a href="https://tools.google.com/dlpage/gaoptout?hl=de" target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:underline font-medium">https://tools.google.com/dlpage/gaoptout?hl=de</a>.
+                <strong>Widerspruch &amp; Browser-Plugin:</strong> Sie können die Erfassung Ihrer Daten durch Google Analytics verhindern, indem Sie das unter folgendem Link verfügbare Browser-Plugin herunterladen und installieren: <a href="https://tools.google.com/dlpage/gaoptout?hl=de" target="_blank" rel="noopener noreferrer" className="text-slate-800 underline hover:text-[#0B0F19] font-medium">https://tools.google.com/dlpage/gaoptout?hl=de</a>.
               </p>
               <p>
                 Google ist unter dem <em>EU-US Data Privacy Framework (DPF)</em> zertifiziert und gewährleistet damit ein dem europäischen Standard angemessenes Datenschutzniveau.
@@ -171,8 +171,8 @@ export const DatenschutzPage: React.FC = () => {
 
           {/* 8. Google Maps & Google Bewertungen */}
           <section className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4">
-            <h2 className="text-xl font-bold text-[#1B1754] flex items-center gap-2">
-              <Globe className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+            <h2 className="text-xl font-bold text-[#0B0F19] flex items-center gap-2">
+              <Globe className="w-5 h-5 text-slate-700 flex-shrink-0" />
               <span>8. Google Maps &amp; Google Rezensionsdienste</span>
             </h2>
             <p>
@@ -186,15 +186,15 @@ export const DatenschutzPage: React.FC = () => {
                 Rechtsgrundlage für die Einbindung der Anfahrts- und Standortverlinkung ist unser berechtigtes Interesse an einer leichten Auffindbarkeit unseres Betriebsstandorts in 31623 Drakenburg (<strong>Art. 6 Abs. 1 lit. f DSGVO</strong>).
               </p>
               <p>
-                Weitere Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy?hl=de" target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:underline">https://policies.google.com/privacy?hl=de</a>.
+                Weitere Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy?hl=de" target="_blank" rel="noopener noreferrer" className="text-slate-800 underline hover:text-[#0B0F19]">https://policies.google.com/privacy?hl=de</a>.
               </p>
             </div>
           </section>
 
           {/* 9. Meta Pixel (Facebook & Instagram Pixel) */}
           <section className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4">
-            <h2 className="text-xl font-bold text-[#1B1754] flex items-center gap-2">
-              <Globe className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+            <h2 className="text-xl font-bold text-[#0B0F19] flex items-center gap-2">
+              <Globe className="w-5 h-5 text-slate-700 flex-shrink-0" />
               <span>9. Meta-Pixel (ehemals Facebook Pixel)</span>
             </h2>
             <p>
@@ -211,15 +211,15 @@ export const DatenschutzPage: React.FC = () => {
                 <strong>Rechtsgrundlage:</strong> Die Nutzung des Meta-Pixels erfolgt ausschließlich auf Grundlage Ihrer Einwilligung gemäß <strong>Art. 6 Abs. 1 lit. a DSGVO</strong> und <strong>§ 25 Abs. 1 TDDDG</strong>. Sie können Ihre Einwilligung jederzeit über das Cookie-Banner oder Ihre Facebook-Werbeeinstellungen widerrufen.
               </p>
               <p>
-                Meta Platforms, Inc. ist unter dem <em>EU-US Data Privacy Framework (DPF)</em> zertifiziert. Weitere Details entnehmen Sie den Datenschutzhinweisen von Meta: <a href="https://www.facebook.com/about/privacy/" target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:underline">https://www.facebook.com/about/privacy/</a>.
+                Meta Platforms, Inc. ist unter dem <em>EU-US Data Privacy Framework (DPF)</em> zertifiziert. Weitere Details entnehmen Sie den Datenschutzhinweisen von Meta: <a href="https://www.facebook.com/about/privacy/" target="_blank" rel="noopener noreferrer" className="text-slate-800 underline hover:text-[#0B0F19]">https://www.facebook.com/about/privacy/</a>.
               </p>
             </div>
           </section>
 
           {/* 10. Betroffenenrechte nach DSGVO */}
           <section className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4">
-            <h2 className="text-xl font-bold text-[#1B1754] flex items-center gap-2">
-              <ShieldCheck className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+            <h2 className="text-xl font-bold text-[#0B0F19] flex items-center gap-2">
+              <ShieldCheck className="w-5 h-5 text-slate-700 flex-shrink-0" />
               <span>10. Ihre gesetzlichen Rechte als betroffene Person</span>
             </h2>
             <p>
@@ -235,12 +235,12 @@ export const DatenschutzPage: React.FC = () => {
               <p><strong>Widerruf Ihrer Einwilligung (Art. 7 Abs. 3 DSGVO):</strong> Sie können einmal erteilte Einwilligungen (z. B. für Cookies oder den Newsletter) jederzeit formlos mit Wirkung für die Zukunft widerrufen.</p>
             </div>
             <div className="pt-3 border-t border-slate-100">
-              <h3 className="font-bold text-[#1B1754] text-sm mb-1">Beschwerderecht bei der zuständigen Aufsichtsbehörde (Art. 77 DSGVO)</h3>
+              <h3 className="font-bold text-[#0B0F19] text-sm mb-1">Beschwerderecht bei der zuständigen Aufsichtsbehörde (Art. 77 DSGVO)</h3>
               <p className="text-sm text-slate-600">
                 Im Falle datenschutzrechtlicher Verstöße steht Ihnen ein Beschwerderecht bei einer zuständigen Aufsichtsbehörde zu. Die für uns zuständige Landesdatenschutzbehörde ist:<br />
                 <strong>Die Landesbeauftragte für den Datenschutz Niedersachsen (LfD Niedersachsen)</strong><br />
                 Prinzenstraße 5, 30159 Hannover<br />
-                Telefon: 0511 120-4500 | Website: <a href="https://www.lfd.niedersachsen.de" target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:underline">www.lfd.niedersachsen.de</a>
+                Telefon: 0511 120-4500 | Website: <a href="https://www.lfd.niedersachsen.de" target="_blank" rel="noopener noreferrer" className="text-slate-800 underline hover:text-[#0B0F19]">www.lfd.niedersachsen.de</a>
               </p>
             </div>
           </section>
@@ -253,10 +253,10 @@ export const DatenschutzPage: React.FC = () => {
             Stand der Datenschutzerklärung: September 2026 · DSGVO-konform
           </div>
           <div className="flex items-center gap-6">
-            <Link to="/impressum" className="hover:text-emerald-700 transition-colors font-medium">
+            <Link to="/impressum" className="hover:text-[#0B0F19] transition-colors font-medium">
               Zum Impressum →
             </Link>
-            <Link to="/barrierefreiheit" className="hover:text-emerald-700 transition-colors font-medium">
+            <Link to="/barrierefreiheit" className="hover:text-[#0B0F19] transition-colors font-medium">
               Zur Erklärung zur Barrierefreiheit →
             </Link>
           </div>

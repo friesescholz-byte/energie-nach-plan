@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Phone, Mail, MapPin, Menu, X, ChevronDown, Award, Calculator } from 'lucide-react';
-import { COMPANY_INFO } from '../../constants/assets';
+import { ASSETS, COMPANY_INFO } from '../../constants/assets';
 import { useContactModal } from '../../context/ContactModalContext';
 
 export const Navbar: React.FC = () => {
@@ -52,18 +52,18 @@ export const Navbar: React.FC = () => {
   return (
     <header className="sticky top-0 z-50 w-full">
       {/* Top utility bar */}
-      <div className="bg-[#1B1754] text-slate-200 text-xs py-2 px-4 sm:px-6 lg:px-8 border-b border-[#242068]">
+      <div className="bg-[#0B0F19] text-slate-200 text-xs py-2 px-4 sm:px-6 lg:px-8 border-b border-[#141A29]">
         <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
           <div className="flex items-center gap-4 sm:gap-6 flex-wrap">
             <a 
               href={COMPANY_INFO.googleMapsUrl} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="inline-flex items-center gap-1.5 text-slate-200 hover:text-[#2DE054] transition-colors group"
+              className="inline-flex items-center gap-1.5 text-slate-200 hover:text-[#BBBE22] transition-colors group"
               title="Standort auf Google Maps öffnen"
             >
-              <MapPin className="w-3.5 h-3.5 text-[#2DE054] flex-shrink-0 group-hover:scale-110 transition-transform" />
-              <span className="font-medium underline decoration-slate-600 underline-offset-2 hover:decoration-[#2DE054]">
+              <MapPin className="w-3.5 h-3.5 text-[#BBBE22] flex-shrink-0 group-hover:scale-110 transition-transform" />
+              <span className="font-medium underline decoration-slate-600 underline-offset-2 hover:decoration-[#BBBE22]">
                 {COMPANY_INFO.address}, {COMPANY_INFO.zipCity} ({COMPANY_INFO.region})
               </span>
             </a>
@@ -71,7 +71,7 @@ export const Navbar: React.FC = () => {
           <div className="flex items-center gap-4">
             <a 
               href={`tel:${COMPANY_INFO.phoneClean}`} 
-              className="inline-flex items-center gap-1.5 font-bold text-[#2DE054] hover:text-[#50f073] transition-colors"
+              className="inline-flex items-center gap-1.5 font-bold text-[#BBBE22] hover:text-[#f6e21c] transition-colors"
             >
               <Phone className="w-3.5 h-3.5" />
               <span>{COMPANY_INFO.phone}</span>
@@ -94,9 +94,9 @@ export const Navbar: React.FC = () => {
           {/* Official Brand Logo */}
           <Link to="/" className="flex items-center group py-0.5" aria-label="Energie nach Plan — Startseite">
             <img 
-              src="/logo_horizontal_navy.png" 
+              src={ASSETS.logo} 
               alt="Energie nach Plan — Nico Heidemann & Jan Osmer" 
-              className="h-10 sm:h-11 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]"
+              className="h-12 sm:h-14 lg:h-16 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]"
             />
           </Link>
 
@@ -104,7 +104,7 @@ export const Navbar: React.FC = () => {
           <div className="hidden lg:flex items-center gap-6 xl:gap-8 text-[14px] font-semibold text-slate-700">
             <Link 
               to="/" 
-              className={`hover:text-[#1B1754] transition-colors py-1 ${location.pathname === '/' ? 'text-[#1B1754] font-bold border-b-2 border-[#2DE054]' : ''}`}
+              className={`hover:text-[#0B0F19] transition-colors py-1 ${location.pathname === '/' ? 'text-[#0B0F19] font-bold border-b-2 border-[#BBBE22]' : ''}`}
             >
               Startseite
             </Link>
@@ -125,19 +125,19 @@ export const Navbar: React.FC = () => {
                       setServicesOpen(false);
                     }
                   }}
-                  className="hover:text-[#1B1754] transition-colors py-1 font-semibold"
+                  className="hover:text-[#0B0F19] transition-colors py-1 font-semibold"
                 >
                   Leistungen
                 </Link>
                 <button 
-                  className="p-1 hover:text-[#1B1754] transition-colors focus:outline-none"
+                  className="p-1 hover:text-[#0B0F19] transition-colors focus:outline-none"
                   onClick={(e) => {
                     e.stopPropagation();
                     setServicesOpen(!servicesOpen);
                   }}
                   aria-label="Leistungen Menü öffnen"
                 >
-                  <ChevronDown className={`w-3.5 h-3.5 text-slate-400 group-hover:rotate-180 transition-transform duration-200 ${servicesOpen ? 'rotate-180 text-[#1B1754]' : ''}`} />
+                  <ChevronDown className={`w-3.5 h-3.5 text-slate-400 group-hover:rotate-180 transition-transform duration-200 ${servicesOpen ? 'rotate-180 text-[#0B0F19]' : ''}`} />
                 </button>
               </div>
 
@@ -158,11 +158,11 @@ export const Navbar: React.FC = () => {
                         }
                         setServicesOpen(false);
                       }}
-                      className="block p-2.5 rounded-xl bg-emerald-50/70 hover:bg-emerald-100/70 transition-colors mb-1.5 border border-emerald-200/60"
+                      className="block p-2.5 rounded-xl bg-slate-50 hover:bg-slate-100 transition-colors mb-1.5 border border-slate-200"
                     >
-                      <div className="font-bold text-[#1B1754] text-xs uppercase tracking-wider flex items-center justify-between">
+                      <div className="font-bold text-[#0B0F19] text-xs uppercase tracking-wider flex items-center justify-between">
                         <span>Alle 4 Kernleistungen im Überblick</span>
-                        <span className="text-emerald-700">→</span>
+                        <span className="text-[#0B0F19]">→</span>
                       </div>
                     </Link>
                     {serviceLinks.map((item) => (
@@ -172,7 +172,7 @@ export const Navbar: React.FC = () => {
                         onClick={() => setServicesOpen(false)}
                         className="block p-2.5 rounded-xl hover:bg-slate-50 transition-colors group/item"
                       >
-                        <div className="font-semibold text-slate-900 group-hover/item:text-[#1B1754] text-sm">
+                        <div className="font-semibold text-slate-900 group-hover/item:text-[#0B0F19] text-sm">
                           {item.title}
                         </div>
                         <div className="text-xs text-slate-500 mt-0.5 font-normal">
@@ -189,31 +189,31 @@ export const Navbar: React.FC = () => {
               to="/foerdermittel-sanierungscheck" 
               className={`inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-bold tracking-tight transition-all duration-200 group ${
                 location.pathname === '/foerdermittel-sanierungscheck'
-                  ? 'bg-[#1B1754] text-white shadow-sm border-b-2 border-b-[#2DE054]'
-                  : 'bg-emerald-50/90 hover:bg-[#2DE054] text-[#1B1754] border border-emerald-200/80 hover:border-[#2DE054] border-b-[2.5px] border-b-emerald-200 hover:border-b-[#1ba73c] shadow-xs hover:shadow-sm hover:-translate-y-0.5 active:translate-y-0.5'
+                  ? 'bg-[#0B0F19] text-white shadow-sm border-b-2 border-b-[#BBBE22]'
+                  : 'bg-gradient-to-r from-[#BBBE22]/15 to-[#f6e21c]/25 hover:from-[#BBBE22] hover:to-[#f6e21c] text-[#0B0F19] border border-[#BBBE22]/30 hover:border-[#BBBE22] border-b-[2.5px] border-b-[#BBBE22]/40 hover:border-b-[#929515] shadow-xs hover:shadow-sm hover:-translate-y-0.5 active:translate-y-0.5'
               }`}
             >
-              <Calculator className="w-3.5 h-3.5 text-emerald-700 group-hover:text-[#1B1754] transition-colors" />
+              <Calculator className="w-3.5 h-3.5 text-[#0B0F19]" />
               <span>Fördermittel-Check</span>
             </Link>
 
             <Link 
               to="/ueber-uns" 
-              className={`hover:text-[#1B1754] transition-colors py-1 ${location.pathname === '/ueber-uns' ? 'text-[#1B1754] font-bold border-b-2 border-[#2DE054]' : ''}`}
+              className={`hover:text-[#0B0F19] transition-colors py-1 ${location.pathname === '/ueber-uns' ? 'text-[#0B0F19] font-bold border-b-2 border-[#BBBE22]' : ''}`}
             >
               Über uns
             </Link>
 
             <Link 
               to="/referenzen" 
-              className={`hover:text-[#1B1754] transition-colors py-1 ${location.pathname === '/referenzen' ? 'text-[#1B1754] font-bold border-b-2 border-[#2DE054]' : ''}`}
+              className={`hover:text-[#0B0F19] transition-colors py-1 ${location.pathname === '/referenzen' ? 'text-[#0B0F19] font-bold border-b-2 border-[#BBBE22]' : ''}`}
             >
               Referenzen
             </Link>
 
             <Link 
               to="/kontakt" 
-              className={`hover:text-[#1B1754] transition-colors py-1 ${location.pathname === '/kontakt' ? 'text-[#1B1754] font-bold border-b-2 border-[#2DE054]' : ''}`}
+              className={`hover:text-[#0B0F19] transition-colors py-1 ${location.pathname === '/kontakt' ? 'text-[#0B0F19] font-bold border-b-2 border-[#BBBE22]' : ''}`}
             >
               Kontakt
             </Link>
@@ -224,7 +224,7 @@ export const Navbar: React.FC = () => {
             <button
               type="button"
               onClick={() => openModal()}
-              className="inline-flex items-center justify-center px-4 py-2.5 text-sm font-bold text-white bg-[#1B1754] hover:bg-[#251f6d] rounded-xl transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0.5"
+              className="inline-flex items-center justify-center px-4 py-2.5 text-sm font-bold text-white bg-[#0B0F19] hover:bg-[#1E293B] rounded-xl transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0.5"
             >
               Erstgespräch anfragen
             </button>
@@ -234,7 +234,7 @@ export const Navbar: React.FC = () => {
           <div className="flex lg:hidden items-center gap-2">
             <a 
               href={`tel:${COMPANY_INFO.phoneClean}`}
-              className="p-2 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-semibold flex items-center gap-1 mr-1"
+              className="p-2 rounded-lg bg-slate-100 text-slate-800 text-xs font-semibold flex items-center gap-1 mr-1 hover:bg-[#BBBE22] hover:text-[#0B0F19] transition-colors"
             >
               <Phone className="w-4 h-4" />
               <span className="hidden sm:inline">Anrufen</span>
@@ -254,7 +254,7 @@ export const Navbar: React.FC = () => {
           <div className="lg:hidden border-t border-slate-200 bg-white px-4 pt-4 pb-6 space-y-3 shadow-elevated">
             <Link 
               to="/" 
-              className="block py-2 text-base font-semibold text-slate-800 hover:text-emerald-700"
+              className="block py-2 text-base font-semibold text-slate-800 hover:text-[#0B0F19]"
             >
               Startseite
             </Link>
@@ -269,17 +269,17 @@ export const Navbar: React.FC = () => {
                   }
                   setIsOpen(false);
                 }}
-                className="text-xs font-bold text-[#1B1754] uppercase tracking-wider block mb-2 hover:text-emerald-700 flex items-center justify-between"
+                className="text-xs font-bold text-[#0B0F19] uppercase tracking-wider block mb-2 hover:text-slate-700 flex items-center justify-between"
               >
                 <span>Leistungen &amp; Spezialbereiche</span>
-                <span className="text-emerald-700 font-bold">Übersicht →</span>
+                <span className="text-[#0B0F19] font-bold">Übersicht →</span>
               </Link>
               <div className="space-y-2 pl-2">
                 {serviceLinks.map((item) => (
                   <Link
                     key={item.path}
                     to={item.path}
-                    className="block py-1 text-sm font-medium text-slate-700 hover:text-emerald-700"
+                    className="block py-1 text-sm font-medium text-slate-700 hover:text-[#0B0F19]"
                   >
                     {item.title}
                   </Link>
@@ -289,29 +289,29 @@ export const Navbar: React.FC = () => {
 
             <Link 
               to="/foerdermittel-sanierungscheck" 
-              className="flex items-center gap-2 py-2 text-base font-semibold text-emerald-700"
+              className="flex items-center gap-2 py-2 text-base font-semibold text-[#0B0F19]"
             >
-              <Calculator className="w-4 h-4" />
+              <Calculator className="w-4 h-4 text-[#0B0F19]" />
               Fördermittel- & Sanierungscheck
             </Link>
 
             <Link 
               to="/ueber-uns" 
-              className="block py-2 text-base font-medium text-slate-800 hover:text-emerald-700"
+              className="block py-2 text-base font-medium text-slate-800 hover:text-[#0B0F19]"
             >
               Über uns
             </Link>
 
             <Link 
               to="/referenzen" 
-              className="block py-2 text-base font-medium text-slate-800 hover:text-emerald-700"
+              className="block py-2 text-base font-medium text-slate-800 hover:text-[#0B0F19]"
             >
               Referenzen
             </Link>
 
             <Link 
               to="/kontakt" 
-              className="block py-2 text-base font-medium text-slate-800 hover:text-emerald-700"
+              className="block py-2 text-base font-medium text-slate-800 hover:text-[#0B0F19]"
             >
               Kontakt
             </Link>
@@ -323,7 +323,7 @@ export const Navbar: React.FC = () => {
                   setIsOpen(false);
                   openModal();
                 }}
-                className="w-full inline-flex items-center justify-center px-4 py-3 text-sm font-bold text-white bg-[#1B1754] hover:bg-[#251f6d] rounded-xl transition-colors shadow-sm"
+                className="w-full inline-flex items-center justify-center px-4 py-3 text-sm font-bold text-white bg-[#0B0F19] hover:bg-[#1E293B] rounded-xl transition-colors shadow-sm"
               >
                 Kostenfreies Erstgespräch anfragen
               </button>

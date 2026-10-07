@@ -25,10 +25,10 @@ export const InteractiveCalculatorTeaser: React.FC<InteractiveCalculatorTeaserPr
   return (
     <div className={`relative ${className}`}>
       {/* Eleganter geschwungener Übergang oben mit smaragdgrüner Designer-Linie */}
-      <CurvedWaveTop fillNavy="#140F3E" className={topBackground} />
+      <CurvedWaveTop fillNavy="#0B0F19" className={topBackground} />
 
       {/* Haupt-Bereich in sattem Marken-Navy ohne matschige Verläufe */}
-      <section className="py-20 lg:py-28 text-white relative overflow-hidden bg-[#140F3E]">
+      <section className="py-20 lg:py-28 text-white relative overflow-hidden bg-[#0B0F19]">
         {/* Dezentes Architektur-Gittermuster */}
         <div 
           className="absolute inset-0 opacity-[0.06] pointer-events-none"
@@ -51,19 +51,19 @@ export const InteractiveCalculatorTeaser: React.FC<InteractiveCalculatorTeaserPr
         />
 
         {/* Weicher radialer Vignette-Schleier */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_75%_65%_at_50%_50%,rgba(27,23,84,0.7)_0%,rgba(16,12,51,0.95)_100%)] pointer-events-none" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_75%_65%_at_50%_50%,rgba(11, 15, 25,0.7)_0%,rgba(16,12,51,0.95)_100%)] pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="relative bg-white/[0.04] backdrop-blur-xl p-8 sm:p-14 rounded-3xl border border-white/10 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-10 overflow-hidden">
             {/* Subtile Designer-Eckmarkierungen (Precision Engineering) */}
-            <div className="absolute top-3 left-3 w-2.5 h-2.5 border-t border-l border-[#2DE054]/40" />
-            <div className="absolute top-3 right-3 w-2.5 h-2.5 border-t border-r border-[#2DE054]/40" />
-            <div className="absolute bottom-3 left-3 w-2.5 h-2.5 border-b border-l border-[#2DE054]/40" />
-            <div className="absolute bottom-3 right-3 w-2.5 h-2.5 border-b border-r border-[#2DE054]/40" />
+            <div className="absolute top-3 left-3 w-2.5 h-2.5 border-t border-l border-[#BBBE22]/40" />
+            <div className="absolute top-3 right-3 w-2.5 h-2.5 border-t border-r border-[#BBBE22]/40" />
+            <div className="absolute bottom-3 left-3 w-2.5 h-2.5 border-b border-l border-[#BBBE22]/40" />
+            <div className="absolute bottom-3 right-3 w-2.5 h-2.5 border-b border-r border-[#BBBE22]/40" />
 
             <div className="space-y-4 max-w-2xl">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-[#2DE054] text-xs font-bold tracking-wide">
-                <Sparkles className="w-4 h-4 text-[#2DE054]" />
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-[#BBBE22] text-xs font-bold tracking-wide">
+                <Sparkles className="w-4 h-4 text-[#BBBE22]" />
                 {eyebrow}
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
@@ -77,7 +77,7 @@ export const InteractiveCalculatorTeaser: React.FC<InteractiveCalculatorTeaserPr
             <div className="flex-shrink-0 w-full lg:w-auto">
               <Link
                 to="/foerdermittel-sanierungscheck"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-5 rounded-2xl bg-[#2DE054] hover:bg-[#25ca4a] text-[#1B1754] font-black text-base sm:text-lg transition-all duration-200 shadow-xl hover:shadow-[0_20px_35px_-5px_rgba(45,224,84,0.4)] hover:-translate-y-1 active:translate-y-0.5 border-b-[4px] border-b-[#1b9e38]"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-5 rounded-2xl bg-gradient-to-r from-[#BBBE22] to-[#f6e21c] hover:from-[#A8AB1A] hover:to-[#ebd615] text-[#0B0F19] font-black text-base sm:text-lg transition-all duration-200 shadow-xl hover:shadow-[0_20px_35px_-5px_rgba(187, 190, 34,0.4)] hover:-translate-y-1 active:translate-y-0.5 border-b-[4px] border-b-[#929515]"
               >
                 <Calculator className="w-5 h-5" />
                 <span>{buttonText}</span>
@@ -88,7 +88,7 @@ export const InteractiveCalculatorTeaser: React.FC<InteractiveCalculatorTeaserPr
       </section>
 
       {/* Eleganter geschwungener Übergang unten mit smaragdgrüner Designer-Linie */}
-      <CurvedWaveBottom fillNavy="#140F3E" className={bottomBackground} />
+      <CurvedWaveBottom fillNavy="#0B0F19" className={bottomBackground} />
     </div>
   );
 };

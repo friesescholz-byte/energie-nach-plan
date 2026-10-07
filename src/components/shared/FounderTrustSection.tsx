@@ -63,23 +63,21 @@ export const FounderTrustSection: React.FC<FounderTrustSectionProps> = ({
         <div className="absolute bottom-0 inset-x-0 h-28 bg-gradient-to-t from-[#F3F6FA] via-[#F3F6FA]/60 to-transparent pointer-events-none" />
       </div>
 
-      {/* 2. Sanfte dezent grüne Ambient-Lichter für Tiefenwirkung */}
-      <div className="absolute top-1/4 left-1/3 w-[500px] h-[500px] bg-emerald-100/35 rounded-full blur-[130px] pointer-events-none" />
+      {/* 2. Sanfte dezent kühle Ambient-Lichter für Tiefenwirkung */}
+      <div className="absolute top-1/4 left-1/3 w-[500px] h-[500px] bg-slate-200/40 rounded-full blur-[130px] pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/4 w-[450px] h-[450px] bg-slate-200/40 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Section Header: Redaktionell & Förmlich ohne bunte Pill-Badges */}
+        {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
-          <div className="inline-flex items-center justify-center gap-2.5 mb-4">
-            <span className="w-8 h-px bg-emerald-600/50" />
-            <span className="text-xs font-bold uppercase tracking-widest text-emerald-800">
+          <div className="mb-4">
+            <span className="badge-eyebrow">
               {eyebrow}
             </span>
-            <span className="w-8 h-px bg-emerald-600/50" />
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1B1754] tracking-tight leading-[1.15]">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B0F19] tracking-tight leading-[1.15]">
             {title}
           </h2>
           <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
@@ -94,26 +92,26 @@ export const FounderTrustSection: React.FC<FounderTrustSectionProps> = ({
           <div className="lg:col-span-5 flex flex-col items-center">
             <div className="relative w-full max-w-md lg:max-w-none">
               {/* Feine Ambient-Aura hinter den Köpfen */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-emerald-100/40 rounded-full blur-3xl pointer-events-none" />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-slate-200/40 rounded-full blur-3xl pointer-events-none" />
 
               {/* Das gemeinsame Team-Porträt von Nico & Jan */}
               <div className="relative z-10 flex justify-center">
                 <img 
                   src={ASSETS.foundersDuoPortrait} 
                   alt="Nico Heidemann und Jan Osmer - Gründer und Heizungsbaumeister HWK Energie nach Plan" 
-                  className="w-full max-w-[420px] h-auto object-contain drop-shadow-[0_20px_35px_rgba(27,23,84,0.15)]"
+                  className="w-full max-w-[420px] h-auto object-contain drop-shadow-[0_20px_35px_rgba(11, 15, 25,0.15)]"
                 />
               </div>
 
               {/* Förmliche, ruhige Typografie direkt unter dem Porträt – kein störender Card-Kasten */}
               <div className="mt-5 text-center">
-                <div className="text-base sm:text-lg font-black text-[#1B1754] tracking-tight">
+                <div className="text-base sm:text-lg font-black text-[#0B0F19] tracking-tight">
                   Nico Heidemann &amp; Jan Osmer
                 </div>
                 <p className="text-xs sm:text-sm text-slate-600 font-medium mt-1">
                   Geschäftsführer &amp; Handwerksmeister HWK
                 </p>
-                <p className="text-xs text-emerald-800 font-bold uppercase tracking-wider mt-1">
+                <p className="text-xs text-slate-700 font-bold uppercase tracking-wider mt-1">
                   Meister seit 2008 &amp; 2015 · Drakenburg (Landkreis Nienburg)
                 </p>
               </div>
@@ -126,25 +124,25 @@ export const FounderTrustSection: React.FC<FounderTrustSectionProps> = ({
             {/* Nico Heidemann - Redaktioneller Bereich */}
             <div className="space-y-3.5">
               <div className="border-b border-slate-200/80 pb-2.5">
-                <h3 className="text-2xl sm:text-3xl font-black text-[#1B1754] tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-black text-[#0B0F19] tracking-tight">
                   Nico Heidemann
                 </h3>
-                <p className="text-xs sm:text-sm font-bold text-emerald-800 uppercase tracking-wider mt-1">
+                <p className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider mt-1">
                   HWK-Heizungsbaumeister seit 2008 · Gebäudeenergieberater HWK
                 </p>
               </div>
 
-              <blockquote className="text-base sm:text-lg text-slate-700 font-medium italic border-l-2 border-[#2DE054] pl-4 py-1 leading-relaxed">
+              <blockquote className="text-base sm:text-lg text-slate-700 font-medium italic border-l-2 border-[#BBBE22] pl-4 py-1 leading-relaxed">
                 {nicoQuote}
               </blockquote>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1 text-sm text-slate-600">
                 <div className="flex items-center gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0" />
                   <span>Raumweise Heizlastberechnung DIN 12831</span>
                 </div>
                 <div className="flex items-center gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0" />
                   <span>dena-Energieeffizienz-Experte (KfW/BAFA)</span>
                 </div>
               </div>
@@ -156,25 +154,25 @@ export const FounderTrustSection: React.FC<FounderTrustSectionProps> = ({
             {/* Jan Osmer - Redaktioneller Bereich */}
             <div className="space-y-3.5">
               <div className="border-b border-slate-200/80 pb-2.5">
-                <h3 className="text-2xl sm:text-3xl font-black text-[#1B1754] tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-black text-[#0B0F19] tracking-tight">
                   Jan Osmer
                 </h3>
-                <p className="text-xs sm:text-sm font-bold text-emerald-800 uppercase tracking-wider mt-1">
+                <p className="text-xs sm:text-sm font-bold text-slate-700 uppercase tracking-wider mt-1">
                   HWK-Heizungsbaumeister seit 2015 · TGA-Fachplanung &amp; Bauleitung
                 </p>
               </div>
 
-              <blockquote className="text-base sm:text-lg text-slate-700 font-medium italic border-l-2 border-[#2DE054] pl-4 py-1 leading-relaxed">
+              <blockquote className="text-base sm:text-lg text-slate-700 font-medium italic border-l-2 border-[#BBBE22] pl-4 py-1 leading-relaxed">
                 {janQuote}
               </blockquote>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1 text-sm text-slate-600">
                 <div className="flex items-center gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0" />
                   <span>Hydraulischer Abgleich nach Verfahren B</span>
                 </div>
                 <div className="flex items-center gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0" />
                   <span>Unabhängige Qualitätskontrolle vor Ort</span>
                 </div>
               </div>
@@ -185,17 +183,17 @@ export const FounderTrustSection: React.FC<FounderTrustSectionProps> = ({
               <button
                 type="button"
                 onClick={() => openModal()}
-                className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl bg-[#2DE054] hover:bg-[#25ca4a] text-[#1B1754] font-bold text-sm sm:text-base transition-all shadow-[0_4px_16px_rgba(45,224,84,0.35)] hover:shadow-[0_8px_24px_rgba(45,224,84,0.45)] hover:-translate-y-0.5 active:translate-y-0"
+                className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl bg-gradient-to-r from-[#BBBE22] to-[#f6e21c] hover:from-[#A8AB1A] hover:to-[#ebd615] text-[#0B0F19] font-bold text-sm sm:text-base transition-all shadow-[0_4px_16px_rgba(187, 190, 34,0.35)] hover:shadow-[0_8px_24px_rgba(187, 190, 34,0.45)] hover:-translate-y-0.5 active:translate-y-0"
               >
                 <span>Erstgespräch mit Nico &amp; Jan anfragen</span>
-                <ArrowRight className="w-4 h-4 text-[#1B1754]" />
+                <ArrowRight className="w-4 h-4 text-[#0B0F19]" />
               </button>
 
               <a
                 href={`tel:${COMPANY_INFO.phoneClean}`}
-                className="inline-flex items-center justify-center gap-2 px-5 py-4 rounded-xl border border-slate-300/80 bg-white/90 hover:bg-white text-slate-800 font-bold text-sm transition-all shadow-sm hover:border-[#1B1754]"
+                className="inline-flex items-center justify-center gap-2 px-5 py-4 rounded-xl border border-slate-300/80 bg-white/90 hover:bg-white text-slate-800 font-bold text-sm transition-all shadow-sm hover:border-[#0B0F19]"
               >
-                <Phone className="w-4 h-4 text-emerald-600" />
+                <Phone className="w-4 h-4 text-slate-700" />
                 <span>Hotline: {COMPANY_INFO.phone}</span>
               </a>
             </div>
@@ -207,15 +205,15 @@ export const FounderTrustSection: React.FC<FounderTrustSectionProps> = ({
         {/* Feine Qualitäts-Zertifikatsleiste unten */}
         <div className="mt-16 pt-8 border-t border-slate-200/80 max-w-4xl mx-auto flex flex-wrap items-center justify-center gap-y-3 gap-x-8 text-xs sm:text-sm font-semibold text-slate-600">
           <div className="flex items-center gap-2">
-            <Check className="w-4 h-4 text-emerald-600" />
+            <Check className="w-4 h-4 text-slate-700" />
             <span>100 % herstellerneutral &amp; provisionsfrei</span>
           </div>
           <div className="flex items-center gap-2">
-            <Check className="w-4 h-4 text-emerald-600" />
+            <Check className="w-4 h-4 text-slate-700" />
             <span>Zugelassen für KfW &amp; BAFA Bundesförderung</span>
           </div>
           <div className="flex items-center gap-2">
-            <Check className="w-4 h-4 text-emerald-600" />
+            <Check className="w-4 h-4 text-slate-700" />
             <span>Persönliche Betreuung durch die Handwerksmeister</span>
           </div>
         </div>

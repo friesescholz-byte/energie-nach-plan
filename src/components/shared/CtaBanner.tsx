@@ -21,10 +21,10 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({
   return (
     <div className="relative">
       {/* Geschwungener Übergang oben mit smaragdgrüner Designer-Linie */}
-      <CurvedWaveTop fillNavy="#140F3E" className={topBackground} />
+      <CurvedWaveTop fillNavy="#0B0F19" className={topBackground} />
 
       {/* Haupt-Bereich in sattem Marken-Navy */}
-      <section className="pt-20 pb-24 text-white relative overflow-hidden bg-[#140F3E]">
+      <section className="pt-20 pb-24 text-white relative overflow-hidden bg-[#0B0F19]">
         {/* Dezentes Architektur-Gittermuster */}
         <div 
           className="absolute inset-0 opacity-[0.06] pointer-events-none"
@@ -47,11 +47,11 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({
         />
 
         {/* Weicher radialer Vignette-Schleier */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_75%_65%_at_50%_50%,rgba(27,23,84,0.7)_0%,rgba(14,10,45,0.95)_100%)] pointer-events-none" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_75%_65%_at_50%_50%,rgba(11, 15, 25,0.7)_0%,rgba(14,10,45,0.95)_100%)] pointer-events-none" />
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-[#2DE054] text-xs font-bold mb-6 tracking-wide shadow-sm">
-            <ShieldCheck className="w-4 h-4 text-[#2DE054]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-[#BBBE22] text-xs font-bold mb-6 tracking-wide shadow-sm">
+            <ShieldCheck className="w-4 h-4 text-[#BBBE22]" />
             Unverbindliche Meister-Erstberatung
           </div>
 
@@ -67,31 +67,31 @@ export const CtaBanner: React.FC<CtaBannerProps> = ({
             <button
               type="button"
               onClick={() => openModal()}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-[#2DE054] hover:bg-[#25ca4a] text-[#1B1754] font-bold text-sm sm:text-base shadow-[0_4px_16px_rgba(45,224,84,0.35)] hover:shadow-[0_8px_24px_rgba(45,224,84,0.45)] hover:-translate-y-0.5 active:translate-y-0 transition-all"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-gradient-to-r from-[#BBBE22] to-[#f6e21c] hover:from-[#A8AB1A] hover:to-[#ebd615] text-[#0B0F19] font-bold text-sm sm:text-base shadow-[0_4px_16px_rgba(187, 190, 34,0.35)] hover:shadow-[0_8px_24px_rgba(187, 190, 34,0.45)] hover:-translate-y-0.5 active:translate-y-0 transition-all"
             >
               <span>Kostenloses Erstgespräch anfragen</span>
-              <ArrowRight className="w-4 h-4 text-[#1B1754]" />
+              <ArrowRight className="w-4 h-4 text-[#0B0F19]" />
             </button>
             <a
               href={`tel:${COMPANY_INFO.phoneClean}`}
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-white/[0.08] hover:bg-white/[0.14] text-white font-semibold text-sm sm:text-base border border-white/20 hover:border-white/35 backdrop-blur-sm hover:-translate-y-0.5 transition-all shadow-xs"
             >
-              <Phone className="w-4 h-4 text-[#2DE054]" />
+              <Phone className="w-4 h-4 text-[#BBBE22]" />
               <span>Direkt anrufen: {COMPANY_INFO.phone}</span>
             </a>
           </div>
 
           <div className="mt-12 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs sm:text-sm text-slate-300">
             <span className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-[#2DE054]" />
+              <CheckCircle2 className="w-4 h-4 text-[#BBBE22]" />
               Keine Verkaufsabsicht für Heizgeräte
             </span>
             <span className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-[#2DE054]" />
+              <CheckCircle2 className="w-4 h-4 text-[#BBBE22]" />
               100 % herstellerunabhängig
             </span>
             <span className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-[#2DE054]" />
+              <CheckCircle2 className="w-4 h-4 text-[#BBBE22]" />
               Gelistete dena-Experten (KfW/BAFA)
             </span>
           </div>

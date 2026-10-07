@@ -55,7 +55,7 @@ export const HomePage: React.FC = () => {
   return (
     <div className="bg-white">
       {/* 1. HERO SECTION (Gemäß Farbvorgaben & Canva-Ausrichtung) */}
-      <section className="relative pt-8 pb-16 lg:pt-14 lg:pb-24 overflow-hidden bg-gradient-to-b from-[#E7F6F2] via-[#EDF8F5] to-white">
+      <section className="relative pt-8 pb-16 lg:pt-14 lg:pb-24 overflow-hidden bg-gradient-to-b from-[#FAFBF2] via-[#FBFCF7] to-white">
         
         {/* SVG ClipPath Definition für die originale Canva-Form des Schnittmodells */}
         <svg width="0" height="0" className="absolute pointer-events-none opacity-0">
@@ -100,14 +100,14 @@ export const HomePage: React.FC = () => {
                   L 1000, 0
                   Z
                 "
-                fill="#2DE054"
+                fill="#BBBE22"
               />
             </svg>
           </div>
 
           {/* 2. Das Haus-Schnittmodell: Unten und rechts bündig verankert mit der originalen Canva-Spitzenform */}
           <div 
-            className="relative w-full h-full max-h-[700px] flex items-end justify-end filter drop-shadow-[0_25px_50px_rgba(27,23,84,0.18)] z-10"
+            className="relative w-full h-full max-h-[700px] flex items-end justify-end filter drop-shadow-[0_25px_50px_rgba(11, 15, 25,0.18)] z-10"
             style={{ clipPath: 'url(#canvaHouseFrameRef)', WebkitClipPath: 'url(#canvaHouseFrameRef)' }}
           >
             <img
@@ -124,21 +124,21 @@ export const HomePage: React.FC = () => {
             
             {/* Massive Bold Headline im Rhythmus des Screenshots: Fokus auf Planungsbüro & Meisterkompetenz */}
             <div className="space-y-1 sm:space-y-2 select-none">
-              <div className="text-5xl sm:text-6xl lg:text-[70px] xl:text-[78px] font-black tracking-tight text-[#1B1754] leading-[0.98]">
+              <div className="text-5xl sm:text-6xl lg:text-[70px] xl:text-[78px] font-black tracking-tight text-[#0B0F19] leading-[0.98]">
                 Planen mit
               </div>
               <div>
-                <span className="inline-block px-5 sm:px-8 py-1.5 sm:py-2 rounded-full bg-[#36E85B] text-[#1B1754] text-5xl sm:text-6xl lg:text-[70px] xl:text-[78px] font-black tracking-tight leading-[0.98] shadow-sm">
+                <span className="inline-block px-5 sm:px-8 py-1.5 sm:py-2 rounded-full bg-[#BBBE22] text-[#0B0F19] text-5xl sm:text-6xl lg:text-[70px] xl:text-[78px] font-black tracking-tight leading-[0.98] shadow-sm">
                   Meister-
                 </span>
               </div>
-              <div className="text-5xl sm:text-6xl lg:text-[70px] xl:text-[78px] font-black tracking-tight text-[#1B1754] leading-[0.98]">
+              <div className="text-5xl sm:text-6xl lg:text-[70px] xl:text-[78px] font-black tracking-tight text-[#0B0F19] leading-[0.98]">
                 Garantie
               </div>
             </div>
 
             {/* Subline-Text: Positionierung als herstellerunabhängiges Planungsbüro & zertifizierte Experten */}
-            <p className="text-base sm:text-lg lg:text-[19px] text-[#242068] font-medium leading-relaxed max-w-xl">
+            <p className="text-base sm:text-lg lg:text-[19px] text-[#141A29] font-medium leading-relaxed max-w-xl">
               Zertifizierte Energieeffizienz-Experten &amp; Ingenieurskompetenz aus Drakenburg. Unabhängige Fachplanung für Wärmepumpen, Photovoltaik, Dämmung und Sanierungskonzepte – herstellerunabhängig und mit <span className="whitespace-nowrap">bis zu 70&nbsp;%</span> staatlicher KfW-Förderung.
             </p>
 
@@ -154,17 +154,17 @@ export const HomePage: React.FC = () => {
                   e.preventDefault();
                   document.getElementById('leistungen')?.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl border border-slate-300/80 border-b-[3.5px] border-b-slate-300 hover:border-b-[#1B1754] bg-white/90 hover:bg-white text-slate-800 hover:text-[#1B1754] font-bold text-sm sm:text-base transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-1 group backdrop-blur-sm self-stretch sm:self-auto whitespace-nowrap"
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl border border-slate-300/80 border-b-[3.5px] border-b-slate-300 hover:border-b-[#0B0F19] bg-white/90 hover:bg-white text-slate-800 hover:text-[#0B0F19] font-bold text-sm sm:text-base transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-1 group backdrop-blur-sm self-stretch sm:self-auto whitespace-nowrap"
               >
                 <span>Zu den Leistungen</span>
-                <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-[#1B1754] group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-[#0B0F19] group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
 
             {/* Mobile-Ansicht des Schnittmodells (unter Text auf Smartphones/Tablets) */}
             <div className="lg:hidden mt-8 w-full max-w-md mx-auto">
               <div 
-                className="relative overflow-hidden filter drop-shadow-[0_20px_40px_rgba(27,23,84,0.18)]"
+                className="relative overflow-hidden filter drop-shadow-[0_20px_40px_rgba(11, 15, 25,0.18)]"
                 style={{ clipPath: 'url(#canvaHouseFrameRef)', WebkitClipPath: 'url(#canvaHouseFrameRef)' }}
               >
                 <img
@@ -190,10 +190,10 @@ export const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14 sm:mb-16 lg:mb-20">
             <div>
-              <span className="inline-block px-3.5 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-widest mb-4 border border-emerald-200/80">
+              <span className="badge-eyebrow mb-4">
                 Gebündelte Kompetenz
               </span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1B1754] tracking-tight leading-[1.15]">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B0F19] tracking-tight leading-[1.15]">
                 Unsere 4 Kernleistungen auf einen Blick
               </h2>
               <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl font-normal">
@@ -203,11 +203,11 @@ export const HomePage: React.FC = () => {
             <div>
               <Link
                 to="/foerdermittel-sanierungscheck"
-                className="inline-flex items-center gap-2 px-4 py-2 sm:px-4.5 sm:py-2.5 rounded-xl bg-emerald-50/80 hover:bg-[#2DE054] text-[#1B1754] font-semibold text-xs sm:text-sm border border-emerald-200/80 hover:border-[#2DE054] border-b-2 border-b-emerald-200 hover:border-b-[#1ba73c] shadow-xs hover:shadow transition-all duration-200 group"
+                className="inline-flex items-center gap-2 px-4 py-2 sm:px-4.5 sm:py-2.5 rounded-xl bg-slate-100 hover:bg-[#BBBE22] text-[#0B0F19] font-semibold text-xs sm:text-sm border border-slate-200/90 hover:border-[#BBBE22] border-b-2 border-b-slate-300 hover:border-b-[#929515] shadow-xs hover:shadow transition-all duration-200 group"
               >
-                <Calculator className="w-3.5 h-3.5 text-emerald-700 group-hover:text-[#1B1754] transition-colors" />
+                <Calculator className="w-3.5 h-3.5 text-[#0B0F19]" />
                 <span>Kostenlosen Fördermittel-Check starten</span>
-                <ArrowRight className="w-3.5 h-3.5 text-emerald-700 group-hover:text-[#1B1754] group-hover:translate-x-1 transition-all" />
+                <ArrowRight className="w-3.5 h-3.5 text-[#0B0F19] group-hover:translate-x-1 transition-all" />
               </Link>
             </div>
           </div>
@@ -216,20 +216,20 @@ export const HomePage: React.FC = () => {
             {/* Leistung 1: Komplettpaket Sanierung */}
             <Link
               to="/komplettpaket-sanierung"
-              className="group bg-slate-50/70 hover:bg-white rounded-3xl p-7 border border-slate-200/80 border-b-[4px] border-b-slate-200 hover:border-b-[#2DE054] shadow-sm hover:shadow-[0_25px_50px_-15px_rgba(27,23,84,0.14)] hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between"
+              className="group bg-slate-50/70 hover:bg-white rounded-3xl p-7 border border-slate-200/80 border-b-[4px] border-b-slate-200 hover:border-b-[#BBBE22] shadow-sm hover:shadow-[0_25px_50px_-15px_rgba(11, 15, 25,0.14)] hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between"
             >
               <div>
-                <div className="w-14 h-14 rounded-2xl bg-white text-[#1B1754] flex items-center justify-center mb-6 shadow-xs border border-slate-200/80 border-b-[3px] border-b-slate-200 group-hover:bg-[#2DE054] group-hover:text-[#1B1754] group-hover:border-[#2DE054] group-hover:border-b-[#1ba73c] group-hover:scale-110 group-hover:shadow-[0_10px_20px_-5px_rgba(45,224,84,0.45)] transition-all duration-300 flex-shrink-0">
+                <div className="w-14 h-14 rounded-2xl bg-slate-100 text-slate-800 flex items-center justify-center mb-6 shadow-xs border border-slate-200/90 group-hover:bg-[#BBBE22] group-hover:text-[#0B0F19] group-hover:border-[#BBBE22] group-hover:scale-110 group-hover:shadow-[0_10px_20px_-5px_rgba(187, 190, 34,0.45)] transition-all duration-300 flex-shrink-0">
                   <FileCheck className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-[#1B1754] mb-2.5 group-hover:text-emerald-700 transition-colors">
+                <h3 className="text-xl font-bold text-[#0B0F19] mb-2.5 transition-colors">
                   Komplettpaket Sanierung
                 </h3>
                 <p className="text-sm text-slate-600 leading-relaxed mb-6 font-normal">
                   Von der Bestandsaufnahme über den iSFP bis zur meisterlichen Fachbauleitung vor Ort. Alles modular aus einer Hand.
                 </p>
               </div>
-              <div className="text-xs font-bold text-emerald-800 group-hover:text-emerald-600 inline-flex items-center gap-1.5 pt-4 border-t border-slate-200/60 w-full text-left">
+              <div className="text-xs font-bold text-slate-800 group-hover:text-[#0B0F19] inline-flex items-center gap-1.5 pt-4 border-t border-slate-200/60 w-full text-left">
                 <span>Ablauf Komplettpaket ansehen</span> <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1.5 transition-transform" />
               </div>
             </Link>
@@ -237,20 +237,20 @@ export const HomePage: React.FC = () => {
             {/* Leistung 2: Fördermittelberatung */}
             <Link
               to="/foerdermittelberatung"
-              className="group bg-slate-50/70 hover:bg-white rounded-3xl p-7 border border-slate-200/80 border-b-[4px] border-b-slate-200 hover:border-b-[#2DE054] shadow-sm hover:shadow-[0_25px_50px_-15px_rgba(27,23,84,0.14)] hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between"
+              className="group bg-slate-50/70 hover:bg-white rounded-3xl p-7 border border-slate-200/80 border-b-[4px] border-b-slate-200 hover:border-b-[#BBBE22] shadow-sm hover:shadow-[0_25px_50px_-15px_rgba(11, 15, 25,0.14)] hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between"
             >
               <div>
-                <div className="w-14 h-14 rounded-2xl bg-white text-[#1B1754] flex items-center justify-center mb-6 shadow-xs border border-slate-200/80 border-b-[3px] border-b-slate-200 group-hover:bg-[#2DE054] group-hover:text-[#1B1754] group-hover:border-[#2DE054] group-hover:border-b-[#1ba73c] group-hover:scale-110 group-hover:shadow-[0_10px_20px_-5px_rgba(45,224,84,0.45)] transition-all duration-300 flex-shrink-0">
+                <div className="w-14 h-14 rounded-2xl bg-slate-100 text-slate-800 flex items-center justify-center mb-6 shadow-xs border border-slate-200/90 group-hover:bg-[#BBBE22] group-hover:text-[#0B0F19] group-hover:border-[#BBBE22] group-hover:scale-110 group-hover:shadow-[0_10px_20px_-5px_rgba(187, 190, 34,0.45)] transition-all duration-300 flex-shrink-0">
                   <Calculator className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-[#1B1754] mb-2.5 group-hover:text-emerald-700 transition-colors">
+                <h3 className="text-xl font-bold text-[#0B0F19] mb-2.5 transition-colors">
                   Fördermittelberatung (KfW / BAFA)
                 </h3>
                 <p className="text-sm text-slate-600 leading-relaxed mb-6 font-normal">
                   Bis zu 70 % Zuschuss und bis zu 21.000 € Barzuschuss. Wir wickeln Ihre Anträge 100 % rechtssicher ab.
                 </p>
               </div>
-              <div className="text-xs font-bold text-emerald-800 group-hover:text-emerald-600 inline-flex items-center gap-1.5 pt-4 border-t border-slate-200/60 w-full text-left">
+              <div className="text-xs font-bold text-slate-800 group-hover:text-[#0B0F19] inline-flex items-center gap-1.5 pt-4 border-t border-slate-200/60 w-full text-left">
                 <span>Details zu Fördersätzen ansehen</span> <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1.5 transition-transform" />
               </div>
             </Link>
@@ -258,20 +258,20 @@ export const HomePage: React.FC = () => {
             {/* Leistung 3: Für Hausverwaltungen */}
             <Link
               to="/fuer-hausverwaltungen"
-              className="group bg-slate-50/70 hover:bg-white rounded-3xl p-7 border border-slate-200/80 border-b-[4px] border-b-slate-200 hover:border-b-[#2DE054] shadow-sm hover:shadow-[0_25px_50px_-15px_rgba(27,23,84,0.14)] hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between"
+              className="group bg-slate-50/70 hover:bg-white rounded-3xl p-7 border border-slate-200/80 border-b-[4px] border-b-slate-200 hover:border-b-[#BBBE22] shadow-sm hover:shadow-[0_25px_50px_-15px_rgba(11, 15, 25,0.14)] hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between"
             >
               <div>
-                <div className="w-14 h-14 rounded-2xl bg-white text-[#1B1754] flex items-center justify-center mb-6 shadow-xs border border-slate-200/80 border-b-[3px] border-b-slate-200 group-hover:bg-[#2DE054] group-hover:text-[#1B1754] group-hover:border-[#2DE054] group-hover:border-b-[#1ba73c] group-hover:scale-110 group-hover:shadow-[0_10px_20px_-5px_rgba(45,224,84,0.45)] transition-all duration-300 flex-shrink-0">
+                <div className="w-14 h-14 rounded-2xl bg-slate-100 text-slate-800 flex items-center justify-center mb-6 shadow-xs border border-slate-200/90 group-hover:bg-[#BBBE22] group-hover:text-[#0B0F19] group-hover:border-[#BBBE22] group-hover:scale-110 group-hover:shadow-[0_10px_20px_-5px_rgba(187, 190, 34,0.45)] transition-all duration-300 flex-shrink-0">
                   <Building2 className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-[#1B1754] mb-2.5 group-hover:text-emerald-700 transition-colors">
+                <h3 className="text-xl font-bold text-[#0B0F19] mb-2.5 transition-colors">
                   Für Hausverwaltungen &amp; WEG
                 </h3>
                 <p className="text-sm text-slate-600 leading-relaxed mb-6 font-normal">
                   Spezialkonzepte für Mehrfamilienhäuser: Beschlussfähige Vorlagen, GEG-Fahrpläne und Begleitung der Versammlung.
                 </p>
               </div>
-              <div className="text-xs font-bold text-emerald-800 group-hover:text-emerald-600 inline-flex items-center gap-1.5 pt-4 border-t border-slate-200/60 w-full text-left">
+              <div className="text-xs font-bold text-slate-800 group-hover:text-[#0B0F19] inline-flex items-center gap-1.5 pt-4 border-t border-slate-200/60 w-full text-left">
                 <span>Lösungen für WEGs ansehen</span> <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1.5 transition-transform" />
               </div>
             </Link>
@@ -279,20 +279,20 @@ export const HomePage: React.FC = () => {
             {/* Leistung 4: TGA-Fachplanung */}
             <Link
               to="/tga-planung"
-              className="group bg-slate-50/70 hover:bg-white rounded-3xl p-7 border border-slate-200/80 border-b-[4px] border-b-slate-200 hover:border-b-[#2DE054] shadow-sm hover:shadow-[0_25px_50px_-15px_rgba(27,23,84,0.14)] hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between"
+              className="group bg-slate-50/70 hover:bg-white rounded-3xl p-7 border border-slate-200/80 border-b-[4px] border-b-slate-200 hover:border-b-[#BBBE22] shadow-sm hover:shadow-[0_25px_50px_-15px_rgba(11, 15, 25,0.14)] hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between"
             >
               <div>
-                <div className="w-14 h-14 rounded-2xl bg-white text-[#1B1754] flex items-center justify-center mb-6 shadow-xs border border-slate-200/80 border-b-[3px] border-b-slate-200 group-hover:bg-[#2DE054] group-hover:text-[#1B1754] group-hover:border-[#2DE054] group-hover:border-b-[#1ba73c] group-hover:scale-110 group-hover:shadow-[0_10px_20px_-5px_rgba(45,224,84,0.45)] transition-all duration-300 flex-shrink-0">
+                <div className="w-14 h-14 rounded-2xl bg-slate-100 text-slate-800 flex items-center justify-center mb-6 shadow-xs border border-slate-200/90 group-hover:bg-[#BBBE22] group-hover:text-[#0B0F19] group-hover:border-[#BBBE22] group-hover:scale-110 group-hover:shadow-[0_10px_20px_-5px_rgba(187, 190, 34,0.45)] transition-all duration-300 flex-shrink-0">
                   <Compass className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold text-[#1B1754] mb-2.5 group-hover:text-emerald-700 transition-colors">
+                <h3 className="text-xl font-bold text-[#0B0F19] mb-2.5 transition-colors">
                   TGA-Planung (HOAI § 56)
                 </h3>
                 <p className="text-sm text-slate-600 leading-relaxed mb-6 font-normal">
                   Raumweise Heizlastberechnung nach DIN EN 12831, Rohrnetzberechnung und hydraulischer Abgleich für Architekten &amp; Bauherren.
                 </p>
               </div>
-              <div className="text-xs font-bold text-emerald-800 group-hover:text-emerald-600 inline-flex items-center gap-1.5 pt-4 border-t border-slate-200/60 w-full text-left">
+              <div className="text-xs font-bold text-slate-800 group-hover:text-[#0B0F19] inline-flex items-center gap-1.5 pt-4 border-t border-slate-200/60 w-full text-left">
                 <span>Details zur TGA-Planung ansehen</span> <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1.5 transition-transform" />
               </div>
             </Link>
@@ -301,17 +301,17 @@ export const HomePage: React.FC = () => {
           {/* Praxisbeweis & Referenzen Hinweis */}
           <div className="mt-12 p-6 sm:p-7 rounded-2xl bg-white/90 border border-slate-200/80 shadow-xs flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3.5 text-center sm:text-left">
-              <div className="w-11 h-11 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center justify-center text-emerald-700 flex-shrink-0 shadow-xs">
-                <Sparkles className="w-5 h-5 text-emerald-600" />
+              <div className="w-11 h-11 rounded-xl bg-slate-100 border border-slate-200/90 flex items-center justify-center text-slate-700 flex-shrink-0 shadow-xs">
+                <Sparkles className="w-5 h-5 text-slate-700" />
               </div>
               <div>
-                <span className="text-xs font-bold text-emerald-800 uppercase tracking-wider block">Praxisbeweis &amp; Erfahrung</span>
-                <span className="font-bold text-[#1B1754] text-sm sm:text-base">Über 350+ erfolgreich geplante und geförderte Sanierungsprojekte</span>
+                <span className="text-xs font-bold text-slate-700 uppercase tracking-wider block">Praxisbeweis &amp; Erfahrung</span>
+                <span className="font-bold text-[#0B0F19] text-sm sm:text-base">Über 350+ erfolgreich geplante und geförderte Sanierungsprojekte</span>
               </div>
             </div>
             <Link
               to="/referenzen"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white hover:bg-[#1B1754] text-[#1B1754] hover:text-white font-bold text-sm border border-slate-200 border-b-[2.5px] border-b-slate-300 hover:border-b-[#110e38] shadow-xs hover:shadow-md transition-all duration-200 flex-shrink-0"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white hover:bg-[#0B0F19] text-[#0B0F19] hover:text-white font-bold text-sm border border-slate-200 border-b-[2.5px] border-b-slate-300 hover:border-b-[#080C14] shadow-xs hover:shadow-md transition-all duration-200 flex-shrink-0"
             >
               <span>Zu den Referenzen</span>
               <ArrowRight className="w-4 h-4" />
@@ -325,14 +325,14 @@ export const HomePage: React.FC = () => {
         <div className="h-px w-full bg-gradient-to-r from-transparent via-slate-300/60 to-transparent" />
       </div>
 
-      {/* 4. WARUM ENERGIE NACH PLAN DIE LOGISCHE ENTSCHEIDUNG IST (Mit verfeinertem, grün schimmerndem Architekturmuster) */}
-      <section className="pt-24 sm:pt-28 pb-0 bg-gradient-to-b from-[#F4F7FB] via-[#F8FCF9] to-[#EEF5F1] relative overflow-hidden">
-        {/* Ganz leicht grün schimmernde Ambient-Auren für Tiefe */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1100px] h-[650px] bg-gradient-to-tr from-emerald-100/50 via-emerald-50/30 to-transparent rounded-full blur-[110px] pointer-events-none" />
-        <div className="absolute -top-24 right-0 w-96 h-96 bg-emerald-200/25 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-24 left-0 w-96 h-96 bg-emerald-100/35 rounded-full blur-3xl pointer-events-none" />
+      {/* 4. WARUM ENERGIE NACH PLAN DIE LOGISCHE ENTSCHEIDUNG IST */}
+      <section className="pt-24 sm:pt-28 pb-0 bg-gradient-to-b from-[#F4F7FB] via-[#F8FAFC] to-[#F1F5F9] relative overflow-hidden">
+        {/* Ganz leicht kühle Ambient-Auren für Tiefe */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1100px] h-[650px] bg-gradient-to-tr from-slate-200/40 via-slate-100/30 to-transparent rounded-full blur-[110px] pointer-events-none" />
+        <div className="absolute -top-24 right-0 w-96 h-96 bg-slate-200/30 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-24 left-0 w-96 h-96 bg-slate-200/25 rounded-full blur-3xl pointer-events-none" />
 
-        {/* Großformatiges, geschwungenes Architektur-Konturmuster mit dezenten smaragdgrünen Wellenlinien – reicht lückenlos bis zur Wellenlinie */}
+        {/* Großformatiges, geschwungenes Architektur-Konturmuster */}
         <div 
           className="absolute inset-0 opacity-[0.75] pointer-events-none [mask-image:linear-gradient(to_bottom,transparent,black_8%,black_100%)]"
           style={{
@@ -345,10 +345,10 @@ export const HomePage: React.FC = () => {
           
           {/* Header der Vergleichs-Sektion */}
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="inline-block px-3.5 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-widest mb-4 border border-emerald-200/80">
+            <span className="badge-eyebrow mb-4">
               Vergleich &amp; Mehrwert
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1B1754] tracking-tight leading-[1.15]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B0F19] tracking-tight leading-[1.15]">
               Warum Energie nach Plan die logische Entscheidung ist
             </h2>
             <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
@@ -363,63 +363,63 @@ export const HomePage: React.FC = () => {
                 <div className="col-span-1 text-slate-700">Kriterium</div>
                 <div className="col-span-1 text-center text-slate-500">Klassischer Energieberater</div>
                 <div className="col-span-1 text-center text-slate-500">Klassischer Heizungsbauer</div>
-                <div className="col-span-1 text-center text-[#1B1754] bg-[#2DE054]/20 py-2.5 px-3 rounded-xl border border-[#2DE054]/50 shadow-sm font-black">
+                <div className="col-span-1 text-center text-[#0B0F19] bg-[#BBBE22]/20 py-2.5 px-3 rounded-xl border border-[#BBBE22]/50 shadow-sm font-black">
                   Energie nach Plan
                 </div>
               </div>
 
               <div className="divide-y divide-slate-100 text-sm">
                 <div className="grid grid-cols-4 gap-6 py-5 items-center hover:bg-slate-50/60 transition-colors rounded-xl px-2">
-                  <div className="col-span-1 font-bold text-[#1B1754]">Echtes Handwerkswissen</div>
+                  <div className="col-span-1 font-bold text-[#0B0F19]">Echtes Handwerkswissen</div>
                   <div className="col-span-1 text-center text-slate-400 flex justify-center"><X className="w-5 h-5 text-rose-500" /></div>
                   <div className="col-span-1 text-center text-slate-700 flex justify-center"><Check className="w-5 h-5 text-slate-700" /></div>
-                  <div className="col-span-1 text-center font-bold text-[#1B1754] flex justify-center">
-                    <span className="w-8 h-8 rounded-full bg-[#2DE054]/20 flex items-center justify-center text-emerald-800">
-                      <Check className="w-5 h-5 text-emerald-700 stroke-[3]" />
+                  <div className="col-span-1 text-center font-bold text-[#0B0F19] flex justify-center">
+                    <span className="w-8 h-8 rounded-full bg-slate-100 border border-slate-200/90 flex items-center justify-center text-slate-800 shadow-xs">
+                      <Check className="w-4 h-4 text-slate-800 stroke-[3]" />
                     </span>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-4 gap-6 py-5 items-center hover:bg-slate-50/60 transition-colors rounded-xl px-2">
-                  <div className="col-span-1 font-bold text-[#1B1754]">100 % Herstellerunabhängigkeit</div>
+                  <div className="col-span-1 font-bold text-[#0B0F19]">100 % Herstellerunabhängigkeit</div>
                   <div className="col-span-1 text-center text-slate-700 flex justify-center"><Check className="w-5 h-5 text-slate-700" /></div>
                   <div className="col-span-1 text-center text-slate-400 flex justify-center"><X className="w-5 h-5 text-rose-500" /></div>
-                  <div className="col-span-1 text-center font-bold text-[#1B1754] flex justify-center">
-                    <span className="w-8 h-8 rounded-full bg-[#2DE054]/20 flex items-center justify-center text-emerald-800">
-                      <Check className="w-5 h-5 text-emerald-700 stroke-[3]" />
+                  <div className="col-span-1 text-center font-bold text-[#0B0F19] flex justify-center">
+                    <span className="w-8 h-8 rounded-full bg-slate-100 border border-slate-200/90 flex items-center justify-center text-slate-800 shadow-xs">
+                      <Check className="w-4 h-4 text-slate-800 stroke-[3]" />
                     </span>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-4 gap-6 py-5 items-center hover:bg-slate-50/60 transition-colors rounded-xl px-2">
-                  <div className="col-span-1 font-bold text-[#1B1754]">KfW- &amp; BAFA-Förderservice (iSFP)</div>
+                  <div className="col-span-1 font-bold text-[#0B0F19]">KfW- &amp; BAFA-Förderservice (iSFP)</div>
                   <div className="col-span-1 text-center text-slate-700 flex justify-center"><Check className="w-5 h-5 text-slate-700" /></div>
                   <div className="col-span-1 text-center text-slate-400 flex justify-center"><X className="w-5 h-5 text-rose-500" /></div>
-                  <div className="col-span-1 text-center font-bold text-[#1B1754] flex justify-center">
-                    <span className="w-8 h-8 rounded-full bg-[#2DE054]/20 flex items-center justify-center text-emerald-800">
-                      <Check className="w-5 h-5 text-emerald-700 stroke-[3]" />
+                  <div className="col-span-1 text-center font-bold text-[#0B0F19] flex justify-center">
+                    <span className="w-8 h-8 rounded-full bg-slate-100 border border-slate-200/90 flex items-center justify-center text-slate-800 shadow-xs">
+                      <Check className="w-4 h-4 text-slate-800 stroke-[3]" />
                     </span>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-4 gap-6 py-5 items-center hover:bg-slate-50/60 transition-colors rounded-xl px-2">
-                  <div className="col-span-1 font-bold text-[#1B1754]">Raumweise Heizlastberechnung DIN 12831</div>
+                  <div className="col-span-1 font-bold text-[#0B0F19]">Raumweise Heizlastberechnung DIN 12831</div>
                   <div className="col-span-1 text-center text-slate-400 flex justify-center"><X className="w-5 h-5 text-rose-500" /></div>
                   <div className="col-span-1 text-center text-slate-500 flex justify-center text-xs">Oft nur Daumenwert</div>
-                  <div className="col-span-1 text-center font-bold text-[#1B1754] flex justify-center">
-                    <span className="w-8 h-8 rounded-full bg-[#2DE054]/20 flex items-center justify-center text-emerald-800">
-                      <Check className="w-5 h-5 text-emerald-700 stroke-[3]" />
+                  <div className="col-span-1 text-center font-bold text-[#0B0F19] flex justify-center">
+                    <span className="w-8 h-8 rounded-full bg-slate-100 border border-slate-200/90 flex items-center justify-center text-slate-800 shadow-xs">
+                      <Check className="w-4 h-4 text-slate-800 stroke-[3]" />
                     </span>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-4 gap-6 py-5 items-center hover:bg-slate-50/60 transition-colors rounded-xl px-2">
-                  <div className="col-span-1 font-bold text-[#1B1754]">Fachbauleitung &amp; Abnahmekontrolle</div>
+                  <div className="col-span-1 font-bold text-[#0B0F19]">Fachbauleitung &amp; Abnahmekontrolle</div>
                   <div className="col-span-1 text-center text-slate-400 flex justify-center"><X className="w-5 h-5 text-rose-500" /></div>
                   <div className="col-span-1 text-center text-slate-500 flex justify-center text-xs">Nur Eigenkontrolle</div>
-                  <div className="col-span-1 text-center font-bold text-[#1B1754] flex justify-center">
-                    <span className="w-8 h-8 rounded-full bg-[#2DE054]/20 flex items-center justify-center text-emerald-800">
-                      <Check className="w-5 h-5 text-emerald-700 stroke-[3]" />
+                  <div className="col-span-1 text-center font-bold text-[#0B0F19] flex justify-center">
+                    <span className="w-8 h-8 rounded-full bg-slate-100 border border-slate-200/90 flex items-center justify-center text-slate-800 shadow-xs">
+                      <Check className="w-4 h-4 text-slate-800 stroke-[3]" />
                     </span>
                   </div>
                 </div>
@@ -436,7 +436,7 @@ export const HomePage: React.FC = () => {
       <section className="pt-20 sm:pt-24 pb-20 bg-gradient-to-b from-[#EFF2F8] via-white to-[#F0F3F9] relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-14 sm:mb-16 lg:mb-20">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1B1754] tracking-tight leading-[1.15]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B0F19] tracking-tight leading-[1.15]">
               Zwischen GEG, Förderdschungel und Handwerkermangel: Die 3 teuersten Sanierungsfallen
             </h2>
             <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
@@ -448,7 +448,7 @@ export const HomePage: React.FC = () => {
           <div className="space-y-10 sm:space-y-14">
             
             {/* Problem 01 */}
-            <div className="group bg-slate-50/60 hover:bg-white rounded-3xl border border-slate-200/90 border-b-[4px] border-b-slate-200 hover:border-b-rose-500 shadow-sm hover:shadow-[0_25px_50px_-15px_rgba(27,23,84,0.12)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col lg:flex-row items-stretch overflow-hidden">
+            <div className="group bg-slate-50/60 hover:bg-white rounded-3xl border border-slate-200/90 border-b-[4px] border-b-slate-200 hover:border-b-rose-500 shadow-sm hover:shadow-[0_25px_50px_-15px_rgba(11, 15, 25,0.12)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col lg:flex-row items-stretch overflow-hidden">
               <div className="w-full lg:w-5/12 min-h-[260px] sm:min-h-[300px] lg:min-h-[340px] relative overflow-hidden bg-slate-100 flex-shrink-0">
                 <img
                   src={ASSETS.trapHeatingAltbau}
@@ -461,22 +461,24 @@ export const HomePage: React.FC = () => {
                   <span className="text-xs font-black uppercase tracking-wider text-rose-600 block mb-2">
                     Gefahr Nr. 1: Fehlplanung
                   </span>
-                  <h3 className="text-2xl sm:text-3xl font-black text-[#1B1754] mb-4 leading-snug">
+                  <h3 className="text-2xl sm:text-3xl font-black text-[#0B0F19] mb-4 leading-snug">
                     Die Wärmepumpen-Panik im Altbau
                   </h3>
                   <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal mb-6">
                     <em>„Funktioniert das bei mir ohne Fußbodenheizung?“</em> — Ohne präzise Vor-Ort-Messung der Vorlauftemperatur und raumweise Heizlastberechnung drohen überdimensionierte Anlagen und explodierende Stromkosten im Winter.
                   </p>
                 </div>
-                <div className="p-4 sm:p-5 rounded-2xl bg-emerald-50/90 border border-emerald-200/80 flex items-center gap-3.5 text-emerald-950 font-bold text-sm sm:text-base">
-                  <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+                <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-br from-[#FAFBF2] via-[#FBFCF7] to-[#F4F7ED] border border-[#BBBE22]/40 flex items-center gap-3.5 text-[#0B0F19] font-bold text-sm sm:text-base shadow-xs">
+                  <div className="w-7 h-7 rounded-full bg-gradient-to-r from-[#BBBE22] to-[#f6e21c] text-[#0B0F19] flex items-center justify-center flex-shrink-0 shadow-xs">
+                    <Check className="w-4 h-4 stroke-[3]" />
+                  </div>
                   <span>Die Meister-Lösung: Verbindlicher Eignungs-Check &amp; reale Heizlastberechnung nach DIN 12831</span>
                 </div>
               </div>
             </div>
 
             {/* Problem 02 (Alternierendes Layout für maximale Ruhe) */}
-            <div className="group bg-slate-50/60 hover:bg-white rounded-3xl border border-slate-200/90 border-b-[4px] border-b-slate-200 hover:border-b-amber-500 shadow-sm hover:shadow-[0_25px_50px_-15px_rgba(27,23,84,0.12)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col lg:flex-row-reverse items-stretch overflow-hidden">
+            <div className="group bg-slate-50/60 hover:bg-white rounded-3xl border border-slate-200/90 border-b-[4px] border-b-slate-200 hover:border-b-amber-500 shadow-sm hover:shadow-[0_25px_50px_-15px_rgba(11, 15, 25,0.12)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col lg:flex-row-reverse items-stretch overflow-hidden">
               <div className="w-full lg:w-5/12 min-h-[260px] sm:min-h-[300px] lg:min-h-[340px] relative overflow-hidden bg-slate-100 flex-shrink-0">
                 <img
                   src={ASSETS.trapFundingBureaucracy}
@@ -489,22 +491,24 @@ export const HomePage: React.FC = () => {
                   <span className="text-xs font-black uppercase tracking-wider text-amber-600 block mb-2">
                     Gefahr Nr. 2: Frist- &amp; Formfehler
                   </span>
-                  <h3 className="text-2xl sm:text-3xl font-black text-[#1B1754] mb-4 leading-snug">
+                  <h3 className="text-2xl sm:text-3xl font-black text-[#0B0F19] mb-4 leading-snug">
                     Verschenkte Fördermittel &amp; Fristfehler
                   </h3>
                   <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal mb-6">
                     Ein falscher Satz im Handwerkerangebot oder ein Antrag nach Auftragsvergabe: Schon sind bis zu <strong>21.000 € Zuschuss</strong> für immer verloren. Ohne individuellen Sanierungsfahrplan (iSFP) entfällt zudem der staatliche 5 % Extrabonus.
                   </p>
                 </div>
-                <div className="p-4 sm:p-5 rounded-2xl bg-emerald-50/90 border border-emerald-200/80 flex items-center gap-3.5 text-emerald-950 font-bold text-sm sm:text-base">
-                  <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+                <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-br from-[#FAFBF2] via-[#FBFCF7] to-[#F4F7ED] border border-[#BBBE22]/40 flex items-center gap-3.5 text-[#0B0F19] font-bold text-sm sm:text-base shadow-xs">
+                  <div className="w-7 h-7 rounded-full bg-gradient-to-r from-[#BBBE22] to-[#f6e21c] text-[#0B0F19] flex items-center justify-center flex-shrink-0 shadow-xs">
+                    <Check className="w-4 h-4 stroke-[3]" />
+                  </div>
                   <span>Die Meister-Lösung: Rechtssicherer KfW/BAFA Full-Service mit maximaler Zuschuss-Garantie</span>
                 </div>
               </div>
             </div>
 
             {/* Problem 03 */}
-            <div className="group bg-slate-50/60 hover:bg-white rounded-3xl border border-slate-200/90 border-b-[4px] border-b-slate-200 hover:border-b-[#1B1754] shadow-sm hover:shadow-[0_25px_50px_-15px_rgba(27,23,84,0.12)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col lg:flex-row items-stretch overflow-hidden">
+            <div className="group bg-slate-50/60 hover:bg-white rounded-3xl border border-slate-200/90 border-b-[4px] border-b-slate-200 hover:border-b-[#0B0F19] shadow-sm hover:shadow-[0_25px_50px_-15px_rgba(11, 15, 25,0.12)] hover:-translate-y-1.5 transition-all duration-300 flex flex-col lg:flex-row items-stretch overflow-hidden">
               <div className="w-full lg:w-5/12 min-h-[260px] sm:min-h-[300px] lg:min-h-[340px] relative overflow-hidden bg-slate-100 flex-shrink-0">
                 <img
                   src={ASSETS.trapSalesPressure}
@@ -514,18 +518,20 @@ export const HomePage: React.FC = () => {
               </div>
               <div className="w-full lg:w-7/12 p-8 sm:p-10 lg:p-12 flex flex-col justify-between">
                 <div>
-                  <span className="text-xs font-black uppercase tracking-wider text-[#1B1754] block mb-2">
+                  <span className="text-xs font-black uppercase tracking-wider text-[#0B0F19] block mb-2">
                     Gefahr Nr. 3: Markenbindung
                   </span>
-                  <h3 className="text-2xl sm:text-3xl font-black text-[#1B1754] mb-4 leading-snug">
+                  <h3 className="text-2xl sm:text-3xl font-black text-[#0B0F19] mb-4 leading-snug">
                     Der Verkaufsdruck klassischer Betriebe
                   </h3>
                   <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal mb-6">
                     Klassische Betriebe verkaufen oft nur das Fabrikat, auf das sie die beste Einkaufsmarge erhalten. Niemand prüft unabhängig, ob das System für die spezifische Gebäudegeometrie und Ihr Verbrauchsverhalten optimal dimensioniert ist.
                   </p>
                 </div>
-                <div className="p-4 sm:p-5 rounded-2xl bg-emerald-50/90 border border-emerald-200/80 flex items-center gap-3.5 text-emerald-950 font-bold text-sm sm:text-base">
-                  <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+                <div className="p-4 sm:p-5 rounded-2xl bg-gradient-to-br from-[#FAFBF2] via-[#FBFCF7] to-[#F4F7ED] border border-[#BBBE22]/40 flex items-center gap-3.5 text-[#0B0F19] font-bold text-sm sm:text-base shadow-xs">
+                  <div className="w-7 h-7 rounded-full bg-gradient-to-r from-[#BBBE22] to-[#f6e21c] text-[#0B0F19] flex items-center justify-center flex-shrink-0 shadow-xs">
+                    <Check className="w-4 h-4 stroke-[3]" />
+                  </div>
                   <span>Die Meister-Lösung: 100 % herstellerunabhängige Fachplanung &amp; herstellerneutrale Leistungsverzeichnisse</span>
                 </div>
               </div>
@@ -545,10 +551,10 @@ export const HomePage: React.FC = () => {
       <section className="py-28 lg:py-36 bg-gradient-to-b from-[#FAFBFC] via-white to-[#F1F4FA] relative" id="ueber-uns-preview">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-20 lg:mb-24">
-            <span className="inline-block px-3.5 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-widest mb-4 border border-emerald-200/80">
+            <span className="badge-eyebrow mb-4">
               Inhabergeführt &amp; Unabhängig
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1B1754] tracking-tight leading-[1.15]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B0F19] tracking-tight leading-[1.15]">
               Wir sind keine Theoretiker. Wir sind Praktiker mit Meisterbrief.
             </h2>
             <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
@@ -572,29 +578,29 @@ export const HomePage: React.FC = () => {
               {/* Redaktionelle Angaben & Zitat - ohne Kachel-Box */}
               <div className="space-y-4 pt-2">
                 <div>
-                  <h3 className="text-3xl sm:text-4xl font-black text-[#1B1754] tracking-tight">
+                  <h3 className="text-3xl sm:text-4xl font-black text-[#0B0F19] tracking-tight">
                     Nico Heidemann
                   </h3>
-                  <p className="text-sm font-bold text-emerald-700 uppercase tracking-wide mt-1">
+                  <p className="text-sm font-bold text-slate-700 uppercase tracking-wide mt-1">
                     Geschäftsführer &amp; HWK-Heizungsbaumeister
                   </p>
                 </div>
 
-                <blockquote className="text-base sm:text-lg text-slate-700 font-medium italic border-l-2 border-[#2DE054] pl-4 py-1 leading-relaxed">
+                <blockquote className="text-base sm:text-lg text-slate-700 font-medium italic border-l-2 border-[#BBBE22] pl-4 py-1 leading-relaxed">
                   „Ein Sanierungsfahrplan darf kein starres Bürokratie-Dokument sein. Er muss auf der Baustelle funktionieren und Ihnen bares Geld sparen.“
                 </blockquote>
 
                 <div className="space-y-2.5 text-sm text-slate-600 pt-2">
                   <div className="flex items-center gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0" />
                     <span><strong>Heizungsbaumeister HWK</strong> seit 2008 (Handwerkskammer Hannover)</span>
                   </div>
                   <div className="flex items-center gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0" />
                     <span><strong>Gebäudeenergieberater HWK</strong> (Zertifiziert nach DIN V 18599)</span>
                   </div>
                   <div className="flex items-center gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0" />
                     <span><strong>dena-Energieeffizienz-Expertenliste</strong> für Bundesförderprogramme</span>
                   </div>
                 </div>
@@ -603,10 +609,10 @@ export const HomePage: React.FC = () => {
                   <button
                     type="button"
                     onClick={() => openModal()}
-                    className="inline-flex items-center gap-2 text-sm font-bold text-[#1B1754] hover:text-emerald-700 transition-colors group"
+                    className="inline-flex items-center gap-2 text-sm font-bold text-[#0B0F19] hover:text-slate-700 transition-colors group"
                   >
                     <span>Erstgespräch mit Nico anfragen</span>
-                    <ArrowRight className="w-4 h-4 text-emerald-600 group-hover:translate-x-1.5 transition-transform" />
+                    <ArrowRight className="w-4 h-4 text-slate-700 group-hover:translate-x-1.5 transition-transform" />
                   </button>
                 </div>
               </div>
@@ -626,29 +632,29 @@ export const HomePage: React.FC = () => {
               {/* Redaktionelle Angaben & Zitat - ohne Kachel-Box */}
               <div className="space-y-4 pt-2">
                 <div>
-                  <h3 className="text-3xl sm:text-4xl font-black text-[#1B1754] tracking-tight">
+                  <h3 className="text-3xl sm:text-4xl font-black text-[#0B0F19] tracking-tight">
                     Jan Osmer
                   </h3>
-                  <p className="text-sm font-bold text-emerald-700 uppercase tracking-wide mt-1">
+                  <p className="text-sm font-bold text-slate-700 uppercase tracking-wide mt-1">
                     Geschäftsführer &amp; HWK-Heizungsbaumeister
                   </p>
                 </div>
 
-                <blockquote className="text-base sm:text-lg text-slate-700 font-medium italic border-l-2 border-[#2DE054] pl-4 py-1 leading-relaxed">
+                <blockquote className="text-base sm:text-lg text-slate-700 font-medium italic border-l-2 border-[#BBBE22] pl-4 py-1 leading-relaxed">
                   „Wir verkaufen keine Geräte auf Hersteller-Provision. Wir prüfen neutral, was technisch und wirtschaftlich wirklich Sinn ergibt.“
                 </blockquote>
 
                 <div className="space-y-2.5 text-sm text-slate-600 pt-2">
                   <div className="flex items-center gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0" />
                     <span><strong>Heizungsbaumeister HWK</strong> seit 2015 (Handwerkskammer Hannover)</span>
                   </div>
                   <div className="flex items-center gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0" />
                     <span><strong>Gebäudeenergieberater HWK</strong> seit 2019</span>
                   </div>
                   <div className="flex items-center gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0" />
                     <span><strong>dena-Energieeffizienz-Expertenliste</strong> (Zugelassen für KfW &amp; BAFA)</span>
                   </div>
                 </div>
@@ -657,10 +663,10 @@ export const HomePage: React.FC = () => {
                   <button
                     type="button"
                     onClick={() => openModal()}
-                    className="inline-flex items-center gap-2 text-sm font-bold text-[#1B1754] hover:text-emerald-700 transition-colors group"
+                    className="inline-flex items-center gap-2 text-sm font-bold text-[#0B0F19] hover:text-slate-700 transition-colors group"
                   >
                     <span>Erstgespräch mit Jan anfragen</span>
-                    <ArrowRight className="w-4 h-4 text-emerald-600 group-hover:translate-x-1.5 transition-transform" />
+                    <ArrowRight className="w-4 h-4 text-slate-700 group-hover:translate-x-1.5 transition-transform" />
                   </button>
                 </div>
               </div>
@@ -690,7 +696,7 @@ export const HomePage: React.FC = () => {
               <span className="text-xs font-semibold text-slate-600">Verifizierte Google-Rezensionen</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1B1754] tracking-tight leading-[1.15]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B0F19] tracking-tight leading-[1.15]">
               Echte Kundenstimmen aus der Praxis
             </h2>
             <p className="mt-4 text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
@@ -716,7 +722,7 @@ export const HomePage: React.FC = () => {
               </div>
               <div className="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
                 <div>
-                  <div className="text-sm font-bold text-[#1B1754]">Dr. Michael B.</div>
+                  <div className="text-sm font-bold text-[#0B0F19]">Dr. Michael B.</div>
                   <div className="text-xs text-slate-500 font-medium">Einfamilienhaus · KfW 458 Förderung</div>
                 </div>
                 <div className="w-7 h-7 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center p-1.5 flex-shrink-0" title="Verifizierte Google-Rezension">
@@ -745,7 +751,7 @@ export const HomePage: React.FC = () => {
               </div>
               <div className="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
                 <div>
-                  <div className="text-sm font-bold text-[#1B1754]">Sabine W.</div>
+                  <div className="text-sm font-bold text-[#0B0F19]">Sabine W.</div>
                   <div className="text-xs text-slate-500 font-medium">WEG-Verwaltung · Sanierungsfahrplan (iSFP)</div>
                 </div>
                 <div className="w-7 h-7 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center p-1.5 flex-shrink-0" title="Verifizierte Google-Rezension">
@@ -774,7 +780,7 @@ export const HomePage: React.FC = () => {
               </div>
               <div className="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
                 <div>
-                  <div className="text-sm font-bold text-[#1B1754]">Dipl.-Ing. Thomas K.</div>
+                  <div className="text-sm font-bold text-[#0B0F19]">Dipl.-Ing. Thomas K.</div>
                   <div className="text-xs text-slate-500 font-medium">Architekturbüro · TGA-Fachplanung HOAI</div>
                 </div>
                 <div className="w-7 h-7 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center p-1.5 flex-shrink-0" title="Verifizierte Google-Rezension">
@@ -796,7 +802,7 @@ export const HomePage: React.FC = () => {
               href={COMPANY_INFO.googleReviewUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-white hover:bg-slate-50 text-[#1B1754] font-bold text-sm sm:text-base border border-slate-300/90 border-b-[3.5px] border-b-slate-300 hover:border-b-[#1B1754] shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-1 transition-all group"
+              className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-white hover:bg-slate-50 text-[#0B0F19] font-bold text-sm sm:text-base border border-slate-300/90 border-b-[3.5px] border-b-slate-300 hover:border-b-[#0B0F19] shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-1 transition-all group"
             >
               <div className="w-6 h-6 rounded-lg bg-white flex items-center justify-center p-0.5 flex-shrink-0">
                 <svg className="w-5 h-5" viewBox="0 0 24 24">
@@ -807,7 +813,7 @@ export const HomePage: React.FC = () => {
                 </svg>
               </div>
               <span>Jetzt eigene Google-Bewertung schreiben</span>
-              <ArrowRight className="w-4 h-4 text-emerald-600 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-4 h-4 text-slate-700 group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
 
@@ -823,10 +829,10 @@ export const HomePage: React.FC = () => {
       <section className="pt-24 pb-28 bg-gradient-to-b from-[#F1F4FA] via-white to-[#EEF2F9] relative">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="inline-block px-3.5 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-widest mb-4 border border-emerald-200/80">
+            <span className="badge-eyebrow mb-4">
               Transparente Antworten
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1B1754] tracking-tight leading-[1.15]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B0F19] tracking-tight leading-[1.15]">
               Häufig gestellte Fragen (FAQ)
             </h2>
           </div>
@@ -839,8 +845,8 @@ export const HomePage: React.FC = () => {
                   key={idx}
                   className={`rounded-2xl border transition-all duration-300 overflow-hidden ${
                     isOpen 
-                      ? 'border-emerald-300 bg-white shadow-md border-b-[4px] border-b-[#2DE054]' 
-                      : 'border-slate-200/90 bg-slate-50/60 hover:bg-white hover:border-slate-300 shadow-xs border-b-[3.5px] border-b-slate-200 hover:border-b-[#1B1754] hover:-translate-y-0.5'
+                      ? 'border-slate-300 bg-white shadow-md border-b-[4px] border-b-[#BBBE22]' 
+                      : 'border-slate-200/90 bg-slate-50/60 hover:bg-white hover:border-slate-300 shadow-xs border-b-[3.5px] border-b-slate-200 hover:border-b-[#0B0F19] hover:-translate-y-0.5'
                   }`}
                 >
                   <button
@@ -850,16 +856,16 @@ export const HomePage: React.FC = () => {
                   >
                     <div className="flex items-center gap-3.5 sm:gap-4">
                       <div className={`w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 transition-colors ${
-                        isOpen ? 'bg-[#2DE054] text-[#1B1754]' : 'bg-emerald-50 text-emerald-700'
+                        isOpen ? 'bg-[#BBBE22] text-[#0B0F19]' : 'bg-slate-100 text-slate-700'
                       }`}>
                         <HelpCircle className="w-5 h-5" />
                       </div>
-                      <h3 className="text-base sm:text-lg font-black text-[#1B1754] tracking-tight">
+                      <h3 className="text-base sm:text-lg font-black text-[#0B0F19] tracking-tight">
                         {faq.q}
                       </h3>
                     </div>
                     <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-transform duration-300 ${
-                      isOpen ? 'rotate-180 bg-emerald-50 text-emerald-700' : 'text-slate-400'
+                      isOpen ? 'rotate-180 bg-slate-100 text-slate-700' : 'text-slate-400'
                     }`}>
                       <ChevronDown className="w-5 h-5" />
                     </div>

@@ -50,13 +50,13 @@ export const PropertyManagersPage: React.FC = () => {
   return (
     <div className="bg-white">
       {/* 1. HERO SECTION */}
-      <section className="relative pt-12 pb-20 lg:pt-16 lg:pb-28 overflow-hidden bg-gradient-to-b from-[#E7F6F2] via-[#EDF8F5] to-white">
+      <section className="relative pt-12 pb-20 lg:pt-16 lg:pb-28 overflow-hidden bg-gradient-to-b from-[#FAFBF2] via-[#FBFCF7] to-white">
         <div 
           className="absolute inset-0 opacity-[0.035] pointer-events-none [mask-image:linear-gradient(to_bottom,transparent,black_15%,black_85%,transparent)]"
           style={{
             backgroundImage: `
-              linear-gradient(to right, #1B1754 1px, transparent 1px),
-              linear-gradient(to bottom, #1B1754 1px, transparent 1px)
+              linear-gradient(to right, #0B0F19 1px, transparent 1px),
+              linear-gradient(to bottom, #0B0F19 1px, transparent 1px)
             `,
             backgroundSize: '40px 40px'
           }}
@@ -70,12 +70,12 @@ export const PropertyManagersPage: React.FC = () => {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
           <div className="lg:w-[50%] xl:w-[48%] space-y-6">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 border border-emerald-200/80 text-emerald-800 text-xs font-bold tracking-wide shadow-xs">
-              <Building2 className="w-4 h-4 text-emerald-600" />
+            <div className="badge-eyebrow">
+              <Building2 className="w-4 h-4 text-slate-700" />
               <span>Spezialisiert auf WEGs ab 3 bis 50+ Einheiten</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#1B1754] tracking-tight leading-[1.1]">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#0B0F19] tracking-tight leading-[1.1]">
               Energetische Sanierung für WEGs: Beschlussfähig, neutral und rechtssicher.
             </h1>
 
@@ -87,7 +87,7 @@ export const PropertyManagersPage: React.FC = () => {
               <button
                 type="button"
                 onClick={() => openModal()}
-                className="inline-flex items-center justify-center gap-3 px-8 py-5 rounded-2xl bg-[#2DE054] hover:bg-[#25ca4a] text-[#1B1754] font-black text-base sm:text-lg transition-all duration-200 shadow-xl hover:shadow-[0_20px_35px_-5px_rgba(45,224,84,0.4)] hover:-translate-y-1 active:translate-y-0.5 border-b-[4px] border-b-[#1b9e38]"
+                className="inline-flex items-center justify-center gap-3 px-8 py-5 rounded-2xl bg-gradient-to-r from-[#BBBE22] to-[#f6e21c] hover:from-[#A8AB1A] hover:to-[#ebd615] text-[#0B0F19] font-black text-base sm:text-lg transition-all duration-200 shadow-xl hover:shadow-[0_20px_35px_-5px_rgba(187, 190, 34,0.4)] hover:-translate-y-1 active:translate-y-0.5 border-b-[4px] border-b-[#929515]"
               >
                 <span>WEG-Erstberatung anfragen</span>
                 <ArrowRight className="w-5 h-5" />
@@ -95,9 +95,9 @@ export const PropertyManagersPage: React.FC = () => {
 
               <a
                 href={`tel:${COMPANY_INFO.phoneClean}`}
-                className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl border border-slate-300/80 border-b-[3.5px] border-b-slate-300 hover:border-b-[#1B1754] bg-white/90 hover:bg-white text-slate-800 hover:text-[#1B1754] font-bold text-sm sm:text-base transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-1 group backdrop-blur-sm"
+                className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl border border-slate-300/80 border-b-[3.5px] border-b-slate-300 hover:border-b-[#0B0F19] bg-white/90 hover:bg-white text-slate-800 hover:text-[#0B0F19] font-bold text-sm sm:text-base transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-1 group backdrop-blur-sm"
               >
-                <Phone className="w-4 h-4 text-emerald-600" />
+                <Phone className="w-4 h-4 text-slate-700" />
                 <span>Verwalter-Hotline: {COMPANY_INFO.phone}</span>
               </a>
             </div>
@@ -134,10 +134,10 @@ export const PropertyManagersPage: React.FC = () => {
       <section className="py-24 lg:py-32 bg-gradient-to-b from-[#F4F6FB] via-[#F8FAFC] to-[#EFF2F8] relative" id="saeulen">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
-            <span className="inline-block px-3.5 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-widest mb-4 border border-emerald-200/80">
+            <span className="badge-eyebrow mb-4">
               Lückenlose Verwalter-Entlastung
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1B1754] tracking-tight leading-[1.15]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B0F19] tracking-tight leading-[1.15]">
               Vier Schritte zum erfolgreichen WEG-Beschluss
             </h2>
             <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
@@ -148,7 +148,7 @@ export const PropertyManagersPage: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {/* Säule 1 */}
             <div className="bg-white rounded-3xl p-8 sm:p-10 border border-slate-200/90 shadow-sm border-b-[4px] border-b-slate-200 space-y-4 hover:-translate-y-1 transition-transform">
-              <h3 className="text-2xl font-black text-[#1B1754]">
+              <h3 className="text-2xl font-black text-[#0B0F19]">
                 Technische &amp; wirtschaftliche Vorprüfung
               </h3>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
@@ -156,11 +156,11 @@ export const PropertyManagersPage: React.FC = () => {
               </p>
               <div className="pt-2 space-y-2 text-xs sm:text-sm text-slate-700">
                 <div className="flex items-center gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0" />
                   <span>Raumweise Heizlastberechnung nach DIN EN 12831</span>
                 </div>
                 <div className="flex items-center gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0" />
                   <span>Vergleich von Investitions- &amp; Folgebetriebskosten</span>
                 </div>
               </div>
@@ -168,7 +168,7 @@ export const PropertyManagersPage: React.FC = () => {
 
             {/* Säule 2 */}
             <div className="bg-white rounded-3xl p-8 sm:p-10 border border-slate-200/90 shadow-sm border-b-[4px] border-b-slate-200 space-y-4 hover:-translate-y-1 transition-transform">
-              <h3 className="text-2xl font-black text-[#1B1754]">
+              <h3 className="text-2xl font-black text-[#0B0F19]">
                 Beschlussfähige Vorlagen für die ETV
               </h3>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
@@ -176,11 +176,11 @@ export const PropertyManagersPage: React.FC = () => {
               </p>
               <div className="pt-2 space-y-2 text-xs sm:text-sm text-slate-700">
                 <div className="flex items-center gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0" />
                   <span>Formulierte Tagesordnungspunkte (TOPs)</span>
                 </div>
                 <div className="flex items-center gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0" />
                   <span>Transparente MEA-Kostenaufteilung für Eigentümer</span>
                 </div>
               </div>
@@ -188,7 +188,7 @@ export const PropertyManagersPage: React.FC = () => {
 
             {/* Säule 3 */}
             <div className="bg-white rounded-3xl p-8 sm:p-10 border border-slate-200/90 shadow-sm border-b-[4px] border-b-slate-200 space-y-4 hover:-translate-y-1 transition-transform">
-              <h3 className="text-2xl font-black text-[#1B1754]">
+              <h3 className="text-2xl font-black text-[#0B0F19]">
                 Meister-Präsentation auf Ihrer ETV
               </h3>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
@@ -196,11 +196,11 @@ export const PropertyManagersPage: React.FC = () => {
               </p>
               <div className="pt-2 space-y-2 text-xs sm:text-sm text-slate-700">
                 <div className="flex items-center gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0" />
                   <span>Bis zu 500 € BAFA-Zuschuss für die ETV-Präsentation</span>
                 </div>
                 <div className="flex items-center gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0" />
                   <span>Hohe Zustimmungsquoten durch meisterliche Autorität</span>
                 </div>
               </div>
@@ -208,7 +208,7 @@ export const PropertyManagersPage: React.FC = () => {
 
             {/* Säule 4 */}
             <div className="bg-white rounded-3xl p-8 sm:p-10 border border-slate-200/90 shadow-sm border-b-[4px] border-b-slate-200 space-y-4 hover:-translate-y-1 transition-transform">
-              <h3 className="text-2xl font-black text-[#1B1754]">
+              <h3 className="text-2xl font-black text-[#0B0F19]">
                 KfW-Mehrparteien-Förderung &amp; Abnahme
               </h3>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
@@ -216,11 +216,11 @@ export const PropertyManagersPage: React.FC = () => {
               </p>
               <div className="pt-2 space-y-2 text-xs sm:text-sm text-slate-700">
                 <div className="flex items-center gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0" />
                   <span>Maximale KfW-Staffelung pro Wohneinheit gesichert</span>
                 </div>
                 <div className="flex items-center gap-2.5">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                  <CheckCircle2 className="w-4 h-4 text-slate-700 flex-shrink-0" />
                   <span>Haftungssichere Bestätigung nach Durchführung (BnD)</span>
                 </div>
               </div>
@@ -228,11 +228,11 @@ export const PropertyManagersPage: React.FC = () => {
           </div>
 
           {/* Spezifische Hausverwaltungs Call-to-Action Box */}
-          <div className="mt-14 p-8 sm:p-11 rounded-3xl bg-gradient-to-br from-[#1B1754] via-[#1F1A60] to-[#140F3E] text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-8 border border-white/10 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-80 h-80 bg-[#2DE054]/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="mt-14 p-8 sm:p-11 rounded-3xl bg-gradient-to-br from-[#0B0F19] via-[#111625] to-[#0B0F19] text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-8 border border-white/10 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-80 h-80 bg-[#BBBE22]/10 rounded-full blur-3xl pointer-events-none" />
             <div className="space-y-2.5 text-center md:text-left relative z-10">
-              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-[#2DE054] text-xs font-bold uppercase tracking-wider border border-[#2DE054]/30">
-                <Sparkles className="w-3.5 h-3.5 text-[#2DE054]" />
+              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-[#BBBE22] text-xs font-bold uppercase tracking-wider border border-[#BBBE22]/30">
+                <Sparkles className="w-3.5 h-3.5 text-[#BBBE22]" />
                 Für Hausverwaltungen &amp; Beiräte
               </span>
               <h4 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
@@ -245,10 +245,10 @@ export const PropertyManagersPage: React.FC = () => {
             <button
               type="button"
               onClick={() => openModal('allgemein')}
-              className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl bg-[#2DE054] hover:bg-[#25ca4a] text-[#1B1754] font-bold text-sm sm:text-base transition-all shadow-[0_4px_16px_rgba(45,224,84,0.35)] hover:shadow-[0_8px_24px_rgba(45,224,84,0.45)] hover:-translate-y-0.5 active:translate-y-0 flex-shrink-0 relative z-10"
+              className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl bg-gradient-to-r from-[#BBBE22] to-[#f6e21c] hover:from-[#A8AB1A] hover:to-[#ebd615] text-[#0B0F19] font-bold text-sm sm:text-base transition-all shadow-[0_4px_16px_rgba(187, 190, 34,0.35)] hover:shadow-[0_8px_24px_rgba(187, 190, 34,0.45)] hover:-translate-y-0.5 active:translate-y-0 flex-shrink-0 relative z-10"
             >
               <span>WEG-Sanierung unverbindlich anfragen</span>
-              <ArrowRight className="w-4 h-4 text-[#1B1754]" />
+              <ArrowRight className="w-4 h-4 text-[#0B0F19]" />
             </button>
           </div>
         </div>

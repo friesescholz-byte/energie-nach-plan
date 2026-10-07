@@ -23,15 +23,15 @@ export const EcoHeroButton: React.FC<EcoHeroButtonProps> = ({
           onClick();
         }
       }}
-      className={`group relative inline-flex items-center select-none focus:outline-none eco-hero-btn filter drop-shadow-[0_12px_24px_rgba(27,23,84,0.16)] active:drop-shadow-[0_4px_8px_rgba(27,23,84,0.22)] ${className}`}
+      className={`group relative inline-flex items-center select-none focus:outline-none eco-hero-btn filter drop-shadow-[0_12px_24px_rgba(11, 15, 25,0.16)] active:drop-shadow-[0_4px_8px_rgba(11, 15, 25,0.22)] ${className}`}
     >
       {/* 
         3D ARCHITEKTUR-BUTTON CONTAINER:
         - Spezielle Form: Sanfte Rundung links für die Sonne, architektonischer Dachschrägen-Chamfer oben rechts
         - 3D-Effekt: Physischer 3D-Sockel (Extrusion) unten + Druck-Interaktion (active:translate-y-[4px])
         - Pfeil und Wärmepumpe überschneiden sich NICHT mehr (448px Breite mit freiem Raum dazwischen)
-        - Tag (Default): Weißer Button, grüner Rand (#2DE054), grüner Sockel (#15803D)
-        - Nacht (Hover): Tiefschwarz (#080C14), tiefblauer Rand (#1B1754), strahlend warmes Hauslicht & rotierende Sonne
+        - Tag (Default): Weißer Button, grüner Rand (#BBBE22), grüner Sockel (#15803D)
+        - Nacht (Hover): Tiefschwarz (#080C14), tiefblauer Rand (#0B0F19), strahlend warmes Hauslicht & rotierende Sonne
       */}
       <div className="relative w-[370px] sm:w-[450px] h-[74px] sm:h-[78px] transition-transform duration-200 ease-out group-hover:-translate-y-0.5 active:translate-y-[4px]">
         
@@ -53,13 +53,13 @@ export const EcoHeroButton: React.FC<EcoHeroButtonProps> = ({
           {/* A) 3D PHYSICAL EXTRUSION SOCKEL (Sichtbare 6px 3D-Tiefe an der Unterkante) */}
           <path
             d="M 36,7 L 396,7 L 446,36 L 446,58 A 20 20 0 0 1 426,77 L 36,77 A 36 36 0 0 1 36,7 Z"
-            className="fill-[#15803D] group-hover:fill-[#0A0F1D] transition-colors duration-500"
+            className="fill-[#929515] group-hover:fill-[#0A0F1D] transition-colors duration-500"
           />
 
           {/* B) BUTTON-FRONTFLÄCHE MIT INTEGRIERTEM ARCHITEKTUR-CHAMFER & RAND */}
           <path
             d="M 36,1 L 396,1 L 446,30 L 446,52 A 20 20 0 0 1 426,71 L 36,71 A 35 35 0 0 1 36,1 Z"
-            className="fill-white group-hover:fill-[#080C14] stroke-[#2DE054] group-hover:stroke-[#1B1754] transition-all duration-500"
+            className="fill-white group-hover:fill-[#080C14] stroke-[#BBBE22] group-hover:stroke-[#0B0F19] transition-all duration-500"
             strokeWidth="2.5"
             strokeLinejoin="round"
           />
@@ -132,7 +132,7 @@ export const EcoHeroButton: React.FC<EcoHeroButtonProps> = ({
                   width="28"
                   height="22"
                   rx="3"
-                  className="fill-[#F1F5F9] group-hover:fill-[#1E293B] stroke-[#1B1754] group-hover:stroke-[#64748B] transition-colors duration-500"
+                  className="fill-[#F1F5F9] group-hover:fill-[#1E293B] stroke-[#0B0F19] group-hover:stroke-[#64748B] transition-colors duration-500"
                   strokeWidth="1.6"
                 />
                 {/* Lüfterring */}
@@ -140,26 +140,26 @@ export const EcoHeroButton: React.FC<EcoHeroButtonProps> = ({
                   cx="19.5"
                   cy="47"
                   r="7.5"
-                  className="fill-[#E2E8F0] group-hover:fill-[#0F172A] stroke-[#2DE054] transition-colors duration-500"
+                  className="fill-[#E2E8F0] group-hover:fill-[#0F172A] stroke-[#BBBE22] transition-colors duration-500"
                   strokeWidth="1.4"
                 />
                 {/* Rotierendes Lüfterrad */}
                 <g style={{ transformOrigin: '19.5px 47px', animation: 'spinPumpFan 2.5s linear infinite' }}>
-                  <circle cx="19.5" cy="47" r="2" className="fill-[#1B1754] group-hover:fill-[#2DE054] transition-colors duration-500" />
-                  <line x1="19.5" y1="40.5" x2="19.5" y2="53.5" className="stroke-[#1B1754] group-hover:stroke-[#2DE054] transition-colors duration-500" strokeWidth="1.4" strokeLinecap="round" />
-                  <line x1="13" y1="47" x2="26" y2="47" className="stroke-[#1B1754] group-hover:stroke-[#2DE054] transition-colors duration-500" strokeWidth="1.4" strokeLinecap="round" />
+                  <circle cx="19.5" cy="47" r="2" className="fill-[#0B0F19] group-hover:fill-[#BBBE22] transition-colors duration-500" />
+                  <line x1="19.5" y1="40.5" x2="19.5" y2="53.5" className="stroke-[#0B0F19] group-hover:stroke-[#BBBE22] transition-colors duration-500" strokeWidth="1.4" strokeLinecap="round" />
+                  <line x1="13" y1="47" x2="26" y2="47" className="stroke-[#0B0F19] group-hover:stroke-[#BBBE22] transition-colors duration-500" strokeWidth="1.4" strokeLinecap="round" />
                 </g>
                 {/* Status-LED grün */}
-                <circle cx="8" cy="40" r="1.3" fill="#2DE054" className="group-hover:[filter:drop-shadow(0_0_5px_#2DE054)] transition-all" />
+                <circle cx="8" cy="40" r="1.3" fill="#BBBE22" className="group-hover:[filter:drop-shadow(0_0_5px_#BBBE22)] transition-all" />
                 {/* Verbindungsrohre zum Haus */}
-                <line x1="32" y1="49" x2="42" y2="49" stroke="#1B1754" strokeWidth="1.8" strokeLinecap="round" />
-                <line x1="32" y1="53" x2="42" y2="53" stroke="#2DE054" strokeWidth="1.8" strokeLinecap="round" />
+                <line x1="32" y1="49" x2="42" y2="49" stroke="#0B0F19" strokeWidth="1.8" strokeLinecap="round" />
+                <line x1="32" y1="53" x2="42" y2="53" stroke="#BBBE22" strokeWidth="1.8" strokeLinecap="round" />
               </g>
 
               {/* 2. ARCHITEKTUR-HAUS: FASSADE VOLLSTÄNDIG MIT DEM DACH VERSCHMOLZEN */}
               <polygon
                 points="42,20 136,27.5 136,62 42,62"
-                className="fill-[#F8FAFC] group-hover:fill-[#1E293B] stroke-[#1B1754] group-hover:stroke-[#64748B] transition-colors duration-500"
+                className="fill-[#F8FAFC] group-hover:fill-[#1E293B] stroke-[#0B0F19] group-hover:stroke-[#64748B] transition-colors duration-500"
                 strokeWidth="1.8"
                 strokeLinejoin="round"
               />
@@ -167,7 +167,7 @@ export const EcoHeroButton: React.FC<EcoHeroButtonProps> = ({
               {/* Pultdachbalken mit Überstand (sitzt bündig auf der Fassade) */}
               <polygon
                 points="38,19 140,27 139,30.5 38,22.5"
-                className="fill-[#1B1754] group-hover:fill-[#334155] stroke-[#1B1754] group-hover:stroke-[#475569] transition-colors duration-500"
+                className="fill-[#0B0F19] group-hover:fill-[#334155] stroke-[#0B0F19] group-hover:stroke-[#475569] transition-colors duration-500"
                 strokeWidth="1"
                 strokeLinejoin="round"
               />
@@ -197,7 +197,7 @@ export const EcoHeroButton: React.FC<EcoHeroButtonProps> = ({
                 width="31"
                 height="11"
                 rx="1.5"
-                className="fill-[#E0F2FE] group-hover:fill-[#FEF08A] stroke-[#1B1754] group-hover:stroke-[#FACC15] group-hover:[filter:drop-shadow(0_0_8px_rgba(254,240,138,0.95))_drop-shadow(0_0_16px_rgba(250,204,21,0.85))] transition-all duration-500"
+                className="fill-[#E0F2FE] group-hover:fill-[#FEF08A] stroke-[#0B0F19] group-hover:stroke-[#FACC15] group-hover:[filter:drop-shadow(0_0_8px_rgba(254,240,138,0.95))_drop-shadow(0_0_16px_rgba(250,204,21,0.85))] transition-all duration-500"
                 strokeWidth="1.3"
               />
               {/* OG Fenster rechts */}
@@ -207,7 +207,7 @@ export const EcoHeroButton: React.FC<EcoHeroButtonProps> = ({
                 width="43"
                 height="11"
                 rx="1.5"
-                className="fill-[#E0F2FE] group-hover:fill-[#FEF08A] stroke-[#1B1754] group-hover:stroke-[#FACC15] group-hover:[filter:drop-shadow(0_0_8px_rgba(254,240,138,0.95))_drop-shadow(0_0_16px_rgba(250,204,21,0.85))] transition-all duration-500"
+                className="fill-[#E0F2FE] group-hover:fill-[#FEF08A] stroke-[#0B0F19] group-hover:stroke-[#FACC15] group-hover:[filter:drop-shadow(0_0_8px_rgba(254,240,138,0.95))_drop-shadow(0_0_16px_rgba(250,204,21,0.85))] transition-all duration-500"
                 strokeWidth="1.3"
               />
 
@@ -218,11 +218,11 @@ export const EcoHeroButton: React.FC<EcoHeroButtonProps> = ({
                 width="56"
                 height="18"
                 rx="1.5"
-                className="fill-[#E0F2FE] group-hover:fill-[#FEF08A] stroke-[#1B1754] group-hover:stroke-[#FACC15] group-hover:[filter:drop-shadow(0_0_10px_rgba(254,240,138,0.95))_drop-shadow(0_0_20px_rgba(250,204,21,0.9))] transition-all duration-500"
+                className="fill-[#E0F2FE] group-hover:fill-[#FEF08A] stroke-[#0B0F19] group-hover:stroke-[#FACC15] group-hover:[filter:drop-shadow(0_0_10px_rgba(254,240,138,0.95))_drop-shadow(0_0_20px_rgba(250,204,21,0.9))] transition-all duration-500"
                 strokeWidth="1.4"
               />
               {/* Fenstersprosse */}
-              <line x1="77" y1="42" x2="77" y2="60" className="stroke-[#1B1754] group-hover:stroke-[#FACC15] transition-colors duration-500" strokeWidth="1" />
+              <line x1="77" y1="42" x2="77" y2="60" className="stroke-[#0B0F19] group-hover:stroke-[#FACC15] transition-colors duration-500" strokeWidth="1" />
 
               {/* Haustür mit Glaselement */}
               <rect
@@ -231,11 +231,11 @@ export const EcoHeroButton: React.FC<EcoHeroButtonProps> = ({
                 width="20"
                 height="20"
                 rx="1"
-                className="fill-[#F1F5F9] group-hover:fill-[#334155] stroke-[#1B1754] group-hover:stroke-[#64748B] transition-colors duration-500"
+                className="fill-[#F1F5F9] group-hover:fill-[#334155] stroke-[#0B0F19] group-hover:stroke-[#64748B] transition-colors duration-500"
                 strokeWidth="1.4"
               />
               {/* Türgriff */}
-              <line x1="116" y1="51" x2="116" y2="56" stroke="#1B1754" strokeWidth="1.4" strokeLinecap="round" className="group-hover:stroke-white transition-colors" />
+              <line x1="116" y1="51" x2="116" y2="56" stroke="#0B0F19" strokeWidth="1.4" strokeLinecap="round" className="group-hover:stroke-white transition-colors" />
             </svg>
           </div>
         </div>
@@ -243,12 +243,12 @@ export const EcoHeroButton: React.FC<EcoHeroButtonProps> = ({
         {/* 3. VORDERGRUND: TYPOGRAFIE & CTA PFEIL (Mit sauberem Abstand zur Wärmepumpe!) */}
         <div className="relative z-30 flex items-center justify-between h-[70px] sm:h-[72px] px-5 sm:px-6 pr-4 sm:pr-5">
           <div className="flex items-center gap-3 sm:gap-3.5 pl-6 sm:pl-8">
-            <span className="font-black text-[20px] sm:text-[23px] tracking-tight text-[#1B1754] group-hover:text-white transition-colors duration-500 whitespace-nowrap drop-shadow-sm">
+            <span className="font-black text-[20px] sm:text-[23px] tracking-tight text-[#0B0F19] group-hover:text-white transition-colors duration-500 whitespace-nowrap drop-shadow-sm">
               {text}
             </span>
 
             {/* Action Pfeil-Kreis mit 3D Push (Komplett frei, verdeckt nichts!) */}
-            <div className="flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-[#2DE054] group-hover:bg-[#3B82F6] text-[#1B1754] group-hover:text-white group-hover:translate-x-1 group-hover:scale-105 transition-all duration-500 flex-shrink-0 shadow-[0_2px_6px_rgba(0,0,0,0.15)]">
+            <div className="flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gradient-to-r from-[#BBBE22] to-[#f6e21c] group-hover:from-[#A8AB1A] group-hover:to-[#ebd615] text-[#0B0F19] group-hover:text-[#0B0F19] group-hover:translate-x-1 group-hover:scale-105 transition-all duration-500 flex-shrink-0 shadow-[0_2px_6px_rgba(0,0,0,0.15)]">
               <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12" />
                 <polyline points="12 5 19 12 12 19" />

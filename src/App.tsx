@@ -40,7 +40,7 @@ function ScrollToTop() {
 export const App: React.FC = () => {
   return (
     <ContactModalProvider>
-      <div className="min-h-screen flex flex-col bg-white text-slate-900 selection:bg-emerald-100 selection:text-emerald-900">
+      <div className="min-h-screen flex flex-col bg-white text-slate-900 selection:bg-[#0B0F19] selection:text-white">
         <ScrollToTop />
         <Navbar />
         <main className="flex-grow">

@@ -47,14 +47,14 @@ export const CompletePackagePage: React.FC = () => {
   return (
     <div className="bg-white">
       {/* 1. HERO SECTION (Fließender Mint-zu-Weiß Verlauf & Blueprint Pattern) */}
-      <section className="relative pt-12 pb-20 lg:pt-16 lg:pb-28 overflow-hidden bg-gradient-to-b from-[#E7F6F2] via-[#EDF8F5] to-white">
+      <section className="relative pt-12 pb-20 lg:pt-16 lg:pb-28 overflow-hidden bg-gradient-to-b from-[#FAFBF2] via-[#FBFCF7] to-white">
         {/* Subtiles Blueprint Raster */}
         <div 
           className="absolute inset-0 opacity-[0.035] pointer-events-none [mask-image:linear-gradient(to_bottom,transparent,black_15%,black_85%,transparent)]"
           style={{
             backgroundImage: `
-              linear-gradient(to right, #1B1754 1px, transparent 1px),
-              linear-gradient(to bottom, #1B1754 1px, transparent 1px)
+              linear-gradient(to right, #0B0F19 1px, transparent 1px),
+              linear-gradient(to bottom, #0B0F19 1px, transparent 1px)
             `,
             backgroundSize: '40px 40px'
           }}
@@ -68,12 +68,12 @@ export const CompletePackagePage: React.FC = () => {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
           <div className="lg:w-[50%] xl:w-[48%] space-y-6">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 border border-emerald-200/80 text-emerald-800 text-xs font-bold tracking-wide shadow-xs">
-              <Layers className="w-4 h-4 text-emerald-600" />
+            <div className="badge-eyebrow">
+              <Layers className="w-4 h-4 text-slate-700" />
               <span>Das Rundum-Sorglos-Meisterpaket</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#1B1754] tracking-tight leading-[1.1]">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#0B0F19] tracking-tight leading-[1.1]">
               Kein Schnittstellen-Chaos. Keine bösen Überraschungen auf der Baustelle.
             </h1>
 
@@ -85,7 +85,7 @@ export const CompletePackagePage: React.FC = () => {
               <button
                 type="button"
                 onClick={() => openModal('isfp')}
-                className="inline-flex items-center justify-center gap-3 px-8 py-5 rounded-2xl bg-[#2DE054] hover:bg-[#25ca4a] text-[#1B1754] font-black text-base sm:text-lg transition-all duration-200 shadow-xl hover:shadow-[0_20px_35px_-5px_rgba(45,224,84,0.4)] hover:-translate-y-1 active:translate-y-0.5 border-b-[4px] border-b-[#1b9e38]"
+                className="inline-flex items-center justify-center gap-3 px-8 py-5 rounded-2xl bg-gradient-to-r from-[#BBBE22] to-[#f6e21c] hover:from-[#A8AB1A] hover:to-[#ebd615] text-[#0B0F19] font-black text-base sm:text-lg transition-all duration-200 shadow-xl hover:shadow-[0_20px_35px_-5px_rgba(187, 190, 34,0.4)] hover:-translate-y-1 active:translate-y-0.5 border-b-[4px] border-b-[#929515]"
               >
                 <span>Kostenloses Erstgespräch</span>
                 <ArrowRight className="w-5 h-5" />
@@ -93,10 +93,10 @@ export const CompletePackagePage: React.FC = () => {
               
               <a
                 href="#ablauf"
-                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl border border-slate-300/80 border-b-[3.5px] border-b-slate-300 hover:border-b-[#1B1754] bg-white/90 hover:bg-white text-slate-800 hover:text-[#1B1754] font-bold text-sm sm:text-base transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-1 group backdrop-blur-sm"
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl border border-slate-300/80 border-b-[3.5px] border-b-slate-300 hover:border-b-[#0B0F19] bg-white/90 hover:bg-white text-slate-800 hover:text-[#0B0F19] font-bold text-sm sm:text-base transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-1 group backdrop-blur-sm"
               >
                 <span>Ablauf im Detail</span>
-                <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-[#1B1754] group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-[#0B0F19] group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
 
@@ -132,10 +132,10 @@ export const CompletePackagePage: React.FC = () => {
       <section className="py-24 lg:py-32 bg-gradient-to-b from-[#F4F6FB] via-[#F8FAFC] to-[#EFF2F8] relative" id="ablauf">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-20 lg:mb-24">
-            <span className="inline-block px-3.5 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-widest mb-4 border border-emerald-200/80">
+            <span className="badge-eyebrow mb-4">
               Lückenlose Begleitung
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1B1754] tracking-tight leading-[1.15]">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B0F19] tracking-tight leading-[1.15]">
               Der Sanierungsablauf im Detail
             </h2>
             <p className="mt-5 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
@@ -155,11 +155,11 @@ export const CompletePackagePage: React.FC = () => {
                 />
               </div>
               <div className="lg:col-span-7 space-y-5">
-                <div className="inline-flex items-center gap-2.5 px-3 py-1 rounded-lg bg-emerald-50 text-emerald-800 font-bold text-xs uppercase tracking-wider border border-emerald-200/60">
-                  <span className="w-2 h-2 rounded-full bg-[#2DE054]" />
+                <div className="inline-flex items-center gap-2.5 px-3 py-1 rounded-lg bg-slate-100 text-slate-800 font-bold text-xs uppercase tracking-wider border border-slate-200/90">
+                  <span className="w-2 h-2 rounded-full bg-[#BBBE22]" />
                   <span>Analyse &amp; Strategie</span>
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-black text-[#1B1754] tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-black text-[#0B0F19] tracking-tight">
                   Bestandsaufnahme &amp; Sanierungsfahrplan (iSFP)
                 </h3>
                 <p className="text-base text-slate-600 leading-relaxed font-normal">
@@ -167,15 +167,15 @@ export const CompletePackagePage: React.FC = () => {
                 </p>
                 <div className="space-y-3 pt-2">
                   <div className="flex items-center gap-3 text-sm text-slate-700">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-slate-700 flex-shrink-0" />
                     <span><strong>Bis zu 80 % BAFA-Zuschuss</strong> auf das Beratungshonorar direkt gesichert</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-slate-700">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-slate-700 flex-shrink-0" />
                     <span><strong>Raumweise Heizlastberechnung DIN 12831</strong> (Reale Werte statt Daumenmaß)</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-slate-700">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-slate-700 flex-shrink-0" />
                     <span><strong>5 % Extra-Förderbonus (iSFP-Bonus)</strong> für alle künftigen Hüllmaßnahmen</span>
                   </div>
                 </div>
@@ -192,11 +192,11 @@ export const CompletePackagePage: React.FC = () => {
                 />
               </div>
               <div className="lg:col-span-7 space-y-5">
-                <div className="inline-flex items-center gap-2.5 px-3 py-1 rounded-lg bg-emerald-50 text-emerald-800 font-bold text-xs uppercase tracking-wider border border-emerald-200/60">
-                  <span className="w-2 h-2 rounded-full bg-[#2DE054]" />
+                <div className="inline-flex items-center gap-2.5 px-3 py-1 rounded-lg bg-slate-100 text-slate-800 font-bold text-xs uppercase tracking-wider border border-slate-200/90">
+                  <span className="w-2 h-2 rounded-full bg-[#BBBE22]" />
                   <span>Ausschreibung &amp; Fördersicherung</span>
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-black text-[#1B1754] tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-black text-[#0B0F19] tracking-tight">
                   Herstellerneutrale Ausschreibung &amp; KfW-Antrag
                 </h3>
                 <p className="text-base text-slate-600 leading-relaxed font-normal">
@@ -204,15 +204,15 @@ export const CompletePackagePage: React.FC = () => {
                 </p>
                 <div className="space-y-3 pt-2">
                   <div className="flex items-center gap-3 text-sm text-slate-700">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-slate-700 flex-shrink-0" />
                     <span><strong>100 % herstellerunabhängig:</strong> Wir prüfen Fabrikate ohne Provisionsbindung</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-slate-700">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-slate-700 flex-shrink-0" />
                     <span><strong>Rechtssichere KfW 458 &amp; BAFA-Antragstellung</strong> vor Vertragsunterschrift</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-slate-700">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-slate-700 flex-shrink-0" />
                     <span><strong>Bis zu 70 % staatlicher Zuschuss</strong> (max. 21.000 € gesichert)</span>
                   </div>
                 </div>
@@ -229,11 +229,11 @@ export const CompletePackagePage: React.FC = () => {
                 />
               </div>
               <div className="lg:col-span-7 space-y-5">
-                <div className="inline-flex items-center gap-2.5 px-3 py-1 rounded-lg bg-emerald-50 text-emerald-800 font-bold text-xs uppercase tracking-wider border border-emerald-200/60">
-                  <span className="w-2 h-2 rounded-full bg-[#2DE054]" />
+                <div className="inline-flex items-center gap-2.5 px-3 py-1 rounded-lg bg-slate-100 text-slate-800 font-bold text-xs uppercase tracking-wider border border-slate-200/90">
+                  <span className="w-2 h-2 rounded-full bg-[#BBBE22]" />
                   <span>Qualität &amp; Endabnahme</span>
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-black text-[#1B1754] tracking-tight">
+                <h3 className="text-2xl sm:text-3xl font-black text-[#0B0F19] tracking-tight">
                   Unabhängige Fachbauleitung &amp; Abnahmekontrolle
                 </h3>
                 <p className="text-base text-slate-600 leading-relaxed font-normal">
@@ -241,15 +241,15 @@ export const CompletePackagePage: React.FC = () => {
                 </p>
                 <div className="space-y-3 pt-2">
                   <div className="flex items-center gap-3 text-sm text-slate-700">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-slate-700 flex-shrink-0" />
                     <span><strong>Vor-Ort-Kontrolltermine</strong> durch echte HWK-Heizungsbaumeister</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-slate-700">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-slate-700 flex-shrink-0" />
                     <span><strong>Prüfung des hydraulischen Abgleichs</strong> (Verfahren B nach VdZ-Formular)</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm text-slate-700">
-                    <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-slate-700 flex-shrink-0" />
                     <span><strong>Bestätigung nach Durchführung (BnD)</strong> für 100 % beanstandungsfreie Auszahlung</span>
                   </div>
                 </div>
@@ -257,11 +257,11 @@ export const CompletePackagePage: React.FC = () => {
             </div>
 
             {/* Spezifische Komplettpaket Call-to-Action Box */}
-            <div className="mt-14 p-8 sm:p-11 rounded-3xl bg-gradient-to-br from-[#1B1754] via-[#1F1A60] to-[#140F3E] text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-8 border border-white/10 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-80 h-80 bg-[#2DE054]/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="mt-14 p-8 sm:p-11 rounded-3xl bg-gradient-to-br from-[#0B0F19] via-[#111625] to-[#0B0F19] text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-8 border border-white/10 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-80 h-80 bg-[#BBBE22]/10 rounded-full blur-3xl pointer-events-none" />
               <div className="space-y-2.5 text-center md:text-left relative z-10">
-                <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-[#2DE054] text-xs font-bold uppercase tracking-wider border border-[#2DE054]/30">
-                  <Sparkles className="w-3.5 h-3.5 text-[#2DE054]" />
+                <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-[#BBBE22] text-xs font-bold uppercase tracking-wider border border-[#BBBE22]/30">
+                  <Sparkles className="w-3.5 h-3.5 text-[#BBBE22]" />
                   100 % Rundum-Sorglos-Garantie
                 </span>
                 <h4 className="text-2xl sm:text-3xl font-black text-white tracking-tight">
@@ -274,10 +274,10 @@ export const CompletePackagePage: React.FC = () => {
               <button
                 type="button"
                 onClick={() => openModal('isfp')}
-                className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl bg-[#2DE054] hover:bg-[#25ca4a] text-[#1B1754] font-bold text-sm sm:text-base transition-all shadow-[0_4px_16px_rgba(45,224,84,0.35)] hover:shadow-[0_8px_24px_rgba(45,224,84,0.45)] hover:-translate-y-0.5 active:translate-y-0 flex-shrink-0 relative z-10"
+                className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl bg-gradient-to-r from-[#BBBE22] to-[#f6e21c] hover:from-[#A8AB1A] hover:to-[#ebd615] text-[#0B0F19] font-bold text-sm sm:text-base transition-all shadow-[0_4px_16px_rgba(187, 190, 34,0.35)] hover:shadow-[0_8px_24px_rgba(187, 190, 34,0.45)] hover:-translate-y-0.5 active:translate-y-0 flex-shrink-0 relative z-10"
               >
                 <span>Komplettpaket unverbindlich anfragen</span>
-                <ArrowRight className="w-4 h-4 text-[#1B1754]" />
+                <ArrowRight className="w-4 h-4 text-[#0B0F19]" />
               </button>
             </div>
 

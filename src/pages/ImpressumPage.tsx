@@ -10,11 +10,11 @@ export const ImpressumPage: React.FC = () => {
         
         {/* Header */}
         <div className="border-b border-slate-200/80 pb-8">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold uppercase tracking-wider mb-4 border border-emerald-200/80">
-            <Scale className="w-3.5 h-3.5 text-emerald-600" />
+          <div className="badge-eyebrow mb-4">
+            <Scale className="w-3.5 h-3.5 text-slate-700" />
             <span>Rechtliche Angaben &amp; Pflichtinformationen</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#1B1754] tracking-tight">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B0F19] tracking-tight">
             Impressum
           </h1>
           <p className="mt-3 text-base text-slate-600 font-normal">
@@ -27,11 +27,11 @@ export const ImpressumPage: React.FC = () => {
           
           {/* 1. Angaben gemäß § 5 DDG */}
           <section className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4">
-            <h2 className="text-xl font-bold text-[#1B1754] flex items-center gap-2">
+            <h2 className="text-xl font-bold text-[#0B0F19] flex items-center gap-2">
               <span>1. Diensteanbieter gemäß § 5 DDG</span>
             </h2>
             <div className="space-y-1 text-slate-800">
-              <p className="font-bold text-base text-[#1B1754]">{COMPANY_INFO.name}</p>
+              <p className="font-bold text-base text-[#0B0F19]">{COMPANY_INFO.name}</p>
               <p>Gesellschaft bürgerlichen Rechts (GbR)</p>
               <p>Vertretungsberechtigte Gesellschafter: <strong>Nico Heidemann</strong> &amp; <strong>Jan Osmer</strong></p>
               <p>{COMPANY_INFO.address}</p>
@@ -42,37 +42,37 @@ export const ImpressumPage: React.FC = () => {
 
           {/* 2. Kontaktaufnahme */}
           <section className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4">
-            <h2 className="text-xl font-bold text-[#1B1754]">
+            <h2 className="text-xl font-bold text-[#0B0F19]">
               2. Kontakt
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+                <Phone className="w-5 h-5 text-slate-700 flex-shrink-0" />
                 <div>
                   <div className="text-xs text-slate-500 font-semibold uppercase">Telefon</div>
-                  <a href={`tel:${COMPANY_INFO.phoneClean}`} className="font-bold text-slate-800 hover:text-emerald-700 transition-colors">
+                  <a href={`tel:${COMPANY_INFO.phoneClean}`} className="font-bold text-slate-800 hover:text-[#0B0F19] transition-colors">
                     {COMPANY_INFO.phone}
                   </a>
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+                <Mail className="w-5 h-5 text-slate-700 flex-shrink-0" />
                 <div>
                   <div className="text-xs text-slate-500 font-semibold uppercase">E-Mail</div>
-                  <a href={`mailto:${COMPANY_INFO.email}`} className="font-bold text-slate-800 hover:text-emerald-700 transition-colors">
+                  <a href={`mailto:${COMPANY_INFO.email}`} className="font-bold text-slate-800 hover:text-[#0B0F19] transition-colors">
                     {COMPANY_INFO.email}
                   </a>
                 </div>
               </div>
               <div className="flex items-start gap-3 sm:col-span-2 pt-2">
-                <MapPin className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <MapPin className="w-5 h-5 text-slate-700 flex-shrink-0 mt-0.5" />
                 <div>
                   <div className="text-xs text-slate-500 font-semibold uppercase">Firmensitz &amp; Anfahrt</div>
                   <a 
                     href={COMPANY_INFO.googleMapsUrl} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-slate-800 hover:text-emerald-700 underline font-medium inline-flex items-center gap-1"
+                    className="text-slate-800 hover:text-[#0B0F19] underline font-medium inline-flex items-center gap-1"
                   >
                     <span>{COMPANY_INFO.address}, {COMPANY_INFO.zipCity} auf Google Maps öffnen</span>
                     <ExternalLink className="w-3.5 h-3.5" />
@@ -84,7 +84,7 @@ export const ImpressumPage: React.FC = () => {
 
           {/* 3. Berufsbezeichnung & Handwerkskammer */}
           <section className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4">
-            <h2 className="text-xl font-bold text-[#1B1754]">
+            <h2 className="text-xl font-bold text-[#0B0F19]">
               3. Berufsbezeichnung &amp; berufsrechtliche Regelungen
             </h2>
             <div className="space-y-3">
@@ -97,18 +97,18 @@ export const ImpressumPage: React.FC = () => {
                 <strong>Zuständige Handwerkskammer (Aufsichtsbehörde):</strong><br />
                 Handwerkskammer Hannover<br />
                 Berliner Allee 17, 30175 Hannover<br />
-                Website: <a href="https://www.hwk-hannover.de" target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:underline">www.hwk-hannover.de</a>
+                Website: <a href="https://www.hwk-hannover.de" target="_blank" rel="noopener noreferrer" className="text-slate-800 underline hover:text-[#0B0F19]">www.hwk-hannover.de</a>
               </p>
               <p>
                 <strong>Berufsrechtliche Regelungen:</strong><br />
-                Handwerksordnung (HwO) in der jeweils geltenden Fassung (einsehbar unter <a href="https://www.gesetze-im-internet.de/hwo/" target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:underline">www.gesetze-im-internet.de/hwo/</a>).
+                Handwerksordnung (HwO) in der jeweils geltenden Fassung (einsehbar unter <a href="https://www.gesetze-im-internet.de/hwo/" target="_blank" rel="noopener noreferrer" className="text-slate-800 underline hover:text-[#0B0F19]">www.gesetze-im-internet.de/hwo/</a>).
               </p>
             </div>
           </section>
 
           {/* 4. dena Energieeffizienz-Expertenliste */}
           <section className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4">
-            <h2 className="text-xl font-bold text-[#1B1754]">
+            <h2 className="text-xl font-bold text-[#0B0F19]">
               4. Zertifizierung &amp; Sachverständigen-Eintragung
             </h2>
             <p>
@@ -121,13 +121,13 @@ export const ImpressumPage: React.FC = () => {
               <li>Fachbauleitung und Technische Bestätigung nach Durchführung (BnD)</li>
             </ul>
             <p className="text-sm text-slate-500">
-              Zertifizierungsstelle: Deutsche Energie-Agentur GmbH (dena), Chausseestraße 128a, 10115 Berlin (<a href="https://www.energie-effizienz-experten.de" target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:underline">www.energie-effizienz-experten.de</a>).
+              Zertifizierungsstelle: Deutsche Energie-Agentur GmbH (dena), Chausseestraße 128a, 10115 Berlin (<a href="https://www.energie-effizienz-experten.de" target="_blank" rel="noopener noreferrer" className="text-slate-800 underline hover:text-[#0B0F19]">www.energie-effizienz-experten.de</a>).
             </p>
           </section>
 
           {/* 5. Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV */}
           <section className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4">
-            <h2 className="text-xl font-bold text-[#1B1754]">
+            <h2 className="text-xl font-bold text-[#0B0F19]">
               5. Verantwortlich für redaktionelle Inhalte gemäß § 18 Abs. 2 MStV
             </h2>
             <p>
@@ -139,7 +139,7 @@ export const ImpressumPage: React.FC = () => {
 
           {/* 6. Berufshaftpflichtversicherung */}
           <section className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4">
-            <h2 className="text-xl font-bold text-[#1B1754]">
+            <h2 className="text-xl font-bold text-[#0B0F19]">
               6. Berufshaftpflichtversicherung
             </h2>
             <p>
@@ -152,11 +152,11 @@ export const ImpressumPage: React.FC = () => {
 
           {/* 7. Streitbeilegung */}
           <section className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4">
-            <h2 className="text-xl font-bold text-[#1B1754]">
+            <h2 className="text-xl font-bold text-[#0B0F19]">
               7. Verbraucherstreitbeilegung &amp; Online-Streitbeilegung
             </h2>
             <p>
-              Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" className="text-emerald-700 hover:underline">https://ec.europa.eu/consumers/odr</a>.<br />
+              Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" className="text-slate-800 underline hover:text-[#0B0F19]">https://ec.europa.eu/consumers/odr</a>.<br />
               Unsere E-Mail-Adresse finden Sie oben im Impressum.
             </p>
             <p>
@@ -166,7 +166,7 @@ export const ImpressumPage: React.FC = () => {
 
           {/* 8. Haftung für Inhalte & Links */}
           <section className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4">
-            <h2 className="text-xl font-bold text-[#1B1754]">
+            <h2 className="text-xl font-bold text-[#0B0F19]">
               8. Haftung für Inhalte und Links
             </h2>
             <div className="space-y-3 text-slate-600 text-sm">
@@ -190,10 +190,10 @@ export const ImpressumPage: React.FC = () => {
             Stand: {new Date().getFullYear()} · Energie nach Plan GbR
           </div>
           <div className="flex items-center gap-6">
-            <Link to="/datenschutz" className="hover:text-emerald-700 transition-colors font-medium">
+            <Link to="/datenschutz" className="hover:text-[#0B0F19] transition-colors font-medium">
               Zur Datenschutzerklärung →
             </Link>
-            <Link to="/barrierefreiheit" className="hover:text-emerald-700 transition-colors font-medium">
+            <Link to="/barrierefreiheit" className="hover:text-[#0B0F19] transition-colors font-medium">
               Zur Erklärung zur Barrierefreiheit →
             </Link>
           </div>

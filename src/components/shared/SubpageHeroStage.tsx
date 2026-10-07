@@ -55,14 +55,14 @@ export const SubpageHeroStage: React.FC<SubpageHeroStageProps> = ({ imageSrc, im
                 L 1000, 0
                 Z
               "
-              fill="#2DE054"
+              fill="#BBBE22"
             />
           </svg>
         </div>
 
         {/* 2. Das Bild mit der originalen organischen Spitzenform der Startseite */}
         <div 
-          className="relative w-full h-full max-h-[700px] flex items-end justify-end filter drop-shadow-[0_25px_50px_rgba(27,23,84,0.18)] z-10"
+          className="relative w-full h-full max-h-[700px] flex items-end justify-end filter drop-shadow-[0_25px_50px_rgba(11, 15, 25,0.18)] z-10"
           style={{ clipPath: 'url(#subpageHeroShapeRef)', WebkitClipPath: 'url(#subpageHeroShapeRef)' }}
         >
           <img
@@ -81,7 +81,7 @@ export const SubpageHeroMobileImage: React.FC<SubpageHeroStageProps> = ({ imageS
   return (
     <div className="lg:hidden mt-8 w-full max-w-md mx-auto">
       <div 
-        className="relative overflow-hidden filter drop-shadow-[0_20px_40px_rgba(27,23,84,0.18)]"
+        className="relative overflow-hidden filter drop-shadow-[0_20px_40px_rgba(11, 15, 25,0.18)]"
         style={{ clipPath: 'url(#subpageHeroShapeRef)', WebkitClipPath: 'url(#subpageHeroShapeRef)' }}
       >
         <img
